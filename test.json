@@ -1,66 +1,54 @@
-// CARD CONTENT - Edit this file on GitHub to add/modify cards
-// Add "children" to any card to create expandable nested levels
-
-export interface CardData {
-  title: string;
-  badge: string;
-  description: string;
-  children?: CardData[] | CardData; // Can be a single card or array of cards
-}
-
-export const cardsData: CardData = {
-  title: "Stripe Request",
-  badge: "1",
-  description: "Nunc at convallis dui. Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.",
-  children: [
-    {
-      title: "Hogan Lookup Account",
-      badge: "2.1",
-      description: "Morbi eleifend purus purus, a tempus arcu laoreet vel. Donec posuere ac eros in vestibulum. In eget mi eget eros molestie eleifend. Etiam condimentum lorem vitae nunc convallis hendrerit. Morbi a suscipit urna. Aenean consectetur condimentum orci a vehicula. Maecenas semper dolor tincidunt, commodo libero rhoncus, dapibus nunc. Curabitur id aliquam lorem. Suspendisse fringilla nulla odio, et finibus justo ultricies in."
-    },
-    {
-      title: "Hogan Lookup Account (Hogan Core Container)",
-      badge: "2.2",
-      description: "Aenean consectetur condimentum orci a vehicula. Maecenas semper dolor tincidunt, commodo libero rhoncus, dapibus nunc.",
-      children: [
-        {
-          title: "Hogan Authorized Payment",
-          badge: "3.1",
-          description: "Vivamus arcu nunc, luctus id lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
-        },
-        {
-          title: "Hogan Authorized Payment (Hogan Core Container)",
-          badge: "3.2",
-          description: "Mauris laoreet ligula sem, vel faucibus ipsum mollis sed. Duis nisl massa, malesuada et lectus at, ullamcorper.",
-          children: [
+{
+  "title": "View Request",
+  "badge": "1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.",
+  "children": {
+    "title": "Retrieve Checkout Session",
+    "badge": "2",
+    "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa. Aliquam dictum erat quis enim pulvinar, non fringilla urna congue. Sed dapibus enim et eros consequat scelerisque. Donec purus orci, mattis non massa non, vehicula ornare eros.",
+    "children": [
+      {
+        "title": "Get Credit Card Data",
+        "badge": "3.1",
+        "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue. Pellentesque et purus tempus, dapibus sem eu, suscipit tortor. Nullam mattis urna risus, et malesuada lorem gravida nec.",
+        "children": {
+          "title": "Make Payment",
+          "badge": "4.1",
+          "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis. Proin et accumsan lacus. Etiam ut ornare quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut facilisis quam.",
+          "children": [
             {
-              title: "Hogan Debit Account",
-              badge: "4.1",
-              description: "Fusce quis orci nunc. Aenean dui libero, pharetra nec rutrum vitae, rutrum eu felis. In dictum placerat nisl eu consectetur. Sed varius condimentum ante, eget tempor nisl blandit quis. Ut pretium risus et libero ultrices, a congue felis aliquet. Donec nec aliquet dolor, non sodales odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem quis, malesuada nulla."
-            },
-            {
-              title: "Hogan Debit Account (Hogan Core Container)",
-              badge: "4.2",
-              description: "Donec nec aliquet dolor, non sodales odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem quis, malesuada nulla.",
-              children: {
-                title: "Log Transaction",
-                badge: "5",
-                description: "Fusce porttitor auctor vulputate. Donec lacus augue, condimentum id placerat et, cursus id diam.",
-                children: {
-                  title: "Respond To Stripe",
-                  badge: "6",
-                  description: "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie. Nullam quis neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus.",
-                  children: {
-                    title: "Hi Evan!",
-                    badge: "7",
-                    description: "I was born in json"
-                  }
+              "title": "Create Payout Account",
+              "badge": "5.1",
+              "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium. Nulla in metus sed dolor cursus bibendum in eget mauris. Praesent porta tortor a vestibulum congue. Suspendisse id euismod nunc, in efficitur elit. Cras sed orci et sem auctor varius quis eget dui.",
+              "children": {
+                "title": "Respond To Stripe",
+                "badge": "6",
+                "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie. Nullam quis neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus.",
+                "children": {
+                  "title": "Hi Evan!",
+                  "badge": "7",
+                  "description": "I was born in json"
                 }
               }
+            },
+            {
+              "title": "Send Confirmation to Customer",
+              "badge": "5.2",
+              "description": "Integer vel lobortis enim, sit amet condimentum urna. Suspendisse non dolor ullamcorper, convallis mauris ut, tempus odio. Suspendisse ac semper eros. Nunc molestie ac urna laoreet malesuada. Proin vestibulum lacinia dictum. In ac enim gravida, ultricies sapien non, rhoncus tortor. Praesent luctus nisl metus, eu interdum elit venenatis at."
             }
           ]
         }
-      ]
-    }
-  ]
-};
+      },
+      {
+        "title": "Get Payment Method from Customer",
+        "badge": "3.2",
+        "description": "Maecenas bibendum ex et cursus lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi bibendum eros vel enim tempus vehicula. Quisque vel dignissim diam, et rutrum tellus. Sed venenatis orci justo. Mauris rutrum ornare nisl eu facilisis. Nam ultrices sapien odio, sit amet fermentum turpis suscipit elementum. Praesent et est tempor, sodales justo vel, pellentesque nisi.",
+        "children": {
+          "title": "Process Secure Payment",
+          "badge": "4.2",
+          "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit purus ac magna bibendum, in bibendum augue convallis. Donec sodales magna eu sapien tristique, sed efficitur nisi lobortis. Morbi tristique, velit at varius gravida, nunc turpis pellentesque leo, vel lobortis dui erat vel risus."
+        }
+      }
+    ]
+  }
+}
