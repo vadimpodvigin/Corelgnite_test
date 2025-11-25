@@ -2,53 +2,70 @@
   "title": "View Request",
   "badge": "1",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.",
-  "children": {
-    "title": "Retrieve Checkout Session",
-    "badge": "2",
-    "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa. Aliquam dictum erat quis enim pulvinar, non fringilla urna congue. Sed dapibus enim et eros consequat scelerisque. Donec purus orci, mattis non massa non, vehicula ornare eros.",
-    "children": [
-      {
-        "title": "Get Credit Card Data",
-        "badge": "3.1",
-        "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue. Pellentesque et purus tempus, dapibus sem eu, suscipit tortor. Nullam mattis urna risus, et malesuada lorem gravida nec.",
-        "children": {
-          "title": "Make Payment",
-          "badge": "4.1",
-          "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis. Proin et accumsan lacus. Etiam ut ornare quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut facilisis quam.",
+  "navigation": "vertical",
+  "children": [
+    {
+      "title": "Retrieve Checkout Session",
+      "badge": "2",
+      "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa. Aliquam dictum erat quis enim pulvinar, non fringilla urna congue. Sed dapibus enim et eros consequat scelerisque. Donec purus orci, mattis non massa non, vehicula ornare eros.",
+      "navigation": "horizontal",
+      "children": [
+        {
+          "title": "Get Credit Card Data",
+          "badge": "3.1",
+          "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue. Pellentesque et purus tempus, dapibus sem eu, suscipit tortor. Nullam mattis urna risus, et malesuada lorem gravida nec.",
+          "navigation": "vertical",
           "children": [
             {
-              "title": "Create Payout Account",
-              "badge": "5.1",
-              "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium. Nulla in metus sed dolor cursus bibendum in eget mauris. Praesent porta tortor a vestibulum congue. Suspendisse id euismod nunc, in efficitur elit. Cras sed orci et sem auctor varius quis eget dui.",
-              "children": {
-                "title": "Respond To Stripe",
-                "badge": "6",
-                "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie. Nullam quis neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus.",
-                "children": {
-                  "title": "Hi Evan!",
-                  "badge": "7",
-                  "description": "I was born in json"
+              "title": "Make Payment",
+              "badge": "4.1",
+              "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis. Proin et accumsan lacus. Etiam ut ornare quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut facilisis quam.",
+              "navigation": "horizontal",
+              "children": [
+                {
+                  "title": "Create Payout Account",
+                  "badge": "5.1",
+                  "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium. Nulla in metus sed dolor cursus bibendum in eget mauris. Praesent porta tortor a vestibulum congue. Suspendisse id euismod nunc, in efficitur elit. Cras sed orci et sem auctor varius quis eget dui.",
+                  "navigation": "vertical",
+                  "children": [
+                    {
+                      "title": "Respond To Stripe",
+                      "badge": "6",
+                      "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie. Nullam quis neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus.",
+                      "navigation": "vertical",
+                      "children": [
+                        {
+                          "title": "Hi Evan!",
+                          "badge": "7",
+                          "description": "I was born in json"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Send Confirmation to Customer",
+                  "badge": "5.2",
+                  "description": "Integer vel lobortis enim, sit amet condimentum urna. Suspendisse non dolor ullamcorper, convallis mauris ut, tempus odio. Suspendisse ac semper eros. Nunc molestie ac urna laoreet malesuada. Proin vestibulum lacinia dictum. In ac enim gravida, ultricies sapien non, rhoncus tortor. Praesent luctus nisl metus, eu interdum elit venenatis at."
                 }
-              }
-            },
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Get Payment Method from Customer",
+          "badge": "3.2",
+          "description": "Maecenas bibendum ex et cursus lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi bibendum eros vel enim tempus vehicula. Quisque vel dignissim diam, et rutrum tellus. Sed venenatis orci justo. Mauris rutrum ornare nisl eu facilisis. Nam ultrices sapien odio, sit amet fermentum turpis suscipit elementum. Praesent et est tempor, sodales justo vel, pellentesque nisi.",
+          "navigation": "vertical",
+          "children": [
             {
-              "title": "Send Confirmation to Customer",
-              "badge": "5.2",
-              "description": "Integer vel lobortis enim, sit amet condimentum urna. Suspendisse non dolor ullamcorper, convallis mauris ut, tempus odio. Suspendisse ac semper eros. Nunc molestie ac urna laoreet malesuada. Proin vestibulum lacinia dictum. In ac enim gravida, ultricies sapien non, rhoncus tortor. Praesent luctus nisl metus, eu interdum elit venenatis at."
+              "title": "Process Secure Payment",
+              "badge": "4.2",
+              "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit purus ac magna bibendum, in bibendum augue convallis. Donec sodales magna eu sapien tristique, sed efficitur nisi lobortis. Morbi tristique, velit at varius gravida, nunc turpis pellentesque leo, vel lobortis dui erat vel risus."
             }
           ]
         }
-      },
-      {
-        "title": "Get Payment Method from Customer",
-        "badge": "3.2",
-        "description": "Maecenas bibendum ex et cursus lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi bibendum eros vel enim tempus vehicula. Quisque vel dignissim diam, et rutrum tellus. Sed venenatis orci justo. Mauris rutrum ornare nisl eu facilisis. Nam ultrices sapien odio, sit amet fermentum turpis suscipit elementum. Praesent et est tempor, sodales justo vel, pellentesque nisi.",
-        "children": {
-          "title": "Process Secure Payment",
-          "badge": "4.2",
-          "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed suscipit purus ac magna bibendum, in bibendum augue convallis. Donec sodales magna eu sapien tristique, sed efficitur nisi lobortis. Morbi tristique, velit at varius gravida, nunc turpis pellentesque leo, vel lobortis dui erat vel risus."
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
