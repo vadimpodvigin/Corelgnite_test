@@ -9,31 +9,31 @@
     {
       "title": "Retrieve Checkout Session",
       "badge": "2",
-      "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa. Aliquam dictum erat quis enim pulvinar, non fringilla urna congue.",
+      "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa.",
       "navigation": "horizontal"
     },
     {
       "title": "Get Credit Card Data",
       "badge": "3",
-      "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue. Pellentesque et purus tempus, dapibus sem eu, suscipit tortor.",
-      "navigation": "vertical"
+      "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue.",
+      "navigation": "horizontal"
     },
     {
       "title": "Validate Card Details",
       "badge": "4",
-      "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis. Proin et accumsan lacus.",
-      "navigation": "horizontal"
+      "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis.",
+      "navigation": "vertical"
     },
     {
       "title": "Process Payment",
       "badge": "5",
-      "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium. Nulla in metus sed dolor cursus bibendum.",
-      "navigation": "vertical"
+      "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium.",
+      "navigation": "horizontal"
     },
     {
       "title": "Create Transaction Record",
       "badge": "6",
-      "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie. Nullam quis neque vitae dui pretium lacinia.",
+      "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie.",
       "navigation": "horizontal"
     },
     {
