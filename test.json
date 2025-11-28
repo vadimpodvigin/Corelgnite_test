@@ -1,45 +1,57 @@
 {
   "cards": [
     {
-      "title": "View Request",
+      "title": "Stripe Request",
       "badge": "1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.",
       "navigation": "vertical"
     },
     {
-      "title": "Retrieve Checkout Session",
-      "badge": "2",
+      "title": "Hogan Lookup Account",
+      "badge": "2.1",
       "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa.",
       "navigation": "horizontal"
     },
     {
-      "title": "Get Credit Card Data",
-      "badge": "3",
+      "title": "Hogan Lookup Account (Hogan Core Container)",
+      "badge": "2.2",
       "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue.",
       "navigation": "horizontal"
     },
     {
-      "title": "Validate Card Details",
-      "badge": "4",
+      "title": "Hogan Authorized Payment",
+      "badge": "3.1",
       "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis.",
-      "navigation": "vertical"
+      "navigation": "horizontal"
     },
     {
-      "title": "Process Payment",
-      "badge": "5",
+      "title": "Hogan Authorized Payment (Hogan Core Container)",
+      "badge": "3.2",
       "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium.",
       "navigation": "horizontal"
     },
     {
-      "title": "Create Transaction Record",
-      "badge": "6",
+      "title": "Hogan Debit Account",
+      "badge": "4.1",
       "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie.",
       "navigation": "horizontal"
     },
     {
-      "title": "Send Confirmation Email",
-      "badge": "7",
-      "description": "Final step - confirmation sent to customer with transaction details and receipt. This completes the payment workflow successfully.",
+      "title": "Hogan Debit Account (Hogan Core Container)",
+      "badge": "4.2",
+      "description": "Nam tincidunt sed mi vitae porttitor. Nunc et egestas quam. Ut elit leo, consectetur et euismod in, ullamcorper in ante.",
+      "navigation": "horizontal"
+    },
+    {
+      "title": "Log Transaction",
+      "badge": "5",
+      "description": "Donec tempus pretium tellus, in mattis neque cursus vitae. Aliquam pulvinar sollicitudin nibh, tincidunt vulputate felis.",
+      "navigation": "vertical"
+    },
+    {
+      "title": "Respond To Stripe",
+      "badge": "6",
+      "description": "Nulla molestie efficitur urna sit amet feugiat. Nam iaculis dolor fringilla, tempus tellus fermentum, dapibus mauris. Nam eget elit hendrerit, accumsan sapien a, mollis ipsum.",
       "navigation": "vertical"
     }
   ]
