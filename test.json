@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "id": "card1!!!!!!!",
+      "id": "card1",
       "title": "Validate Order | Request",
       "badge": "1",
       "description": "Ut purus nulla, condimentum eget lobortis tristique, consectetur et nulla. Mauris orci nisi, pulvinar in fringilla sed, tincidunt et nisl.",
@@ -150,7 +150,6 @@
       "title": "Shadow Ledger",
       "badge": "6.2",
       "description": "",
-      "arrows": [],
       "nestedcard": [
         {
           "title": "Assets",
@@ -164,14 +163,14 @@
           "title": "Net Position: Balanced",
           "description": "Invariant: Reserve USD = Token USDX"
         }
-      ]
+      ],
+      "arrows": []
     },
     {
       "id": "card71",
-      "title": "Financial Institution (Wealth management) (Bank’s App)",
+      "title": "Financial Institution (Wealth management) (Bank's App)",
       "badge": "7.2",
       "description": "",
-      "arrows": [],
       "nestedcard": [
         {
           "title": "OMS",
@@ -185,7 +184,8 @@
           "title": "Ledger",
           "description": ""
         }
-      ]
+      ],
+      "arrows": []
     }
   ]
 }
