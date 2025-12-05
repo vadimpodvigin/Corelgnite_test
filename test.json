@@ -1,58 +1,126 @@
 {
   "cards": [
     {
-      "title": "Stripe Request",
+      "id": "card1",
+      "title": "Initial Request",
       "badge": "1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo.",
-      "navigation": "vertical"
+      "description": "This is the first card that appears. It has two arrows - one pointing right and one pointing down.",
+      "arrows": [
+        {
+          "direction": "right",
+          "targetCardId": "card2"
+        },
+        {
+          "direction": "down",
+          "targetCardId": "card3"
+        }
+      ]
     },
     {
-      "title": "Hogan Lookup Account",
+      "id": "card2",
+      "title": "Right Card",
+      "badge": "1.1",
+      "description": "This card appears when you click the right arrow on card 1. It has a down arrow.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card4"
+        }
+      ]
+    },
+    {
+      "id": "card3",
+      "title": "Bottom Card",
+      "badge": "2",
+      "description": "This card appears when you click the down arrow on card 1. It has arrows going left and right.",
+      "arrows": [
+        {
+          "direction": "left",
+          "targetCardId": "card5"
+        },
+        {
+          "direction": "right",
+          "targetCardId": "card6"
+        }
+      ]
+    },
+    {
+      "id": "card4",
+      "title": "Nested Bottom",
+      "badge": "1.1.1",
+      "description": "This card appears below card 1.1. It has no arrows (terminal card).",
+      "arrows": []
+    },
+    {
+      "id": "card5",
+      "title": "Left Card",
       "badge": "2.1",
-      "description": "Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. Donec enim arcu, scelerisque a consequat facilisis, maximus ac massa.",
-      "navigation": "horizontal"
+      "description": "This card appears to the left of card 2.",
+      "arrows": []
     },
     {
-      "title": "Hogan Lookup Account (Hogan Core Container)",
+      "id": "card6",
+      "title": "Right Card",
       "badge": "2.2",
-      "description": "Fusce vel enim non nisi ullamcorper luctus. Maecenas eget risus sollicitudin, tempus odio et, euismod augue.",
-      "navigation": "horizontal"
+      "description": "This card appears to the right of card 2. It has down arrow.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card7"
+        }
+      ]
     },
     {
-      "title": "Hogan Authorized Payment",
-      "badge": "3.1",
-      "description": "Integer elementum enim sed nisi congue, at mollis dui volutpat. Aliquam porta turpis sit amet ligula porttitor mollis.",
-      "navigation": "horizontal"
+      "id": "card7",
+      "title": "Final Card",
+      "badge": "2.2.1",
+      "description": "This is a final card with multiple arrows in all directions.",
+      "arrows": [
+        {
+          "direction": "up",
+          "targetCardId": "card8"
+        },
+        {
+          "direction": "down",
+          "targetCardId": "card9"
+        },
+        {
+          "direction": "left",
+          "targetCardId": "card10"
+        },
+        {
+          "direction": "right",
+          "targetCardId": "card11"
+        }
+      ]
     },
     {
-      "title": "Hogan Authorized Payment (Hogan Core Container)",
-      "badge": "3.2",
-      "description": "Mauris et nunc magna. Nunc venenatis viverra velit sed euismod. Praesent bibendum lectus et turpis lobortis, eu rutrum lorem pretium.",
-      "navigation": "horizontal"
+      "id": "card8",
+      "title": "Up Card",
+      "badge": "2.2.1.1",
+      "description": "This card appears above card 7.",
+      "arrows": []
     },
     {
-      "title": "Hogan Debit Account",
-      "badge": "4.1",
-      "description": "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, at volutpat enim pulvinar molestie.",
-      "navigation": "horizontal"
+      "id": "card9",
+      "title": "Down Card",
+      "badge": "2.2.1.2",
+      "description": "This card appears below card 7.",
+      "arrows": []
     },
     {
-      "title": "Hogan Debit Account (Hogan Core Container)",
-      "badge": "4.2",
-      "description": "Nam tincidunt sed mi vitae porttitor. Nunc et egestas quam. Ut elit leo, consectetur et euismod in, ullamcorper in ante.",
-      "navigation": "horizontal"
+      "id": "card10",
+      "title": "Left Card",
+      "badge": "2.2.1.3",
+      "description": "This card appears to the left of card 7.",
+      "arrows": []
     },
     {
-      "title": "Log Transaction",
-      "badge": "5",
-      "description": "Donec tempus pretium tellus, in mattis neque cursus vitae. Aliquam pulvinar sollicitudin nibh, tincidunt vulputate felis.",
-      "navigation": "vertical"
-    },
-    {
-      "title": "Respond To Stripe",
-      "badge": "6",
-      "description": "Nulla molestie efficitur urna sit amet feugiat. Nam iaculis dolor fringilla, tempus tellus fermentum, dapibus mauris. Nam eget elit hendrerit, accumsan sapien a, mollis ipsum.",
-      "navigation": "vertical"
+      "id": "card11",
+      "title": "Right Card",
+      "badge": "2.2.1.4",
+      "description": "This card appears to the right of card 7.",
+      "arrows": []
     }
   ]
 }
