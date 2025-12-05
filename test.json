@@ -128,8 +128,6 @@
       "description": "",
       "arrows": []
     },
-      ]
-    },
     {
       "id": "card51",
       "title": "Digital Asset Plugin (example: Ripple)",
@@ -193,5 +191,3 @@
         }
       ]
     }
-  ]
-}
