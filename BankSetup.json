@@ -79,10 +79,6 @@
             "description": "",
             "arrows": [
                 {
-                    "direction": "down",
-                    "targetCardId": "4"
-                },
-                {
                     "direction":"left",
                     "targetCardId":"32"
                 }
