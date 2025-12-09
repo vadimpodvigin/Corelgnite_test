@@ -1,1 +1,104 @@
-
+{
+  "cards": [
+    {
+      "id": "card1",
+      "title": "Stripe Request",
+      "badge": "1",
+      "description": "Ut purus nulla, condimentum eget lobortis tristique, consectetur et nulla. Mauris orci nisi, pulvinar in fringilla sed, tincidunt et nisl.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card2"
+        }
+      ]
+    },
+    {
+      "id": "card2",
+      "title": "Hogan Lookup Account",
+      "badge": "2.1",
+      "description": "Nullam aliquam pretium mi sed commodo.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card3"
+        },
+        {
+          "direction": "right",
+          "targetCardId": "card21"
+        }
+      ]
+    },
+    {
+      "id": "card3",
+      "title": "Hogan Authorized Payment",
+      "badge": "3.1",
+      "description": "Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.",
+      "arrows": [
+        {
+          "direction": "right",
+          "targetCardId": "card31"
+        },
+        {
+          "direction": "down",
+          "targetCardId": "card4"
+        }
+      ]
+    },
+    {
+      "id": "card4",
+      "title": "Hogan Debit Account",
+      "badge": "4.1",
+      "description": "ed eget dolor ultrices, dapibus lacus quis, gravida nisi. Fusce aliquam, ante non sodales efficitur, lorem justo commodo sapien, eget euismod sapien tellus sed urna.",
+      "arrows": [
+        {
+          "direction": "right",
+          "targetCardId": "card41"
+        },
+        {
+          "direction": "down",
+          "targetCardId": "card5"
+        }
+      ]
+    },
+    {
+      "id": "card5",
+      "title": "Log Transaction",
+      "badge": "5",
+      "description": "Aliquam laoreet lectus eget scelerisque vestibulum.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card6"
+        }
+      ]
+    },
+    {
+      "id": "card6",
+      "title": "Respond To Stripe",
+      "badge": "6",
+      "description": "Morbi ac venenatis ex. Praesent sem magna, elementum sit amet lobortis ut, iaculis sed urna.",
+      "arrows": []
+    },
+    {
+      "id": "card21",
+      "title": "Hogan Lookup Account",
+      "badge": "2.2",
+      "description": "Pellentesque a fringilla quam, at facilisis purus. Suspendisse ultricies nisi ac commodo commodo.",
+      "arrows": []
+    },
+    {
+      "id": "card31",
+      "title": "Hogan Authorized Payment",
+      "badge": "3.2",
+      "description": "Donec pretium egestas sollicitudin. Cras vel risus at nibh viverra convallis.",
+      "arrows": []
+    },
+    {
+      "id": "card41",
+      "title": "Hogan Debit Account",
+      "badge": "4.2",
+      "description": "Donec ac posuere felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "arrows": []
+    }
+  ]
+}
