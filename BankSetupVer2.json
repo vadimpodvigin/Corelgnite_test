@@ -1,0 +1,73 @@
+{
+    "cards": [
+        {
+            "id": "1",
+            "title": "Initiate New Bank Space",
+            "badge": "1",
+            "description": "",
+            "arrows": [
+                {
+                    "direction": "down",
+                    "targetCardId": "2"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Create Admin Account",
+            "badge": "2",
+            "description": "",
+            "arrows": [
+                {
+                    "direction": "down",
+                    "targetCardId": "3"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Bank Space Setup Wizard",
+            "badge": "3",
+            "description": "",
+            "sections": [
+                {
+                    "title": "Welcome Information",
+                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                },
+                {
+                    "title": "Enter Required Information",
+                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                },
+                {
+                    "title": "Review & Confirm Settings",
+                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                }
+            ],
+            "arrows": [
+                {
+                    "direction": "down",
+                    "targetCardId": "4"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Invite Users",
+            "badge": "4",
+            "description": "",
+            "arrows": [
+                {
+                    "direction": "down",
+                    "targetCardId": "5"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Bank Space Ready",
+            "badge": "5",
+            "description": "",
+            "arrows": []
+        }
+    ]
+}
