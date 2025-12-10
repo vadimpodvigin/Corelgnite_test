@@ -32,14 +32,17 @@
             "sections": [
                 {
                     "title": "Welcome Information",
+                    "badge": "3.1",
                     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
                 },
                 {
                     "title": "Enter Required Information",
+                    "badge": "3.2",
                     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
                 },
                 {
                     "title": "Review & Confirm Settings",
+                    "badge": "3.3",
                     "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
                 }
             ],
