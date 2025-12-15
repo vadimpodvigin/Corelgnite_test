@@ -1,5 +1,5 @@
 workflow:
-  title: Digital Asset Creation
+  title: Digital Assets
   description: This workflow walks through how CoreIgnite orchestrates transactions for a digital asset.
   
 cards:
