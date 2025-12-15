@@ -1,0 +1,124 @@
+cards:
+  - id: card1
+    title: Validate Order | Request
+    badge: "1"
+    description: Ut purus nulla, condimentum eget lobortis tristique, consectetur et nulla. Mauris orci nisi, pulvinar in fringilla sed, tincidunt et nisl.
+    arrows:
+      - direction: down
+        targetCardId: card2
+
+  - id: card2
+    title: Funding Source
+    badge: "2.1"
+    description: Nullam aliquam pretium mi sed commodo.
+    arrows:
+      - direction: down
+        targetCardId: card3
+      - direction: right
+        targetCardId: card21
+
+  - id: card3
+    title: Validate & Reserve Funds
+    badge: "3.1"
+    description: Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.
+    arrows:
+      - direction: right
+        targetCardId: card31
+      - direction: down
+        targetCardId: card4
+
+  - id: card4
+    title: Transfer to Custody Reserve
+    badge: "4"
+    description: ed eget dolor ultrices, dapibus lacus quis, gravida nisi. Fusce aliquam, ante non sodales efficitur, lorem justo commodo sapien, eget euismod sapien tellus sed urna.
+    arrows:
+      - direction: down
+        targetCardId: card5
+
+  - id: card5
+    title: Mint Digital Asset
+    badge: "5.1"
+    description: Aliquam laoreet lectus eget scelerisque vestibulum.
+    arrows:
+      - direction: down
+        targetCardId: card6
+      - direction: right
+        targetCardId: card51
+
+  - id: card6
+    title: Reconcile & Record
+    badge: "6.1"
+    description: Morbi ac venenatis ex. Praesent sem magna, elementum sit amet lobortis ut, iaculis sed urna.
+    arrows:
+      - direction: down
+        targetCardId: card7
+      - direction: right
+        targetCardId: card61
+
+  - id: card7
+    title: Notify Completion
+    badge: "7.1"
+    description: Vestibulum facilisis augue vitae justo vulputate, iaculis molestie velit tempor. Sed suscipit ac lacus sit amet tristique. Praesent quis nisl non ligula cursus consequat vel vitae diam.
+    arrows:
+      - direction: right
+        targetCardId: card71
+
+  - id: card21
+    title: OMS Funds
+    badge: "2.2"
+    description: ""
+    arrows: []
+
+  - id: card31
+    title: Core Bank Plugin (Hogan)
+    badge: "3.2"
+    description: ""
+    arrows:
+      - direction: right
+        targetCardId: card32
+
+  - id: card32
+    title: CORE: DDA
+    badge: "3.3"
+    description: ""
+    arrows: []
+
+  - id: card51
+    title: "Digital Asset Plugin (example: Ripple)"
+    badge: "5.2"
+    description: ""
+    arrows:
+      - direction: right
+        targetCardId: card52
+
+  - id: card52
+    title: Mint
+    badge: "5.3"
+    description: ""
+    arrows: []
+
+  - id: card61
+    title: Shadow Ledger
+    badge: "6.2"
+    description: ""
+    nestedcard:
+      - title: Assets
+        description: Reserve (USD) $1,000
+      - title: Liabilities
+        description: Token Liabilities (USDX) $1,000 USDX
+      - title: "Net Position: Balanced"
+        description: "Invariant: Reserve USD = Token USDX"
+    arrows: []
+
+  - id: card71
+    title: Financial Institution (Wealth management) (Bank's App)
+    badge: "7.2"
+    description: ""
+    nestedcard:
+      - title: OMS
+        description: ""
+      - title: REST API
+        description: ""
+      - title: Ledger
+        description: ""
+    arrows: []
