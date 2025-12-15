@@ -82,7 +82,7 @@ cards:
         targetCardId: card32
 
   - id: card32
-    title: CORE: DDA
+    title: "CORE: DDA"
     badge: "3.2"
     description: ""
     arrows: []
