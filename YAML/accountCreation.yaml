@@ -1,7 +1,11 @@
+workflow:
+  title: User Account Creation
+  description: This workflow guides a new user through the account creation process.
+
 cards:
   - id: card1
     title: Open Invitation Link
-    badge: "1"
+    badge: "1.0"
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     arrows:
       - direction: down
@@ -9,7 +13,7 @@ cards:
 
   - id: card2
     title: Initiate Account Creation
-    badge: "2"
+    badge: "2.0"
     description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     nestedcard:
       - title: Enter Your Information
@@ -22,7 +26,7 @@ cards:
 
   - id: card3
     title: Email Confirmation
-    badge: "3"
+    badge: "3.0"
     description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     nestedcard:
       - title: Open Link in Confirmation Email
@@ -33,7 +37,6 @@ cards:
 
   - id: card4
     title: Account Activation Complete
-    badge: "4"
+    badge: "4.0"
     description: ""
-    sections: []
     arrows: []
