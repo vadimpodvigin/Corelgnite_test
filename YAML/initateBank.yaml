@@ -1,7 +1,11 @@
+workflow:
+  title: Initiate New Bank Space
+  description: This workflow guides a user through the process of initiating a new bank space. This includes creating an admin account and setting up the bank space.
+
 cards:
   - id: "1"
     title: Initiate New Bank Space
-    badge: "1"
+    badge: "1.0"
     description: ""
     arrows:
       - direction: down
@@ -9,7 +13,7 @@ cards:
 
   - id: "2"
     title: Create Admin Account
-    badge: "2"
+    badge: "2.0"
     description: ""
     arrows:
       - direction: down
@@ -17,7 +21,7 @@ cards:
 
   - id: "3"
     title: Bank Space Setup Wizard
-    badge: "3"
+    badge: "3.0"
     description: ""
     nestedcard:
       - title: Welcome Information
@@ -32,7 +36,7 @@ cards:
 
   - id: "4"
     title: Invite Users
-    badge: "4"
+    badge: "4.0"
     description: ""
     arrows:
       - direction: down
@@ -40,6 +44,6 @@ cards:
 
   - id: "5"
     title: Bank Space Ready
-    badge: "5"
+    badge: "5.0"
     description: ""
     arrows: []
