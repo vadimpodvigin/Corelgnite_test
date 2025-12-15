@@ -1,7 +1,11 @@
+workflow:
+  title: Digital Asset Creation
+  description: This workflow walks through how CoreIgnite orchestrates transactions for a digital asset.
+  
 cards:
   - id: card1
     title: Validate Order | Request
-    badge: "1"
+    badge: "1.0"
     description: Ut purus nulla, condimentum eget lobortis tristique, consectetur et nulla. Mauris orci nisi, pulvinar in fringilla sed, tincidunt et nisl.
     arrows:
       - direction: down
@@ -9,7 +13,7 @@ cards:
 
   - id: card2
     title: Funding Source
-    badge: "2.1"
+    badge: "2.0"
     description: Nullam aliquam pretium mi sed commodo.
     arrows:
       - direction: down
@@ -19,7 +23,7 @@ cards:
 
   - id: card3
     title: Validate & Reserve Funds
-    badge: "3.1"
+    badge: "3.0"
     description: Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.
     arrows:
       - direction: right
@@ -29,7 +33,7 @@ cards:
 
   - id: card4
     title: Transfer to Custody Reserve
-    badge: "4"
+    badge: "4.0"
     description: ed eget dolor ultrices, dapibus lacus quis, gravida nisi. Fusce aliquam, ante non sodales efficitur, lorem justo commodo sapien, eget euismod sapien tellus sed urna.
     arrows:
       - direction: down
@@ -37,7 +41,7 @@ cards:
 
   - id: card5
     title: Mint Digital Asset
-    badge: "5.1"
+    badge: "5.0"
     description: Aliquam laoreet lectus eget scelerisque vestibulum.
     arrows:
       - direction: down
@@ -47,7 +51,7 @@ cards:
 
   - id: card6
     title: Reconcile & Record
-    badge: "6.1"
+    badge: "6.0"
     description: Morbi ac venenatis ex. Praesent sem magna, elementum sit amet lobortis ut, iaculis sed urna.
     arrows:
       - direction: down
@@ -57,7 +61,7 @@ cards:
 
   - id: card7
     title: Notify Completion
-    badge: "7.1"
+    badge: "7.0"
     description: Vestibulum facilisis augue vitae justo vulputate, iaculis molestie velit tempor. Sed suscipit ac lacus sit amet tristique. Praesent quis nisl non ligula cursus consequat vel vitae diam.
     arrows:
       - direction: right
@@ -65,13 +69,13 @@ cards:
 
   - id: card21
     title: OMS Funds
-    badge: "2.2"
+    badge: "2.1"
     description: ""
     arrows: []
 
   - id: card31
     title: Core Bank Plugin (Hogan)
-    badge: "3.2"
+    badge: "3.1"
     description: ""
     arrows:
       - direction: right
@@ -79,13 +83,13 @@ cards:
 
   - id: card32
     title: CORE: DDA
-    badge: "3.3"
+    badge: "3.2"
     description: ""
     arrows: []
 
   - id: card51
     title: "Digital Asset Plugin (example: Ripple)"
-    badge: "5.2"
+    badge: "5.1"
     description: ""
     arrows:
       - direction: right
@@ -93,13 +97,13 @@ cards:
 
   - id: card52
     title: Mint
-    badge: "5.3"
+    badge: "5.2"
     description: ""
     arrows: []
 
   - id: card61
     title: Shadow Ledger
-    badge: "6.2"
+    badge: "6.1"
     description: ""
     nestedcard:
       - title: Assets
@@ -112,7 +116,7 @@ cards:
 
   - id: card71
     title: Financial Institution (Wealth management) (Bank's App)
-    badge: "7.2"
+    badge: "7.1"
     description: ""
     nestedcard:
       - title: OMS
