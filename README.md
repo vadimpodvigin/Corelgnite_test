@@ -15,41 +15,23 @@ Corelgnite_test/
 
 Each workflow file contains a `workflow` object with the following properties:
 
-- **category** (string): The category of the workflow. Can be:
-  - `"CoreIgnite Setup"` - For setup and configuration workflows
-  - `"CoreFlow"` - For operational flow workflows
-  - Any custom string value
+- **category** (string): The category of the workflow.
 - **title** (string): The name of the workflow
 - **description** (string): A detailed description of what the workflow does
-- **icon** (string): An icon identifier for the workflow. Must be one of:
-  - `"piggy-bank"`
-  - `"fragments"`
-  - `"finance"`
-  - `"money"`
-  - `"book"`
-  - `"application-mobile"`
-  - `"user-profile"`
+- **icon** (string): An icon identifier for the workflow.
 
-## Workflow Components
 
-### Cards
+## Cards Object Structure
 
 Workflows are composed of **cards**, which represent individual steps or stages in the process. Each card contains:
 
 - **id** (string): Unique identifier for the card
 - **title** (string): The name of the step
-- **badge** (string): Step number displayed on card (e.g., "1", "2.1", "3.2")
+- **badge** (string): Step number displayed on card
 - **description** (string): Detailed description of the step
 - **nestedcards** (array, optional): Nested cards within a card
 - **sections** (array, optional): Sub-sections within a card
 - **arrows** (array): Navigation connections to other cards
-
-### Arrows
-
-Arrows define the flow between cards:
-
-- **direction** (string): Direction of the arrow (`"down"`, `"right"`, `"left"`, `"up"`)
-- **targetCardId** (string): The ID of the target card
 
 ## Supported Formats
 
