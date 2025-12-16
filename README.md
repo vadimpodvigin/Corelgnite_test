@@ -47,8 +47,3 @@ This project supports two formats for workflow definitions:
 3. Follow the schema documentation in the folder-specific README files
 4. Create your workflow definition following the established structure
 
-## Documentation
-
-- [JSON Workflow Format](JSON/README.md) - Complete guide for JSON workflow definitions
-- [YAML Workflow Format](YAML/README.md) - Complete guide for YAML workflow definitions
-
