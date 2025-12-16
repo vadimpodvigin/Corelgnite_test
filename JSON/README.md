@@ -15,7 +15,7 @@ This directory contains workflow definitions in JSON format for CoreIgnite Docs 
 
 The root of each JSON file should contain a `workflow` object and a `cards` array:
 
-```json
+```
 
 "workflow": {
     "category": "CoreIgnite Setup" | "CoreFlow" | "<custom string>",
@@ -48,7 +48,7 @@ The root of each JSON file should contain a `workflow` object and a `cards` arra
 
 Each card in the `cards` array follows this structure:
 
-```json
+```
 "cards": [
     {
         "id": "card1",
@@ -72,7 +72,7 @@ Nested cards are smaller cards within a card. Since this property is optional, i
 - `title` (string, required): Nested card name
 - `subtext` (string, optional): Nested card subtext
 
-```json
+```
 "nestedcards": [
     {
         "title": "Nested Card Title",
@@ -99,7 +99,7 @@ Sections are sub-sections within a card. Since this property is optional, if a c
 - `badge` (string, required): Sub-step number to display on card (e.g., "1.1", "1.2")
 - `description` (string, optional): Section subtext
 
-```json
+```
 "sections": [
     {
         "title": "Section Title",
@@ -123,7 +123,7 @@ Arrows define the flow between cards.
 - `direction` (string, required): Direction: "down", "right", "left", or "up"
 - `targetCardId` (string, required): ID of the target card
 
-```json
+```
 "arrows": [
     {
         "direction": "up" | "down" | "right" | "left",
@@ -134,13 +134,13 @@ Arrows define the flow between cards.
 
 If on the last card, Arrows array can be left empty, but must be listed since it is a required property of a card like so:
 
-```json
+```
 "arrows": []
 ```
 
 ## Complete Schema
 
-```json
+```
 {
   "workflow": {
     "category": "CoreIgnite Setup" | "CoreFlow" | "<custom string>",
