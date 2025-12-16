@@ -1,11 +1,12 @@
 workflow:
+  category: CoreFlow
   title: Stripe Payment Processing
   description: This workflow walks through how CoreIgnite handles Stripe payments.
-  
+  icon: money
 cards:
   - id: card1
     title: Stripe Request
-    badge: "1.0"
+    badge: "1"
     description: Ut purus nulla, condimentum eget lobortis tristique, consectetur et nulla. Mauris orci nisi, pulvinar in fringilla sed, tincidunt et nisl.
     arrows:
       - direction: down
@@ -13,7 +14,7 @@ cards:
 
   - id: card2
     title: Hogan Lookup Account
-    badge: "2.0"
+    badge: "2"
     description: Nullam aliquam pretium mi sed commodo.
     arrows:
       - direction: down
@@ -23,7 +24,7 @@ cards:
 
   - id: card3
     title: Hogan Authorized Payment
-    badge: "3.0"
+    badge: "3"
     description: Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.
     arrows:
       - direction: right
@@ -33,7 +34,7 @@ cards:
 
   - id: card4
     title: Hogan Debit Account
-    badge: "4.0"
+    badge: "4"
     description: ed eget dolor ultrices, dapibus lacus quis, gravida nisi. Fusce aliquam, ante non sodales efficitur, lorem justo commodo sapien, eget euismod sapien tellus sed urna.
     arrows:
       - direction: right
@@ -43,7 +44,7 @@ cards:
 
   - id: card5
     title: Log Transaction
-    badge: "5.0"
+    badge: "5"
     description: Aliquam laoreet lectus eget scelerisque vestibulum.
     arrows:
       - direction: down
@@ -51,7 +52,7 @@ cards:
 
   - id: card6
     title: Respond To Stripe
-    badge: "6.0"
+    badge: "6"
     description: Morbi ac venenatis ex. Praesent sem magna, elementum sit amet lobortis ut, iaculis sed urna.
     arrows: []
 

@@ -1,4 +1,10 @@
 {
+  "workflow": {
+    "category": "CoreFlow",
+    "title": "Stripe Payment Processing",
+    "description": "This workflow walks through how CoreIgnite handles Stripe payments.",
+    "icon": "money"
+  },
   "cards": [
     {
       "id": "card1",
@@ -15,7 +21,7 @@
     {
       "id": "card2",
       "title": "Hogan Lookup Account",
-      "badge": "2.1",
+      "badge": "2",
       "description": "Nullam aliquam pretium mi sed commodo.",
       "arrows": [
         {
@@ -31,7 +37,7 @@
     {
       "id": "card3",
       "title": "Hogan Authorized Payment",
-      "badge": "3.1",
+      "badge": "3",
       "description": "Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.",
       "arrows": [
         {
@@ -47,7 +53,7 @@
     {
       "id": "card4",
       "title": "Hogan Debit Account",
-      "badge": "4.1",
+      "badge": "4",
       "description": "ed eget dolor ultrices, dapibus lacus quis, gravida nisi. Fusce aliquam, ante non sodales efficitur, lorem justo commodo sapien, eget euismod sapien tellus sed urna.",
       "arrows": [
         {
@@ -82,21 +88,21 @@
     {
       "id": "card21",
       "title": "Hogan Lookup Account",
-      "badge": "2.2",
+      "badge": "2.1",
       "description": "Pellentesque a fringilla quam, at facilisis purus. Suspendisse ultricies nisi ac commodo commodo.",
       "arrows": []
     },
     {
       "id": "card31",
       "title": "Hogan Authorized Payment",
-      "badge": "3.2",
+      "badge": "3.1",
       "description": "Donec pretium egestas sollicitudin. Cras vel risus at nibh viverra convallis.",
       "arrows": []
     },
     {
       "id": "card41",
       "title": "Hogan Debit Account",
-      "badge": "4.2",
+      "badge": "4.1",
       "description": "Donec ac posuere felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "arrows": []
     }

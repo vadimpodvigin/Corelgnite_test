@@ -1,11 +1,12 @@
 workflow:
+  category: CoreIgnite Setup
   title: Initiate New Bank Space
   description: This workflow guides a user through the process of initiating a new bank space. This includes creating an admin account and setting up the bank space.
-
+  icon: finance
 cards:
   - id: "1"
     title: Initiate New Bank Space
-    badge: "1.0"
+    badge: "1"
     description: ""
     arrows:
       - direction: down
@@ -13,7 +14,7 @@ cards:
 
   - id: "2"
     title: Create Admin Account
-    badge: "2.0"
+    badge: "2"
     description: ""
     arrows:
       - direction: down
@@ -21,14 +22,17 @@ cards:
 
   - id: "3"
     title: Bank Space Setup Wizard
-    badge: "3.0"
+    badge: "3"
     description: ""
-    nestedcard:
+    sections:
       - title: Welcome Information
+        badge: "3.1"
         description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
       - title: Enter Required Information
+        badge: "3.2"
         description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
       - title: Review & Confirm Settings
+        badge: "3.3"
         description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     arrows:
       - direction: down
@@ -36,7 +40,7 @@ cards:
 
   - id: "4"
     title: Invite Users
-    badge: "4.0"
+    badge: "4"
     description: ""
     arrows:
       - direction: down
@@ -44,6 +48,6 @@ cards:
 
   - id: "5"
     title: Bank Space Ready
-    badge: "5.0"
+    badge: "5"
     description: ""
     arrows: []

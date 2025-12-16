@@ -1,7 +1,8 @@
 workflow:
+  category: CoreFlow
   title: Digital Assets
   description: This workflow walks through how CoreIgnite orchestrates transactions for a digital asset.
-  
+  icon: piggy-bank
 cards:
   - id: card1
     title: Validate Order | Request
@@ -105,24 +106,21 @@ cards:
     title: Shadow Ledger
     badge: ""
     description: ""
-    nestedcard:
+    nestedcards:
       - title: Assets
-        description: Reserve (USD) $1,000
+        subtext: Reserve (USD) $1,000
       - title: Liabilities
-        description: Token Liabilities (USDX) $1,000 USDX
+        subtext: Token Liabilities (USDX) $1,000 USDX
       - title: "Net Position: Balanced"
-        description: "Invariant: Reserve USD = Token USDX"
+        subtext: "Invariant: Reserve USD = Token USDX"
     arrows: []
 
   - id: card71
     title: Financial Institution (Wealth management) (Bank's App)
     badge: "7.1"
     description: ""
-    nestedcard:
+    nestedcards:
       - title: OMS
-        description: ""
       - title: REST API
-        description: ""
       - title: Ledger
-        description: ""
     arrows: []

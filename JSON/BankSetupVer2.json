@@ -1,76 +1,82 @@
 {
-    "cards": [
+  "workflow": {
+    "category": "CoreIgnite Setup",
+    "title": "Bank Space Setup",
+    "description": "This workflow guides a user through the process of initiating a new bank space. This includes creating an admin account and setting up the bank space.",
+    "icon": "finance"
+  },
+  "cards": [
+    {
+      "id": "card1",
+      "title": "Initiate New Bank Space",
+      "badge": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "arrows": [
         {
-            "id": "1",
-            "title": "Initiate New Bank Space",
-            "badge": "1",
-            "description": "",
-            "arrows": [
-                {
-                    "direction": "down",
-                    "targetCardId": "2"
-                }
-            ]
-        },
-        {
-            "id": "2",
-            "title": "Create Admin Account",
-            "badge": "2",
-            "description": "",
-            "arrows": [
-                {
-                    "direction": "down",
-                    "targetCardId": "3"
-                }
-            ]
-        },
-        {
-            "id": "3",
-            "title": "Bank Space Setup Wizard",
-            "badge": "3",
-            "description": "",
-            "sections": [
-                {
-                    "title": "Welcome Information",
-                    "badge": "3.1",
-                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-                },
-                {
-                    "title": "Enter Required Information",
-                    "badge": "3.2",
-                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-                },
-                {
-                    "title": "Review & Confirm Settings",
-                    "badge": "3.3",
-                    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-                }
-            ],
-            "arrows": [
-                {
-                    "direction": "down",
-                    "targetCardId": "4"
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "title": "Invite Users",
-            "badge": "4",
-            "description": "",
-            "arrows": [
-                {
-                    "direction": "down",
-                    "targetCardId": "5"
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "title": "Bank Space Ready",
-            "badge": "5",
-            "description": "",
-            "arrows": []
+          "direction": "down",
+          "targetCardId": "card2"
         }
-    ]
+      ]
+    },
+    {
+      "id": "card2",
+      "title": "Create Admin Account",
+      "badge": "2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card3"
+        }
+      ]
+    },
+    {
+      "id": "card3",
+      "title": "Bank Space Setup Wizard",
+      "badge": "3",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "sections": [
+        {
+          "title": "Welcome Information",
+          "badge": "3.1",
+          "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+          "title": "Enter Required Information",
+          "badge": "3.2",
+          "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        },
+        {
+          "title": "Review & Confirm Settings",
+          "badge": "3.3",
+          "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        }
+      ],
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card4"
+        }
+      ]
+    },
+    {
+      "id": "card4",
+      "title": "Invite Users",
+      "badge": "4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card5"
+        }
+      ]
+    },
+    {
+      "id": "card5",
+      "title": "Bank Space Ready",
+      "badge": "5",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "arrows": []
+    }
+  ]
 }
