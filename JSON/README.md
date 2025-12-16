@@ -26,6 +26,12 @@ The root of each JSON file should contain a `workflow` object and a `cards` arra
 
 ```
 
+### Current Workflow Categories
+
+- **CoreIgnite Setup:** Workflows related to initial setup, configuration, and onboarding
+
+- **CoreFlow:** Workflows related to CoreFlow operational processes
+
 ## Card Object Properties
 
 | Property      | Type     | Required | Description                                       |

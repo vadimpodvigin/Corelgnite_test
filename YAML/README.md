@@ -23,6 +23,12 @@ workflow:
   icon: piggy-bank | fragments | finance | money | book | application-mobile | user-profile
 ```
 
+### Current Workflow Categories
+
+- **CoreIgnite Setup:** Workflows related to initial setup, configuration, and onboarding
+
+- **CoreFlow:** Workflows related to CoreFlow operational processes
+
 ## Card Object Properties
 
 | Property      | Type     | Required | Description                                       |

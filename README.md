@@ -40,7 +40,8 @@ Workflows are composed of **cards**, which represent individual steps or stages 
 - **title** (string): The name of the step
 - **badge** (string): Step number displayed on card (e.g., "1", "2.1", "3.2")
 - **description** (string): Detailed description of the step
-- **nestedcard** (array, optional): Nested cards within a card
+- **nestedcards** (array, optional): Nested cards within a card
+- **sections** (array, optional): Sub-sections within a card
 - **arrows** (array): Navigation connections to other cards
 
 ### Arrows
@@ -56,14 +57,6 @@ This project supports two formats for workflow definitions:
 
 - **JSON**: See [JSON/README.md](JSON/README.md) for detailed documentation
 - **YAML**: See [YAML/README.md](YAML/README.md) for detailed documentation
-
-## Workflow Categories
-
-### CoreIgnite Setup
-Workflows related to initial setup, configuration, and onboarding
-
-### CoreFlow
-Workflows related to CoreFlow operational processes
 
 ## Getting Started
 
