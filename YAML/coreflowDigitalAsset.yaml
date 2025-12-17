@@ -117,7 +117,7 @@ cards:
 
   - id: card71
     title: Financial Institution (Wealth management) (Bank's App)
-    badge: "7.1"
+    badge: ""
     description: ""
     nestedcards:
       - title: OMS
