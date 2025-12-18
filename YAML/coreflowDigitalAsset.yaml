@@ -21,6 +21,8 @@ cards:
         targetCardId: card3
       - direction: right
         targetCardId: card21
+      - direction: right
+        targetCardId: card31
 
   - id: card3
     title: Validate & Reserve Funds
