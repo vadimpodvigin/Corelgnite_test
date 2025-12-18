@@ -111,15 +111,15 @@ cards:
       - title: Ledger
     arrows: []
 
-  sharedSideCards:
-    coreBankGroup:
-      - id: card31
-        title: Core Bank Plugin (Hogan)
-        badge: ""
-        description: ""
-        arrows: []
-      - id: card32
-        title: "CORE: DDA"
-        badge: ""
-        description: ""
-        arrows: []
+sharedSideCards:
+coreBankGroup:
+  - id: card31
+    title: Core Bank Plugin (Hogan)
+    badge: ""
+    description: ""
+    arrows: []
+  - id: card32
+    title: "CORE: DDA"
+    badge: ""
+    description: ""
+    arrows: []
