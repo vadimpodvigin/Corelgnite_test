@@ -3,6 +3,18 @@ workflow:
   title: Digital Assets
   description: This workflow walks through how CoreIgnite orchestrates transactions for a digital asset.
   icon: piggy-bank
+sharedSideCards:
+  coreBankGroup:
+  - id: card31
+    title: Core Bank Plugin (Hogan)
+    badge: ""
+    description: ""
+    arrows: []
+  - id: card32
+    title: "CORE: DDA"
+    badge: ""
+    description: ""
+    arrows: []
 cards:
   - id: card1
     title: Validate Order | Request
@@ -109,17 +121,4 @@ cards:
       - title: OMS
       - title: REST API
       - title: Ledger
-    arrows: []
-
-sharedSideCards:
-coreBankGroup:
-  - id: card31
-    title: Core Bank Plugin (Hogan)
-    badge: ""
-    description: ""
-    arrows: []
-  - id: card32
-    title: "CORE: DDA"
-    badge: ""
-    description: ""
     arrows: []
