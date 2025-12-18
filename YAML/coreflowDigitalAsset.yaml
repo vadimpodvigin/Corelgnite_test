@@ -16,21 +16,19 @@ cards:
     title: Funding Source
     badge: "2"
     description: Nullam aliquam pretium mi sed commodo.
+    sideCardRef: "coreBankGroup"
     arrows:
       - direction: down
         targetCardId: card3
       - direction: right
         targetCardId: card21
-      - direction: right
-        targetCardId: card31
 
   - id: card3
     title: Validate & Reserve Funds
     badge: "3"
     description: Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.
+    sideCardRef: "coreBankGroup"
     arrows:
-      - direction: right
-        targetCardId: card31
       - direction: down
         targetCardId: card4
 
@@ -76,20 +74,6 @@ cards:
     description: ""
     arrows: []
 
-  - id: card31
-    title: Core Bank Plugin (Hogan)
-    badge: ""
-    description: ""
-    arrows:
-      - direction: right
-        targetCardId: card32
-
-  - id: card32
-    title: "CORE: DDA"
-    badge: ""
-    description: ""
-    arrows: []
-
   - id: card51
     title: "Digital Asset Plugin (example: Ripple)"
     badge: ""
@@ -126,3 +110,16 @@ cards:
       - title: REST API
       - title: Ledger
     arrows: []
+
+  sharedSideCards:
+    coreBankGroup:
+      - id: card31
+        title: Core Bank Plugin (Hogan)
+        badge: ""
+        description: ""
+        arrows: []
+      - id: card32
+        title: "CORE: DDA"
+        badge: ""
+        description: ""
+        arrows: []
