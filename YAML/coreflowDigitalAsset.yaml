@@ -39,7 +39,6 @@ cards:
     title: Validate & Reserve Funds
     badge: "3"
     description: Donec odio justo, commodo et libero in, tincidunt aliquet risus. Mauris justo lectus, lacinia sit amet vulputate vel, elementum et nisi.
-    sideCardRef: "coreBankGroup"
     arrows:
       - direction: down
         targetCardId: card4
