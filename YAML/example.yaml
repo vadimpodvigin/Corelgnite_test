@@ -1,0 +1,48 @@
+workflow:
+  title: Example Cards
+  description: Shows all the possible components of Cards avaialble in this workflow tool. This workflow has no actual flow to represent.
+  category: Examples
+  icon: fragment
+
+cards:
+  - id: card1
+    title: Basic Card
+    badge: 1
+    description: This is an example of a basic card, which only has the required fields defined (ID, Title, Badge, Description, Arrows).
+    arrows:
+      - direction: down
+        targetId: card2
+  - id: card2
+    title: Card with Code Snippet
+    badge: 2
+    description: This is an example of a card containing a code snippet component.
+    arrows:
+      - direction: down
+        targetId: card3
+    codeSnippet:
+      code: <p> Hello World </p>
+      caption: You can caption your code here. This is optional to do.
+  - id: card3
+    title: Card with Nested Cards
+    badge: 3
+    description: This is an example of a card containing nested card components.
+    arrows:
+      - direction: down
+        targetId: card4
+    nestedcards:
+      - title: Nested Card 1
+        subtext: Subtext for a nested card is optional.
+      - title: Nested Card 2
+  - id: card4
+    title: Card with Sections
+    badge: 4
+    description: This is an example of a card ocntaining section components.
+    arrows:
+      - direction: down
+        targetId: card5
+    sections:
+      - title: Section 1
+        badge: 4.1
+        description: Description for a section component is optional.
+      - title: Section 2
+        badge: 4.2

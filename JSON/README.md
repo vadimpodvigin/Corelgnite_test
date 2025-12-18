@@ -34,15 +34,16 @@ The root of each JSON file should contain a `workflow` object and a `cards` arra
 
 ## Card Object Properties
 
-| Property      | Type     | Required | Description                                       |
-| ------------- | -------- | -------- | ------------------------------------------------- |
-| `id`          | `string` | Yes      | Unique identifier for the card                    |
-| `title`       | `string` | Yes      | The name of the step                              |
-| `badge`       | `string` | Yes      | Step number to display on card (e.g., "1", "2.1") |
-| `description` | `string` | Yes      | Detailed description of the step                  |
-| `nestedcards` | `array`  | No       | Array of nested cards within the card             |
-| `sections`    | `array`  | No       | Array of sections within the card                 |
-| `arrows`      | `array`  | Yes      | Array of navigation arrows to other cards         |
+| Property      | Type     | Required     | Description                                           |
+| ------------- | -------- | ------------ | -------------------------------------------------     |
+| `id`          | `string` | **Yes**      | **Unique identifier for the card**                    |
+| `title`       | `string` | **Yes**      | **The name of the step**                              |
+| `badge`       | `string` | **Yes**      | **Step number to display on card (e.g., "1", "2.1")** |
+| `description` | `string` | **Yes**      | **Detailed description of the step**                  |
+| `arrows`      | `array`  | **Yes**      | **Navigation arrows to other cards**                  |
+| `codeSnippet` | `object` | No           | Display snippet of code in a card                     |
+| `nestedcards` | `array`  | No           | Display nested cards within the card                  |
+| `sections`    | `array`  | No           | Highlight sections within a card                      |
 
 ### Card Object Schema
 
@@ -55,12 +56,53 @@ Each card in the `cards` array follows this structure:
         "title": "Card Title",
         "badge": "1",
         "description": "Card description",
-        "nestedcards": [...],  // Optional
-        "sections": [...],  // Optional
-        "arrows": [...]
-    },
+        "arrows": [...],
+        "codeSnippet":{...}, // Optional
+        "nestedcards": [...], // Optional
+        "sections": [...], // Optional
+    }
     {...}
 ]
+```
+
+### Arrows
+
+Arrows define the flow between cards.
+
+**_Arrow Properties_**
+
+- `direction` (string, required): Direction: "down", "right", "left", or "up"
+- `targetCardId` (string, required): ID of the target card
+
+```
+"arrows": [
+    {
+        "direction": "up" | "down" | "right" | "left",
+        "targetCardId": "card2"
+    }
+]
+```
+
+If on the last card, Arrows array can be left empty, but must be listed since it is a required property of a card like so:
+
+```
+"arrows": []
+```
+
+### Code Snippet (Optional)
+Code Snippet allows you to display some simple code in its own section with content displayed in a monospaced block. Note this is not meant for complex or long pieces of code, but just to make references to helpful details.
+
+Since this property is optional, if a card does not required sections make sure to omit it entirely from a card object.
+
+**_Code Snippet Properties_**
+
+- `code` (string, required): Code content
+- `caption` (string, optional): Brief text underneath code to provide any comments/explainations
+```
+"codeSnippet": {
+    "code": "<custom code>"
+    "caption": "Code snippet caption"
+}
 ```
 
 ### Nested Cards (Optional)
@@ -112,30 +154,6 @@ Sections are sub-sections within a card. Since this property is optional, if a c
         "description": "Section description"
     }
 ]
-```
-
-### Arrows
-
-Arrows define the flow between cards.
-
-**_Arrow Properties_**
-
-- `direction` (string, required): Direction: "down", "right", "left", or "up"
-- `targetCardId` (string, required): ID of the target card
-
-```
-"arrows": [
-    {
-        "direction": "up" | "down" | "right" | "left",
-        "targetCardId": "card2"
-    }
-]
-```
-
-If on the last card, Arrows array can be left empty, but must be listed since it is a required property of a card like so:
-
-```
-"arrows": []
 ```
 
 ## Complete Schema
@@ -197,7 +215,11 @@ If on the last card, Arrows array can be left empty, but must be listed since it
                 "direction": "up" | "down" | "right" | "left",
                 "targetCardId": "card3"
             }
-        ]
+        ],
+        "codeSnippet": {
+            "code": "code snippet",
+            "caption": "Code snippet caption"
+        }
     },
     {...}
   ]
@@ -213,6 +235,7 @@ If on the last card, Arrows array can be left empty, but must be listed since it
 5. **Descriptive Content**: Provide meaningful titles and descriptions for better understanding
 
 ## JSON Syntax Notes
+
 - Use double quotes `"` for all keys and string values.
 - Arrays are enclosed in square brackets `[ ... ]`, with each item separated by a comma.
 - Objects are enclosed in curly braces `{ ... }`.

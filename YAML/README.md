@@ -31,15 +31,16 @@ workflow:
 
 ## Card Object Properties
 
-| Property      | Type     | Required | Description                                       |
-| ------------- | -------- | -------- | ------------------------------------------------- |
-| `id`          | `string` | Yes      | Unique identifier for the card                    |
-| `title`       | `string` | Yes      | The name of the step                              |
-| `badge`       | `string` | Yes      | Step number to display on card (e.g., "1", "2.1") |
-| `description` | `string` | Yes      | Detailed description of the step                  |
-| `nestedcards` | `array`  | No       | Array of nested cards within the card             |
-| `sections`    | `array`  | No       | Array of sections within the card                 |
-| `arrows`      | `array`  | Yes      | Array of navigation arrows to other cards         |
+| Property      | Type     | Required | Description                                           |
+| ------------- | -------- | -------- | ----------------------------------------------------- |
+| `id`          | `string` | **Yes**  | **Unique identifier for the card**                    |
+| `title`       | `string` | **Yes**  | **The name of the step**                              |
+| `badge`       | `string` | **Yes**  | **Step number to display on card (e.g., "1", "2.1")** |
+| `description` | `string` | **Yes**  | **Detailed description of the step**                  |
+| `arrows`      | `array`  | **Yes**  | **Navigation arrows to other cards**                  |
+| `codeSnippet` | `object` | No       | Display snippet of code in a card                     |
+| `nestedcards` | `array`  | No       | Display nested cards within the card                  |
+| `sections`    | `array`  | No       | Highlight sections within a card                      |
 
 ## Card Object Schema
 
@@ -51,10 +52,49 @@ cards:
     title: Card Title
     badge: "1"
     description: Card description
+    arrows: [...]
+    codeSnippet: {...} # Optional
     nestedcards: [...] # Optional
     sections: [...] # Optional
-    arrows: [...]
 
+```
+
+### Arrows
+
+Arrows define the flow between cards.
+
+**_Arrow Properties_**
+
+- `direction` (string, required): Direction: "down", "right", "left", or "up"
+- `targetCardId` (string, required): ID of the target card
+
+```yaml
+arrows:
+  - direction: up | down | right | left
+    targetCardId: card2
+```
+
+If on the last card, Arrows array can be left empty, but must be listed since it is a required property of a card like so:
+
+```yaml
+arrows: []
+```
+
+### Code Snippet (Optional)
+
+Code Snippet allows you to display some simple code in its own section with content displayed in a monospaced block. Note this is not meant for complex or long pieces of code, but just to make references to helpful details.
+
+Since this property is optional, if a card does not required sections make sure to omit it entirely from a card object.
+
+**_Code Snippet Properties_**
+
+- `code` (string, required): Code content
+- `caption` (string, optional): Brief text underneath code to provide any comments/explainations
+
+```yaml
+codeSnippet:
+  code: <custom code>
+  caption: Code snippet caption
 ```
 
 ### Nested Cards (Optional)
@@ -93,27 +133,6 @@ sections:
     badge: 1.2
 ```
 
-### Arrows
-
-Arrows define the flow between cards.
-
-**_Arrow Properties_**
-
-- `direction` (string, required): Direction: "down", "right", "left", or "up"
-- `targetCardId` (string, required): ID of the target card
-
-```yaml
-arrows:
-  - direction: up | down | right | left
-    targetCardId: card2
-```
-
-If on the last card, Arrows array can be left empty, but must be listed since it is a required property of a card like so:
-
-```yaml
-arrows: []
-```
-
 ## Complete Schema
 
 ```yaml
@@ -130,12 +149,18 @@ cards:
     description: Card description
     arrows:
       - direction: up | down | right | left
-        targetCardId: card2
+        targetCardId: cardx
 
   - id: card2 # Card with all possible properties
     title: Card Title
     badge: "2"
     description: Card description
+    arrows:
+      - direction: up | down | right | left
+        targetCardId: cardx
+    codeSnippet: 
+        code: <custom code>
+        caption: Code Snippet Caption
     nestedcards:
       - title: Nested Card Title
         subtext: Nested card description
@@ -147,8 +172,8 @@ cards:
         description: Section description
       - title: Section Title
         badge: 2.2
-    arrows: []
 ```
+
 ## Best Practices
 
 1. **Unique IDs**: Ensure each card has a unique `id` value
