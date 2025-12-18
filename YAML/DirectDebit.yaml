@@ -1,0 +1,5 @@
+workflow:
+  title: Direct Debit
+  description: Pre-authorized triggers to debit from account
+  category: Debit
+  icon: finance

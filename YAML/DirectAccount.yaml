@@ -1,0 +1,5 @@
+workflow:
+  title: Direct Account
+  description: Account to Account
+  category: Debit
+  icon: finance
