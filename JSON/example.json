@@ -87,15 +87,15 @@
       "tabs": [
         {
           "label": "Tab 1",
-          "description": "Tab 1 description"
+          "description": ".^.^.^.^ Tab 1 description .^.^.^.^"
         },
         {
           "label": "Tab 2",
-          "description": "Tab 2 description"
+          "description": "~~~~~ Tab 2 description ~~~~~"
         },
         {
           "label": "Tab 3",
-          "description": "Tab 3 description"
+          "description": "//// Tab 3 description ////"
         }
       ]
     }

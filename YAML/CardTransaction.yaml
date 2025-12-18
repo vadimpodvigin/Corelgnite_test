@@ -1,0 +1,16 @@
+workflow:
+  title: Card Transaction 
+  description: Card transaction by authorization and hold request
+  category: Debit
+  icon: finance
+
+cards:
+  - id: card1
+    title: some title
+    badge: 1
+    description: some description
+    arrows:
+      - direction: down
+        targetCardId: card2
+
+
