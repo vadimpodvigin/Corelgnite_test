@@ -2,7 +2,7 @@ workflow:
   title: Example Cards
   description: Shows all the possible components of Cards available in this workflow tool. This workflow has no actual flow to represent.
   category: Examples
-  icon: fragment
+  icon: fragments
 
 cards:
   - id: card1
