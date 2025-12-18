@@ -40,10 +40,25 @@ cards:
     title: Card with Sections
     badge: 4
     description: This is an example of a card containing section components.
-    arrows: []
+    arrows:
+      - direction: down
+        targetCardId: card5
     sections:
       - title: Section 1
         badge: 4.1
         description: Description for a section component is optional.
       - title: Section 2
         badge: 4.2
+
+  - id: card5
+    title: Card with Tabs
+    badge: 5
+    description: This is an example of a card containing a tabs component.
+    arrows: []
+    tabs:
+      - label: Tab 1
+        description: Tab 1 description
+      - label: Tab 2
+        description: Tab 2 description
+      - label: Tab 3
+        description: Tab 3 description

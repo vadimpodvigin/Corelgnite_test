@@ -3,7 +3,7 @@
     "title": "Example Cards",
     "description": "Shows all the possible components of Cards available in this workflow tool. This workflow has no actual flow to represent.",
     "category": "Examples",
-    "icon": "fragment"
+    "icon": "fragments"
   },
   "cards": [
     {
@@ -60,7 +60,12 @@
       "title": "Card with Sections",
       "badge": "4",
       "description": "This is an example of a card containing section components.",
-      "arrows": [],
+      "arrows": [
+        {
+            "direction": "down",
+            "targetCardId": "card5"
+        }
+      ],
       "sections": [
         {
           "title": "Section 1",
@@ -70,6 +75,27 @@
         {
           "title": "Section 2",
           "badge": "4.2"
+        }
+      ]
+    },
+    {
+      "id": "card5",
+      "title": "Card with Tabs",
+      "badge": "5",
+      "description": "This is an example of a card containing a tabs component.",
+      "arrows": [],
+      "tabs": [
+        {
+          "label": "Tab 1",
+          "description": "Tab 1 description"
+        },
+        {
+          "label": "Tab 2",
+          "description": "Tab 2 description"
+        },
+        {
+          "label": "Tab 3",
+          "description": "Tab 3 description"
         }
       ]
     }

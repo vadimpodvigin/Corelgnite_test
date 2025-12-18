@@ -1,4 +1,4 @@
-# JSON Format
+# JSON Workflow Format
 
 This directory contains workflow definitions in JSON format for CoreIgnite Docs website.
 
@@ -9,7 +9,7 @@ This directory contains workflow definitions in JSON format for CoreIgnite Docs 
 | `title`       | string | Yes      | Name of the workflow                                                                                                                    |
 | `description` | string | Yes      | Detailed description of the workflow                                                                                                    |
 | `category`    | string | Yes      | Category a workflow is placed under, this field can take one of the existing categories (listed below) or option to create new category |
-| `icon`        | string | Yes      | Icon represntitive of the workflow, this field can only take one of the available options (listed below)                                |
+| `icon`        | string | Yes      | Icon representative of the workflow, this field can only take one of the available options (listed below)                                |
 
 ### Workflow Object Schema
 
@@ -34,16 +34,17 @@ The root of each JSON file should contain a `workflow` object and a `cards` arra
 
 ## Card Object Properties
 
-| Property      | Type     | Required     | Description                                           |
-| ------------- | -------- | ------------ | -------------------------------------------------     |
-| `id`          | `string` | **Yes**      | **Unique identifier for the card**                    |
-| `title`       | `string` | **Yes**      | **The name of the step**                              |
-| `badge`       | `string` | **Yes**      | **Step number to display on card (e.g., "1", "2.1")** |
-| `description` | `string` | **Yes**      | **Detailed description of the step**                  |
-| `arrows`      | `array`  | **Yes**      | **Navigation arrows to other cards**                  |
-| `codeSnippet` | `object` | No           | Display snippet of code in a card                     |
-| `nestedcards` | `array`  | No           | Display nested cards within the card                  |
-| `sections`    | `array`  | No           | Highlight sections within a card                      |
+| Property      | Type     | Required | Description                                           |
+| ------------- | -------- | -------- | ----------------------------------------------------- |
+| `id`          | `string` | **Yes**  | **Unique identifier for the card**                    |
+| `title`       | `string` | **Yes**  | **The name of the step**                              |
+| `badge`       | `string` | **Yes**  | **Step number to display on card (e.g., "1", "2.1")** |
+| `description` | `string` | **Yes**  | **Detailed description of the step**                  |
+| `arrows`      | `array`  | **Yes**  | **Navigation arrows to other cards**                  |
+| `codeSnippet` | `object` | No       | Display snippet of code in a card                     |
+| `nestedcards` | `array`  | No       | Display nested cards within the card                  |
+| `sections`    | `array`  | No       | Highlight sections within a card                      |
+| `tabs`        | `array`  | No       | Show multiple tabs of content                         |
 
 ### Card Object Schema
 
@@ -60,6 +61,7 @@ Each card in the `cards` array follows this structure:
         "codeSnippet":{...}, // Optional
         "nestedcards": [...], // Optional
         "sections": [...], // Optional
+        "tabs": [...], // Optional
     }
     {...}
 ]
@@ -90,24 +92,28 @@ If on the last card, Arrows array can be left empty, but must be listed since it
 ```
 
 ### Code Snippet (Optional)
+
 Code Snippet allows you to display some simple code in its own section with content displayed in a monospaced block. Note this is not meant for complex or long pieces of code, but just to make references to helpful details.
 
-Since this property is optional, if a card does not required sections make sure to omit it entirely from a card object.
+Since this property is optional, if a card does not require sections make sure to omit it entirely from a card object.
 
 **_Code Snippet Properties_**
 
 - `code` (string, required): Code content
 - `caption` (string, optional): Brief text underneath code to provide any comments/explainations
+
 ```
 "codeSnippet": {
-    "code": "<custom code>"
+    "code": "<custom code>",
     "caption": "Code snippet caption"
 }
 ```
 
 ### Nested Cards (Optional)
 
-Nested cards are smaller cards within a card. Since this property is optional, if a card does not required nested cards, make sure to omit it entirely from a card object.
+Nested cards are smaller cards within a card.
+
+Since this property is optional, if a card does not require nested cards, make sure to omit it entirely from a card object.
 
 **_Nested Card Properties_**
 
@@ -118,22 +124,22 @@ Nested cards are smaller cards within a card. Since this property is optional, i
 "nestedcards": [
     {
         "title": "Nested Card Title",
-        "description": "Nested Card Description",
+        "subtext": "Nested card description"
     },
     {
-        "title": "Nested Card Title",
-        "description": "Nested Card Description",
+        "title": "Another Nested Card"
     },
     {
-        "title": "Nested Card Title",
-        "description": "Nested Card Description",
+        "title": "Another Nested Card"
     }
 ]
 ```
 
 ### Sections (Optional)
 
-Sections are sub-sections within a card. Since this property is optional, if a card does not required sections make sure to omit it entirely from a card object.
+Sections are sub-sections within a card.
+
+Since this property is optional, if a card does not require sections make sure to omit it entirely from a card object.
 
 **_Section Properties_**
 
@@ -152,6 +158,34 @@ Sections are sub-sections within a card. Since this property is optional, if a c
         "title": "Section Title",
         "badge": "1.2",
         "description": "Section description"
+    }
+]
+```
+
+### Tabs (Optional)
+
+Tabs allows you to show multiple tabs of content within a card. A viewer will be able to toggle between the different tabs. Make sure to format your tabs in the order you would like them to be displayed.
+
+Since this property is optional, if a card does not require tabs make sure to omit it entirely from a card object.
+
+**_Tabs Properties_**
+
+- `label` (string, required): Section name
+- `description` (string, optional): Section subtext
+
+```
+"tabs": [
+    {
+        "label": "Tab 1",
+        "description": "Tab 1 description"
+    },
+    {
+        "label": "Tab 2",
+        "description": "Tab 2 description"
+    },
+    {
+        "label": "Tab 3",
+        "description": "Tab 3 description"
     }
 ]
 ```
@@ -184,18 +218,26 @@ Sections are sub-sections within a card. Since this property is optional, if a c
         "title": "Card 2 Title",
         "badge": "2",
         "description": "Card 2 description",
+        "arrows": [
+            {
+                "direction": "up" | "down" | "right" | "left",
+                "targetCardId": "card3"
+            }
+        ],
+        "codeSnippet": {
+            "code": "code snippet",
+            "caption": "Code snippet caption"
+        },
         "nestedcards": [
             {
-                "title": "Nested Card 1 Title",
-                "description": "Nested Card 1 Description",
+                "title": "Nested Card Title",
+                "subtext": "Nested card description"
             },
             {
-                "title": "Nested Card 2 Title",
-                "description": "Nested Card 2 Description",
+                "title": "Another Nested Card"
             },
             {
-                "title": "Nested Card 3 Title",
-                "description": "Nested Card 3 Description",
+                "title": "Another Nested Card"
             }
         ],
         "sections": [
@@ -210,16 +252,20 @@ Sections are sub-sections within a card. Since this property is optional, if a c
                 "description": "Section 2 description"
             }
         ],
-        "arrows": [
+        "tabs": [
             {
-                "direction": "up" | "down" | "right" | "left",
-                "targetCardId": "card3"
+                "label": "Tab 1",
+                "description": "Tab 1 description"
+            },
+            {
+                "label": "Tab 2",
+                "description": "Tab 2 description"
+            },
+            {
+                "label": "Tab 3",
+                "description": "Tab 3 description"
             }
-        ],
-        "codeSnippet": {
-            "code": "code snippet",
-            "caption": "Code snippet caption"
-        }
+        ]
     },
     {...}
   ]

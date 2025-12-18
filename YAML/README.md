@@ -41,6 +41,7 @@ workflow:
 | `codeSnippet` | `object` | No       | Display snippet of code in a card                     |
 | `nestedcards` | `array`  | No       | Display nested cards within the card                  |
 | `sections`    | `array`  | No       | Highlight sections within a card                      |
+| `tabs`        | `array`  | No       | Show multiple tabs of content                         |
 
 ## Card Object Schema
 
@@ -133,6 +134,27 @@ sections:
     badge: 1.2
 ```
 
+### Tabs (Optional)
+
+Tabs allows you to show multiple tabs of content within a card. A viewer will be able to toggle between the different tabs. Make sure to format your tabs in the order you would like them to be displayed.
+
+Since this property is optional, if a card does not required tabs make sure to omit it entirely from a card object.
+
+**_Tabs Properties_**
+
+- `label` (string, required): Section name
+- `description` (string, optional): Section subtext
+
+```yaml
+tabs:
+  - label: Tab 1
+    description: Tab 1 description
+  - label: Tab 2
+    description: Tab 2 description
+  - label: Tab 3
+    description: Tab 3 description
+```
+
 ## Complete Schema
 
 ```yaml
@@ -172,6 +194,13 @@ cards:
         description: Section description
       - title: Section Title
         badge: 2.2
+    tabs:
+      - label: Tab 1
+        description: Tab 1 description
+      - label: Tab 2
+        description: Tab 2 description
+      - label: Tab 3
+        description: Tab 3 description
 ```
 
 ## Best Practices
