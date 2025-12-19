@@ -61,14 +61,14 @@ cards:
                     content:
                       description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
                       button: 
-                        label: Create Basket API
+                        label: Some Link
                         url: /
-                  - id: bnplReq
-                    label: Submit BNPL Request
+                  - id: usrBsk
+                    label: User-Composed Basket
                     content:
                       description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
                       button: 
-                        label: BNPL Request API
+                        label: Create Basket Link
                         url: /
               - title: Submit BNPL Request
                 badge: 2.2
