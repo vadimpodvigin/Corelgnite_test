@@ -23,28 +23,37 @@ cards:
     tabs:
       - id: pos
         label: Point of Sale
-        content: 
+        content:
           sections:
             direction: col
             items:
               - title: Transaction Eligibilty Check
                 badge: 2.1
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
+                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
               - title: BNPL Plan Offer
                 badge: 2.2
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. 
+                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
               - title: Submit BNPL Request
                 badge: 2.3
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
+                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
       - id: pastp
         label: Past Purchase
-        content: 
+        content:
           sections:
             direction: row
             items:
               - title: Transaction Selection
                 badge: 2.1
-                description: Suspendisse consectetur accumsan turpis et venenatis. 
+                description: Suspendisse consectetur accumsan turpis et venenatis.
+                tabs:
+                  - id: filB
+                    label: Filter Based
+                    content:
+                      description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                  - id: bnplReq
+                    label: Submit BNPL Request
+                    content:
+                      description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
               - title: Submit BNPL Request
                 badge: 2.2
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
