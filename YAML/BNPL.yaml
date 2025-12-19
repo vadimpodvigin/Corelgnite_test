@@ -31,12 +31,21 @@ cards:
               - title: Transaction Eligibilty Check
                 badge: 2.1
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
+                button: 
+                  label: Transaction Eligibility API
+                  url: /
               - title: BNPL Plan Offer
                 badge: 2.2
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                button: 
+                  label: Offer Eligibility API
+                  url: /
               - title: Submit BNPL Request
                 badge: 2.3
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
+                button: 
+                  label: BNPL Request API
+                  url: /
       - id: pastp
         label: Past Purchase
         content:
@@ -51,10 +60,16 @@ cards:
                     label: Filter Based
                     content:
                       description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                      button: 
+                        label: Create Basket API
+                        url: /
                   - id: bnplReq
                     label: Submit BNPL Request
                     content:
                       description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                      button: 
+                        label: BNPL Request API
+                        url: /
               - title: Submit BNPL Request
                 badge: 2.2
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
