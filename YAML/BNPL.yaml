@@ -1,7 +1,7 @@
 workflow:
   - title: Buy Now, Pay Later
-    category: Buy Now Pay Later
     description: tbd
+    category: Buy Now Pay Later
     icon: money
 
 cards:
