@@ -44,11 +44,13 @@ cards:
       - direction: down
         targetCardId: card5
     sections:
-      - title: Section 1
-        badge: 4.1
-        description: Description for a section component is optional.
-      - title: Section 2
-        badge: 4.2
+      direction: col
+      items:
+        - title: Section 1
+          badge: 4.1
+          description: Description for a section component is optional.
+        - title: Section 2
+          badge: 4.2
 
   - id: card5
     title: Card with Tabs

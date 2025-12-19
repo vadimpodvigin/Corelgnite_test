@@ -119,7 +119,12 @@ nestedcards:
 
 Sections are sub-sections within a card. Since this property is optional, if a card does not required sections make sure to omit it entirely from a card object.
 
-**_Section Properties_**
+**_Sections Object Properties_**
+
+- `direction` (string, required): Layout direction for sections. Must be either "col" or "row"
+- `items` (array, required): Array of section objects
+
+**_Section Item Properties_**
 
 - `title` (string, required): Section card name
 - `badge` (string, required): Sub-step number to display on card (e.g., "1.1", "1.2")
@@ -127,12 +132,23 @@ Sections are sub-sections within a card. Since this property is optional, if a c
 
 ```yaml
 sections:
-  - title: Section Title
-    badge: 1.1
-    description: Section description
-  - title: Section Title
-    badge: 1.2
+  direction: col
+  items:
+    - title: Section Title
+      badge: 1.1
+      description: Section description
+    - title: Section Title
+      badge: 1.2
 ```
+
+### Table (Optional)
+Table allows you to show a data table with custom defined rows and columns. There is a maximum of 10 rows and/or columns allowed on this component to maintain easy readability. 
+
+Since this property is optional, if a card does not required a table make sure to omit it entirely from a card object.
+
+**_Table Properties_**
+
+
 
 ### Tabs (Optional)
 
@@ -189,11 +205,13 @@ cards:
       - title: Another Nested Card
       - title: Another Nested Card
     sections:
-      - title: Section Title
-        badge: 2.1
-        description: Section description
-      - title: Section Title
-        badge: 2.2
+      direction: col
+      items:
+        - title: Section Title
+          badge: 2.1
+          description: Section description
+        - title: Section Title
+          badge: 2.2
     tabs:
       - label: Tab 1
         description: Tab 1 description

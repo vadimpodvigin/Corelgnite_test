@@ -30,7 +30,7 @@ Workflows are composed of **cards**, which represent individual steps or stages 
 - **badge** (string): Step number displayed on card
 - **description** (string): Detailed description of the step
 - **nestedcards** (array, optional): Nested cards within a card
-- **sections** (array, optional): Sub-sections within a card
+- **sections** (object, optional): Sub-sections within a card. Contains `direction` ("col" or "row") and `items` (array of section objects with title, badge, and description)
 - **arrows** (array): Navigation connections to other cards
 
 ## Supported Formats

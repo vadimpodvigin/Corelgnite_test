@@ -141,25 +141,33 @@ Sections are sub-sections within a card.
 
 Since this property is optional, if a card does not require sections make sure to omit it entirely from a card object.
 
-**_Section Properties_**
+**_Sections Object Properties_**
+
+- `direction` (string, required): Layout direction for sections. Must be either "col" or "row"
+- `items` (array, required): Array of section objects
+
+**_Section Item Properties_**
 
 - `title` (string, required): Section name
 - `badge` (string, required): Sub-step number to display on card (e.g., "1.1", "1.2")
 - `description` (string, optional): Section subtext
 
 ```
-"sections": [
-    {
-        "title": "Section Title",
-        "badge": "1.1",
-        "description": "Section description"
-    },
-    {
-        "title": "Section Title",
-        "badge": "1.2",
-        "description": "Section description"
-    }
-]
+"sections": {
+    "direction": "col",
+    "items": [
+        {
+            "title": "Section Title",
+            "badge": "1.1",
+            "description": "Section description"
+        },
+        {
+            "title": "Section Title",
+            "badge": "1.2",
+            "description": "Section description"
+        }
+    ]
+}
 ```
 
 ### Tabs (Optional)
@@ -240,18 +248,21 @@ Since this property is optional, if a card does not require tabs make sure to om
                 "title": "Another Nested Card"
             }
         ],
-        "sections": [
-            {
-                "title": "Section 1 Title",
-                "badge": "2.1",
-                "description": "Section 1 description"
-            },
-            {
-                "title": "Section 2 Title",
-                "badge": "2.2",
-                "description": "Section 2 description"
-            }
-        ],
+        "sections": {
+            "direction": "col",
+            "items": [
+                {
+                    "title": "Section 1 Title",
+                    "badge": "2.1",
+                    "description": "Section 1 description"
+                },
+                {
+                    "title": "Section 2 Title",
+                    "badge": "2.2",
+                    "description": "Section 2 description"
+                }
+            ]
+        },
         "tabs": [
             {
                 "label": "Tab 1",
