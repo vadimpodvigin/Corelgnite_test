@@ -1,7 +1,7 @@
 workflow:
   title: Buy Now, Pay Later
   description: |
-    Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
+    Suspendisse consectetur accumsan turpis et venenatis. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat.
   category: Buy Now Pay Later
   icon: money
 
@@ -11,15 +11,14 @@ cards:
     badge: 1
     description: |
       Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
-      Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
     arrows:
       - direction: right
         targetCardId: card2
 
   - id: card2
-    title: Transaction Employment
+    title: Transaction Enrollment
     badge: 2
-    description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
+    description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
     arrows: []
     tabs:
       - id: pos
@@ -30,7 +29,7 @@ cards:
             items:
               - title: Transaction Eligibilty Check
                 badge: 2.1
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
+                description: Suspendisse consectetur accumsan turpis et venenatis. 
                 button: 
                   label: Transaction Eligibility API
                   url: /
@@ -42,7 +41,7 @@ cards:
                   url: /
               - title: Submit BNPL Request
                 badge: 2.3
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices.
+                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
                 button: 
                   label: BNPL Request API
                   url: /
@@ -66,10 +65,10 @@ cards:
                   - id: usrBsk
                     label: User-Composed Basket
                     content:
-                      description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                      description: Suspendisse consectetur accumsan turpis et venenatis. 
                       button: 
                         label: Create Basket Link
                         url: /
               - title: Submit BNPL Request
                 badge: 2.2
-                description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                description: Suspendisse consectetur accumsan turpis et venenatis.
