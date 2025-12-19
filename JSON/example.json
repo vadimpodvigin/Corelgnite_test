@@ -62,12 +62,12 @@
       "description": "This is an example of a card containing section components.",
       "arrows": [
         {
-            "direction": "down",
-            "targetCardId": "card5"
+          "direction": "down",
+          "targetCardId": "card5"
         }
       ],
       "sections": {
-        "direction": "col",
+        "direction": "row",
         "items": [
           {
             "title": "Section 1",
@@ -83,8 +83,34 @@
     },
     {
       "id": "card5",
-      "title": "Card with Tabs",
+      "title": "Card with Sections",
       "badge": "5",
+      "description": "This is an example of a card containing section components.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card6"
+        }
+      ],
+      "sections": {
+        "direction": "col",
+        "items": [
+          {
+            "title": "Section 1",
+            "badge": "5.1",
+            "description": "Description for a section component is optional."
+          },
+          {
+            "title": "Section 2",
+            "badge": "5.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "card6",
+      "title": "Card with Tabs",
+      "badge": "6",
       "description": "This is an example of a card containing a tabs component.",
       "arrows": [],
       "tabs": [
