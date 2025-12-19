@@ -35,6 +35,7 @@ cards:
     badge: "2"
     description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
     sideCardRef: "coreBankGroup"
+    sideCardSpanEnd: "card3"
     arrows:
       - direction: "right"
         targetCardId: "card21"
