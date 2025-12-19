@@ -3,7 +3,7 @@ workflow:
   description: tbd
   category: Buy Now Pay Later
   icon: money
-  
+
 cards:
   - id: card1
     title: Customer Enrollment
@@ -30,11 +30,13 @@ cards:
               - title: Transaction Eligibilty Check
                 badge: 2.1
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
+              - title: BNPL Plan Offer
                 badge: 2.2
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. 
               - title: Submit BNPL Request
                 badge: 2.3
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
+      - id: pastp
         label: Past Purchase
         content: 
           sections:
