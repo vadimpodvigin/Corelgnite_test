@@ -1,6 +1,7 @@
 workflow:
   title: Buy Now, Pay Later
-  description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.\n
+  description: |
+    Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
   category: Buy Now Pay Later
   icon: money
 
@@ -8,8 +9,9 @@ cards:
   - id: card1
     title: Customer Enrollment
     badge: 1
-    description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.\n
-      Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.\n
+    description: |
+      Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
+      Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
     arrows:
       - direction: right
         targetCardId: card2
