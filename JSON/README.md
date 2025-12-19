@@ -176,24 +176,57 @@ Tabs allows you to show multiple tabs of content within a card. A viewer will be
 
 Since this property is optional, if a card does not require tabs make sure to omit it entirely from a card object.
 
-**_Tabs Properties_**
+**_Tab Item Properties_**
 
-- `label` (string, required): Section name
-- `description` (string, optional): Section subtext
+- `id` (string, required): Unique identifier for the tab
+- `label` (string, required): Tab label/name
+- `content` (object, required): Content object containing tab content
+
+**_Content Object Properties_**
+
+- `description` (string, optional): Text description for the tab
+- `sections` (object, optional): Sections object (same structure as card sections)
+- `nestedcards` (array, optional): Array of nested cards (same structure as card nestedcards)
+- `codeSnippet` (object, optional): Code snippet object (same structure as card codeSnippet)
 
 ```
 "tabs": [
     {
+        "id": "tab1",
         "label": "Tab 1",
-        "description": "Tab 1 description"
+        "content": {
+            "description": "Tab 1 description"
+        }
     },
     {
+        "id": "tab2",
         "label": "Tab 2",
-        "description": "Tab 2 description"
+        "content": {
+            "description": "Tab 2 description",
+            "sections": {
+                "direction": "col",
+                "items": [
+                    {
+                        "title": "Section Title",
+                        "badge": "2.1",
+                        "description": "Section description"
+                    }
+                ]
+            }
+        }
     },
     {
+        "id": "tab3",
         "label": "Tab 3",
-        "description": "Tab 3 description"
+        "content": {
+            "description": "Tab 3 description",
+            "nestedcards": [
+                {
+                    "title": "Nested Card Title",
+                    "subtext": "Nested card description"
+                }
+            ]
+        }
     }
 ]
 ```
@@ -265,16 +298,25 @@ Since this property is optional, if a card does not require tabs make sure to om
         },
         "tabs": [
             {
+                "id": "tab1",
                 "label": "Tab 1",
-                "description": "Tab 1 description"
+                "content": {
+                    "description": "Tab 1 content"
+                }
             },
             {
+                "id": "tab2",
                 "label": "Tab 2",
-                "description": "Tab 2 description"
+                "content": {
+                    "description": "Tab 2 content"
+                }
             },
             {
+                "id": "tab3",
                 "label": "Tab 3",
-                "description": "Tab 3 description"
+                "content": {
+                    "description": "Tab 3 content"
+                }
             }
         ]
     },
