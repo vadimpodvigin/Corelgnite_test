@@ -35,6 +35,12 @@
       "title": "Bank Space Setup Wizard",
       "badge": "3",
       "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card4"
+        }
+      ],
       "sections": {
         "direction": "col",
         "items": [
@@ -54,13 +60,7 @@
             "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
           }
         ]
-      },
-      "arrows": [
-        {
-          "direction": "down",
-          "targetCardId": "card4"
-        }
-      ]
+      }
     },
     {
       "id": "card4",

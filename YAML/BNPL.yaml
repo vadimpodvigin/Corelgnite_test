@@ -20,6 +20,7 @@ cards:
     title: Transaction Employment
     badge: 2
     description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
+    arrows: []
     tabs:
       - id: pos
         label: Point of Sale
@@ -57,4 +58,3 @@ cards:
               - title: Submit BNPL Request
                 badge: 2.2
                 description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
-    arrows: []

@@ -16,6 +16,9 @@ cards:
     title: Initiate Account Creation
     badge: "2"
     description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    arrows:
+      - direction: down
+        targetCardId: card3
     sections:
       direction: col
       items:
@@ -25,20 +28,17 @@ cards:
         - title: Set Password
           badge: "2.2"
           description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-    arrows:
-      - direction: down
-        targetCardId: card3
 
   - id: card3
     title: Email Confirmation
     badge: "3"
     description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-    nestedcards:
-      - title: Open Link in Confirmation Email
-        subtext: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
     arrows:
       - direction: down
         targetCardId: card4
+    nestedcards:
+      - title: Open Link in Confirmation Email
+        subtext: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
   - id: card4
     title: Account Activation Complete

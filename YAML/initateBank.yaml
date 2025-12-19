@@ -24,6 +24,9 @@ cards:
     title: Bank Space Setup Wizard
     badge: "3"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: "4"
     sections:
       direction: col
       items:
@@ -36,9 +39,6 @@ cards:
         - title: Review & Confirm Settings
           badge: "3.3"
           description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-    arrows:
-      - direction: down
-        targetCardId: "4"
 
   - id: "4"
     title: Invite Users

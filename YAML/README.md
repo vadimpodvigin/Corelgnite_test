@@ -42,6 +42,7 @@ workflow:
 | `nestedcards` | `array`  | No       | Display nested cards within the card                  |
 | `sections`    | `array`  | No       | Highlight sections within a card                      |
 | `tabs`        | `array`  | No       | Show multiple tabs of content                         |
+| `button`      | `object` | No       | Button with label and URL                             |
 
 ## Card Object Schema
 
@@ -54,9 +55,11 @@ cards:
     badge: "1"
     description: Card description
     arrows: [...]
+    button: {...} # Optional
     codeSnippet: {...} # Optional
     nestedcards: [...] # Optional
     sections: [...] # Optional
+    tabs: [...] # Optional
 
 ```
 
@@ -79,6 +82,23 @@ If on the last card, Arrows array can be left empty, but must be listed since it
 
 ```yaml
 arrows: []
+```
+
+### Button (Optional)
+
+Button allows you to add a clickable button to a card that links to an external URL.
+
+Since this property is optional, if a card does not required a button make sure to omit it entirely from a card object.
+
+**_Button Properties_**
+
+- `label` (string, required): Text to display on the button
+- `url` (string, required): URL to navigate to when button is clicked
+
+```yaml
+button:
+  label: View Documentation
+  url: https://example.com/docs
 ```
 
 ### Code Snippet (Optional)
@@ -132,6 +152,7 @@ Sections are sub-sections within a card. Since this property is optional, if a c
 - `nestedcards` (array, optional): Array of nested cards (same structure as card nestedcards)
 - `tabs` (array, optional): Array of tabs (same structure as card tabs)
 - `codeSnippet` (object, optional): Code snippet object (same structure as card codeSnippet)
+- `button` (object, optional): Button object (same structure as card button)
 
 ```yaml
 sections:
@@ -142,19 +163,16 @@ sections:
       description: Section description
     - title: Section Title
       badge: 1.2
+      button:
+        label: Learn More
+        url: https://example.com
+      codeSnippet:
+        code: <custom code>
+        caption: Code snippet caption
       description: Section description
       nestedcards:
         - title: Nested Card Title
           subtext: Nested card description
-    - title: Section Title
-      badge: 1.3
-      description: Section description
-      codeSnippet:
-        code: <custom code>
-        caption: Code snippet caption
-    - title: Section Title
-      badge: 1.4
-      description: Section description
       tabs:
         - id: tab1
           label: Tab 1
@@ -189,6 +207,7 @@ Since this property is optional, if a card does not required tabs make sure to o
 - `sections` (object, optional): Sections object (same structure as card sections)
 - `nestedcards` (array, optional): Array of nested cards (same structure as card nestedcards)
 - `codeSnippet` (object, optional): Code snippet object (same structure as card codeSnippet)
+- `button` (object, optional): Button object (same structure as card button)
 
 ```yaml
 tabs:
@@ -199,20 +218,19 @@ tabs:
   - id: tab2
     label: Tab 2
     content:
+      button:
+        label: View More
+        url: https://example.com
       description: Tab 2 description
+      nestedcards:
+        - title: Nested Card Title
+          subtext: Nested card description
       sections:
         direction: col
         items:
           - title: Section Title
             badge: 2.1
             description: Section description
-  - id: tab3
-    label: Tab 3
-    content:
-      description: Tab 3 description
-      nestedcards:
-        - title: Nested Card Title
-          subtext: Nested card description
 ```
 
 ## Complete Schema
@@ -240,6 +258,9 @@ cards:
     arrows:
       - direction: up | down | right | left
         targetCardId: cardx
+    button:
+      label: View Documentation
+      url: https://example.com/docs
     codeSnippet: 
         code: <custom code>
         caption: Code Snippet Caption
@@ -256,19 +277,16 @@ cards:
           description: Section description
         - title: Section Title
           badge: 2.2
+          button:
+            label: Learn More
+            url: https://example.com
+          codeSnippet:
+            code: <custom code>
+            caption: Code snippet caption
           description: Section description
           nestedcards:
             - title: Nested Card Title
               subtext: Nested card description
-        - title: Section Title
-          badge: 2.3
-          description: Section description
-          codeSnippet:
-            code: <custom code>
-            caption: Code snippet caption
-        - title: Section Title
-          badge: 2.4
-          description: Section description
           tabs:
             - id: tab1
               label: Tab 1
@@ -286,7 +304,13 @@ cards:
       - id: tab3
         label: Tab 3
         content:
+          button:
+            label: View More
+            url: https://example.com
           description: Tab 3 content
+    button:
+      label: View Documentation
+      url: https://example.com/docs
 ```
 
 ## Best Practices
