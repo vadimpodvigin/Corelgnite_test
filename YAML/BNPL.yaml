@@ -3,6 +3,7 @@ workflow:
   description: tbd
   category: Buy Now Pay Later
   icon: money
+  
 cards:
   - id: card1
     title: Customer Enrollment
