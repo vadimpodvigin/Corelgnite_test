@@ -129,6 +129,9 @@ Sections are sub-sections within a card. Since this property is optional, if a c
 - `title` (string, required): Section card name
 - `badge` (string, required): Sub-step number to display on card (e.g., "1.1", "1.2")
 - `description` (string, optional): Section card subtext
+- `nestedcards` (array, optional): Array of nested cards (same structure as card nestedcards)
+- `tabs` (array, optional): Array of tabs (same structure as card tabs)
+- `codeSnippet` (object, optional): Code snippet object (same structure as card codeSnippet)
 
 ```yaml
 sections:
@@ -139,6 +142,24 @@ sections:
       description: Section description
     - title: Section Title
       badge: 1.2
+      description: Section description
+      nestedcards:
+        - title: Nested Card Title
+          subtext: Nested card description
+    - title: Section Title
+      badge: 1.3
+      description: Section description
+      codeSnippet:
+        code: <custom code>
+        caption: Code snippet caption
+    - title: Section Title
+      badge: 1.4
+      description: Section description
+      tabs:
+        - id: tab1
+          label: Tab 1
+          content:
+            description: Tab content
 ```
 
 ### Table (Optional)
@@ -235,6 +256,24 @@ cards:
           description: Section description
         - title: Section Title
           badge: 2.2
+          description: Section description
+          nestedcards:
+            - title: Nested Card Title
+              subtext: Nested card description
+        - title: Section Title
+          badge: 2.3
+          description: Section description
+          codeSnippet:
+            code: <custom code>
+            caption: Code snippet caption
+        - title: Section Title
+          badge: 2.4
+          description: Section description
+          tabs:
+            - id: tab1
+              label: Tab 1
+              content:
+                description: Tab content
     tabs:
       - id: tab1
         label: Tab 1
