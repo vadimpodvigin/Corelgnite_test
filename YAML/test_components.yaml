@@ -89,3 +89,21 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card7"
+  - id: "card7"
+    title: "Checkboxes"
+    badge: "7"
+    description: ""
+    checkboxGroup:
+      title: "Group label"
+      items:
+        - label: "Checkbox label"
+          state: "checked"
+        - label: "Checkbox label"
+          state: "disabled"
+        - label: "Checkbox label"
+          state: "error"
+        - label: "Checkbox label"
+          state: "unchecked"
+    arrows:
+      - direction: "down"
+        targetCardId: "card8"
