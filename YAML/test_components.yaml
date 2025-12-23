@@ -28,3 +28,15 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card3"
+  - id: "card3"
+    title: "Code Snippet"
+    badge: "3"
+    description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
+    nestedcards:
+      - title: Nested Card Title
+        subtext: Nested card description
+      - title: Another Nested Card
+      - title: Another Nested Card
+    arrows:
+      - direction: "down"
+        targetCardId: "card4"
