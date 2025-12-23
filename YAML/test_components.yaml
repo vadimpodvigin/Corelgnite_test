@@ -63,12 +63,12 @@ cards:
     tabs:
       - id: tab1
         label: Tab 1
-        content: sdfsdfsdf
-        description: Tab 1 description
+        content:
+          description: Tab 1 description
       - id: tab2
         label: Tab 2
-        content: asjdasijdasdjioasdj
-        description: Tab 1 description
+        content:
+          description: Tab 1 description
     arrows:
       - direction: "down"
         targetCardId: "card6"
