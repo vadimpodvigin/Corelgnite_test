@@ -41,16 +41,16 @@ cards:
       - direction: "down"
         targetCardId: "card4"
   - id: "card4"
-    title: "Nested Cards"
+    title: "Sections"
     badge: "4"
     description: ""
     sections:
       direction: col
       items:
-        - title: Section Title
+        - title: Section Title 1
           badge: 4.1
           description: Section description
-        - title: Section Title
+        - title: Section Title 2
           badge: 4.2
           description: Section description
     arrows:
