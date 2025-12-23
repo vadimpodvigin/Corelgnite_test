@@ -1,0 +1,5 @@
+workflow:
+  title: "Test Components"
+  description: "Here you can find all the components you can use"
+  category: "test_components"
+  icon: "test-tool"
