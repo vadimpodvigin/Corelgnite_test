@@ -5,9 +5,17 @@ workflow:
   icon: "test-tool"
 cards:
   - id: "card1"
-    title: "Card 1"
+    title: "Button"
     badge: "1"
-    description: "Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis."
+    description: ""
+    button:
+      label: "Primary"
+      url: "https://www.bing.com/images/search?view=detailV2&ccid=1NZLvuvF&id=9A5F13CDC45F3D0EEB7A93BF65DBE5DF6C48CFE6&thid=OIP.1NZLvuvFw6CiSQGOulst3gHaE7&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d4d64bbeebc5c3a0a249018eba5b2dde%3frik%3d5s9IbN%252fl22W%252fkw%26riu%3dhttp%253a%252f%252fweknowyourdreams.com%252fimages%252fkitten%252fkitten-07.jpg%26ehk%3dCTXjbs%252fdOMVgBhosIQf27%252bDsN4HH5Bal4cUTKf2wMKw%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=kitten+photo&FORM=IRPRST&ck=4C3A948979E78C57621837C31FD6C072&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
+      type: "primary"
+    button:
+      label: "Tertiary"
+      url: "https://www.bing.com/images/search?view=detailV2&ccid=Gh8QtnFE&id=F1CA711D88126235500271596EE6055518E3A261&thid=OIP.Gh8QtnFEh8LOj1a6-Q88FQHaFj&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.1a1f10b6714487c2ce8f56baf90f3c15%3Frik%3DYaLjGFUF5m5ZcQ%26riu%3Dhttp%253a%252f%252fupload.wikimedia.org%252fwikipedia%252fcommons%252f9%252f9b%252fPhoto_of_a_kitten.jpg%26ehk%3DD%252bCxp6dPLSkHfYa8JvraOQ0MScRDCwP95fuL7yMpZ7E%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=2736&expw=3648&q=kitten+photo&form=IRPRST&ck=B753396741B3B5062257622B33E10567&selectedindex=9&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11"
+      type: "tertiary"
     arrows:
       - direction: "down"
         targetCardId: "card2"
