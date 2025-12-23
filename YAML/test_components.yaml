@@ -8,7 +8,7 @@ cards:
     title: "Button"
     badge: "1"
     description: ""
-    button:
+    buttons:
       - label: "Primary"
         url: "https://www.bing.com/images/search?view=detailV2&ccid=1NZLvuvF&id=9A5F13CDC45F3D0EEB7A93BF65DBE5DF6C48CFE6&thid=OIP.1NZLvuvFw6CiSQGOulst3gHaE7&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d4d64bbeebc5c3a0a249018eba5b2dde%3frik%3d5s9IbN%252fl22W%252fkw%26riu%3dhttp%253a%252f%252fweknowyourdreams.com%252fimages%252fkitten%252fkitten-07.jpg%26ehk%3dCTXjbs%252fdOMVgBhosIQf27%252bDsN4HH5Bal4cUTKf2wMKw%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=kitten+photo&FORM=IRPRST&ck=4C3A948979E78C57621837C31FD6C072&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
         type: "primary"
