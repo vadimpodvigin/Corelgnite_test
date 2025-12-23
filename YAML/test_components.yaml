@@ -21,7 +21,7 @@ cards:
   - id: "card2"
     title: "Code Snippet"
     badge: "2"
-    description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
+    description: ""
     codeSnippet:
       code: <custom code>
       caption: Code snippet caption
@@ -29,9 +29,9 @@ cards:
       - direction: "down"
         targetCardId: "card3"
   - id: "card3"
-    title: "Code Snippet"
+    title: "Nested Cards"
     badge: "3"
-    description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
+    description: ""
     nestedcards:
       - title: Nested Card Title
         subtext: Nested card description
@@ -40,3 +40,19 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card4"
+  - id: "card4"
+    title: "Nested Cards"
+    badge: "4"
+    description: ""
+    sections:
+      direction: col
+      items:
+        - title: Section Title
+          badge: 4.1
+          description: Section description
+        - title: Section Title
+          badge: 4.2
+          description: Section description
+    arrows:
+      - direction: "down"
+        targetCardId: "card5"
