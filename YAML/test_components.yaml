@@ -125,9 +125,9 @@ cards:
         - label: "Step 4"
           description: "Optional label"
           state: "error"
-      arrows:
-        - direction: "down"
-          targetCardId: "card9"
+    arrows:
+      - direction: "down"
+        targetCardId: "card9"
   - id: "card9"
     title: "Table"
     badge: "9"
@@ -189,5 +189,3 @@ cards:
       - label: "Tag Label"
         color: "#A7F0BA"
     arrows:
-      - direction: "down"
-        targetCardId: "card13"
