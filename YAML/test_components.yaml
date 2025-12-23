@@ -18,3 +18,13 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card2"
+  - id: "card2"
+    title: "Code Snippet"
+    badge: "2"
+    description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
+    codeSnippet:
+      code: <custom code>
+      caption: Code snippet caption
+    arrows:
+      - direction: "down"
+        targetCardId: "card3"
