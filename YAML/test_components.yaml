@@ -68,7 +68,6 @@ cards:
       - id: tab2
         label: Tab 2
         content: asjdasijdasdjioasdj
-        label: Tab 2
         description: Tab 1 description
     arrows:
       - direction: "down"
