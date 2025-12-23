@@ -108,24 +108,37 @@ cards:
       - direction: "down"
         targetCardId: "card8"
   - id: "card8"
-    title: ""
+    title: "Steps"
     badge: "8"
     description: ""
     stepper:
-    direction: "vertical"
-    steps:
-      - label: "Step 1"
-        description: "Optional label"
-        state: "completed"
-      - label: "Step 2" 
-        description: "Optional label"
-        state: "current"
-      - label: "Step 3"
-        description: "Optional label"  
-        state: "incomplete"
-      - label: "Step 4"
-        description: "Optional label"
-        state: "error"
+      direction: "vertical"
+      steps:
+        - label: "Step 1"
+          description: "Optional label"
+          state: "completed"
+        - label: "Step 2" 
+          description: "Optional label"
+          state: "current"
+        - label: "Step 3"
+          description: "Optional label"  
+          state: "incomplete"
+        - label: "Step 4"
+          description: "Optional label"
+          state: "error"
+      arrows:
+        - direction: "down"
+          targetCardId: "card9"
+  - id: "card9"
+    title: "Table"
+    badge: "9"
+    description: ""
+    table:
+      headers: ["Header 1", "Header 2", "Header 3"]
+      rows:
+        - ["Row 1 Col 1", "Row 1 Col 2", "Row 1 Col 3"]
+        - ["Row 2 Col 1", "Row 2 Col 2", "Row 2 Col 3"]
+        - ["Row 3 Col 1", "Row 3 Col 2", "Row 3 Col 3"]
     arrows:
       - direction: "down"
-        targetCardId: "card9"
+        targetCardId: "card10"
