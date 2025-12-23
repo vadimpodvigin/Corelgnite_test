@@ -107,3 +107,25 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card8"
+  - id: "card8"
+    title: ""
+    badge: "8"
+    description: ""
+    stepper:
+    direction: "vertical"
+    steps:
+      - label: "Step 1"
+        description: "Optional label"
+        state: "completed"
+      - label: "Step 2" 
+        description: "Optional label"
+        state: "current"
+      - label: "Step 3"
+        description: "Optional label"  
+        state: "incomplete"
+      - label: "Step 4"
+        description: "Optional label"
+        state: "error"
+    arrows:
+      - direction: "down"
+        targetCardId: "card9"
