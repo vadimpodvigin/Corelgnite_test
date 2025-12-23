@@ -142,3 +142,53 @@ cards:
     arrows:
       - direction: "down"
         targetCardId: "card10"
+  - id: "card10"
+    title: "Notifications"
+    badge: "10"
+    description: ""
+    notifications:
+      - type: "info"
+        title: "Notification Title"
+        message: "Notification message content"
+      - type: "success"
+        title: "Notification Title"
+        message: "Notification message content"
+      - type: "warning"
+        title: "Notification Title"
+        message: "Notification message content"
+      - type: "error"
+        title: "Notification Title"
+        message: "Notification message content"
+    arrows:
+      - direction: "down"
+        targetCardId: "card11"
+  - id: "card11"
+    title: "List"
+    badge: "11"
+    description: ""
+    list:
+      type: "ordered"
+      nestedType: "alpha"
+      items:
+        - text: "First item"
+        - text: "Second item with nested"
+          nested:
+            - text: "Nested 2.1"
+            - text: "Nested 2.2"
+    arrows:
+      - direction: "down"
+        targetCardId: "card12"
+  - id: "card12"
+    title: "Tags"
+    badge: "12"
+    description: ""
+    tags:
+      - label: "Tag Label"
+        color: "#FFD6E8"
+      - label: "Tag Label"
+        color: "#D0E2FF"
+      - label: "Tag Label"
+        color: "#A7F0BA"
+    arrows:
+      - direction: "down"
+        targetCardId: "card13"
