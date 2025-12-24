@@ -121,7 +121,7 @@ cards:
       items:
         - label: "Nunc ut porta diam, at convallis enim"
           state: "checked"
-        - label: "uspendisse congue magna at ligula facilisis commodo"
+        - label: "Suspendisse congue magna at ligula facilisis commodo"
           state: "error"
         - label: "Vestibulum metus orci"
           state: "unchecked"
