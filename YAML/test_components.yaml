@@ -23,8 +23,30 @@ cards:
     badge: "2"
     description: ""
     codeSnippet:
-      code: <custom code>
-      caption: Code snippet caption
+      code: <import os
+            import requests
+            import yaml
+            
+            OWNER = "your-org-or-username"
+            REPO = "your-repo"
+            BRANCH = "main"
+            PATH_IN_REPO = "config/tokens.yaml"
+            TOKEN = os.getenv("GITHUB_TOKEN")
+            
+            url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents/{PATH_IN_REPO}?ref={BRANCH}"
+            headers = {
+                "Authorization": f"Bearer {TOKEN}",
+                "Accept": "application/vnd.github.raw+json",
+                "User-Agent": "your-app-or-email"
+            }
+            
+            r = requests.get(url, headers=headers)
+            r.raise_for_status()
+            
+            yaml_text = r.text
+            datadata = yaml.safe_load(yaml_text)
+            >
+      caption: Python (requests + pyyaml)
     arrows:
       - direction: "down"
         targetCardId: "card3"
@@ -33,10 +55,10 @@ cards:
     badge: "3"
     description: ""
     nestedcards:
-      - title: Nested Card Title
-        subtext: Nested card description
-      - title: Another Nested Card
-      - title: Another Nested Card
+      - title: Phasellus dictum
+        subtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesque.
+      - title: Sed commodo
+      - title: Nulla eu congue massa
     arrows:
       - direction: "down"
         targetCardId: "card4"
@@ -47,12 +69,12 @@ cards:
     sections:
       direction: col
       items:
-        - title: Section Title 1
+        - title: Donec sit amet lacinia urna
           badge: 4.1
-          description: Section description
-        - title: Section Title 2
+          description: Maecenas eros ante, vehicula in justo quis, imperdiet vestibulum leo. Duis ante purus, placerat vel metus eget, bibendum malesuada libero.
+        - title: Sed
           badge: 4.2
-          description: Section description
+          description: Fusce at est facilisis lacus sollicitudin semper. Aliquam id ultricies dolor.
     arrows:
       - direction: "down"
         targetCardId: "card5"
@@ -62,13 +84,13 @@ cards:
     description: ""
     tabs:
       - id: tab1
-        label: Tab 1
+        label: Pellentesque mollis
         content:
-          description: Tab 1 description
+          description: Proin porttitor tincidunt vulputate. Nullam sed eros lacus.
       - id: tab2
-        label: Tab 2
+        label: Fusce at est
         content:
-          description: Tab 1 description
+          description: Vivamus id porttitor est, sit amet lobortis nisl. Maecenas ultrices nulla a condimentum egestas.
     arrows:
       - direction: "down"
         targetCardId: "card6"
@@ -78,12 +100,12 @@ cards:
     description: ""
     accordion:
       - title: "Expanded"
-        content: "Content for the first item"
+        content: "Donec ornare lacus id risus venenatis, eget mattis tellus efficitur. Nam ornare, risus sed rutrum laoreet, turpis urna auctor nunc, et semper metus neque eget velit."
         defaultExpanded: true
       - title: "Collapsed"
         content: "Content for the second item"
       - title: "Disabled"
-        content: "This content won't be accessible"
+        content: "Proin sit amet accumsan turpis. Sed accumsan neque sit amet libero volutpat dignissim et eget diam."
         disabled: true
     arrows:
       - direction: "down"
@@ -93,15 +115,13 @@ cards:
     badge: "7"
     description: ""
     checkboxGroup:
-      title: "Group label"
+      title: "Nullam elementum"
       items:
-        - label: "Checkbox label"
+        - label: "Nunc ut porta diam, at convallis enim"
           state: "checked"
-        - label: "Checkbox label"
-          state: "disabled"
-        - label: "Checkbox label"
+        - label: "uspendisse congue magna at ligula facilisis commodo"
           state: "error"
-        - label: "Checkbox label"
+        - label: "Vestibulum metus orci"
           state: "unchecked"
     arrows:
       - direction: "down"
@@ -113,17 +133,17 @@ cards:
     stepper:
       direction: "vertical"
       steps:
-        - label: "Step 1"
-          description: "Optional label"
+        - label: "Donec ultrices"
+          description: "Nunc ut porta diam, at convallis enim"
           state: "completed"
-        - label: "Step 2" 
-          description: "Optional label"
+        - label: "Suspendisse congue" 
+          description: "Class aptent taciti sociosqu"
           state: "current"
-        - label: "Step 3"
-          description: "Optional label"  
+        - label: "Proin porttitor"
+          description: "Aliquam id ultricies"  
           state: "incomplete"
-        - label: "Step 4"
-          description: "Optional label"
+        - label: "In nec dolor"
+          description: "Nunc ut porta diam, at convallis enim"
           state: "error"
     arrows:
       - direction: "down"
@@ -133,11 +153,11 @@ cards:
     badge: "9"
     description: ""
     table:
-      headers: ["Header 1", "Header 2", "Header 3"]
+      headers: ["Class aptent", "Aliquam ut", "Nunc ut porta"]
       rows:
-        - ["Row 1 Col 1", "Row 1 Col 2", "Row 1 Col 3"]
-        - ["Row 2 Col 1", "Row 2 Col 2", "Row 2 Col 3"]
-        - ["Row 3 Col 1", "Row 3 Col 2", "Row 3 Col 3"]
+        - ["Pellentesque habitant morbi tristique senectus", "Nunc ut porta diam, at convallis", "Suspendisse congue magna"]
+        - ["Aliquam", "Class aptent taciti sociosqu ad litora", "Vestibulum metus orci, fermentum in egestas"]
+        - ["Vestibulum quis ante ex", "Proin sed nisi nulla", "Proin porttitor tincidunt vulputate"]
     arrows:
       - direction: "down"
         targetCardId: "card10"
@@ -147,17 +167,17 @@ cards:
     description: ""
     notifications:
       - type: "info"
-        title: "Notification Title"
-        message: "Notification message content"
+        title: "Info"
+        message: "Aliquam id ultricies dolor. Fusce magna leo, mattis eu erat sed, tempor pharetra est"
       - type: "success"
-        title: "Notification Title"
-        message: "Notification message content"
+        title: "Success"
+        message: "Proin sit amet accumsan turpis"
       - type: "warning"
-        title: "Notification Title"
-        message: "Notification message content"
+        title: "Warning"
+        message: "Pellentesque ac lorem et lectus ornare posuere in vitae tellus"
       - type: "error"
-        title: "Notification Title"
-        message: "Notification message content"
+        title: "Error"
+        message: "502"
     arrows:
       - direction: "down"
         targetCardId: "card11"
@@ -169,11 +189,11 @@ cards:
       type: "ordered"
       nestedType: "alpha"
       items:
-        - text: "First item"
-        - text: "Second item with nested"
+        - text: "Proin sed"
+        - text: "Nunc pulvinar justo"
           nested:
-            - text: "Nested 2.1"
-            - text: "Nested 2.2"
+            - text: "Phasellus neque dolor, fermentum vel laoreet sed, condimentum ac enim. Donec non scelerisque dui. Maecenas quam erat, placerat eu odio id, viverra posuere libero."
+            - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit a enim ullamcorper accumsan. Pellentesque mollis, elit eu sodales posuere, tortor dolor eleifend lorem, a elementum arcu neque sit amet nisi."
     arrows:
       - direction: "down"
         targetCardId: "card12"
@@ -182,10 +202,10 @@ cards:
     badge: "12"
     description: ""
     tags:
-      - label: "Tag Label"
-        color: "#FFD6E8"
-      - label: "Tag Label"
-        color: "#D0E2FF"
-      - label: "Tag Label"
-        color: "#A7F0BA"
+      - label: "Sed rutrum"
+        color: "#9F1853"
+      - label: "Nunc pulvinar justo at magna sollicitudin"
+        color: "#0043CE"
+      - label: "=)"
+        color: "#0E6027"
     arrows:
