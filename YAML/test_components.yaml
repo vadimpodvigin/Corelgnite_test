@@ -88,11 +88,11 @@ cards:
       - id: tab1
         label: Pellentesque mollis
         content:
-          description: Proin porttitor tincidunt vulputate. Nullam sed eros lacus.
+          description: Donec sit amet lacinia urna, id pretium urna. Proin sed nisi nulla. Nunc pulvinar justo at magna sollicitudin, id dignissim nunc fringilla. Vestibulum quis ante ex. Phasellus neque dolor, fermentum vel laoreet sed, condimentum ac enim. Donec non scelerisque dui. Maecenas quam erat, placerat eu odio id, viverra posuere libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit a enim ullamcorper accumsan. Pellentesque mollis, elit eu sodales posuere, tortor dolor eleifend lorem, a elementum arcu neque sit amet nisi. Integer lorem metus, tempus a turpis eu, ornare condimentum massa. Proin porttitor tincidunt vulputate. Nullam sed eros lacus.
       - id: tab2
         label: Fusce at est
         content:
-          description: Vivamus id porttitor est, sit amet lobortis nisl. Maecenas ultrices nulla a condimentum egestas.
+          description: Proin sit amet accumsan turpis. Sed accumsan neque sit amet libero volutpat dignissim et eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec dolor erat. Nullam elementum lorem nec tortor posuere consectetur. Pellentesque ac lorem et lectus ornare posuere in vitae tellus. Integer suscipit tortor in orci dapibus, rhoncus ultricies metus malesuada. Nam erat nunc, tincidunt vitae dolor nec, accumsan varius nisi. Nunc ut porta diam, at convallis enim. Suspendisse congue magna at ligula facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc faucibus euismod mollis. Aliquam ut nisl pretium, tempor leo ac, fringilla sapien. Vestibulum metus orci, fermentum in egestas in, placerat ut eros. Vivamus interdum orci eu lectus eleifend, at lacinia est tincidunt. Donec ultrices, nisl a scelerisque porta, ex ipsum consectetur urna, accumsan iaculis quam ipsum ac sapien.
     arrows:
       - direction: "down"
         targetCardId: "card6"
