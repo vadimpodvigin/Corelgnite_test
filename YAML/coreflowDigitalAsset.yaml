@@ -35,7 +35,6 @@ cards:
     badge: "2"
     description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
     sideCardRef: "coreBankGroup"
-    sideCardSpanEnd: "card3"
     arrows:
       - direction: "right"
         targetCardId: "card21"
@@ -55,6 +54,7 @@ cards:
     title: "Validate & Reserve Funds"
     badge: "3"
     description: "Fusce euis oci nunc. Aenean dui libero, pharetra nec rutrum vitae, rutrum eu felis. In dictum posuere nisl eu consectetur. Sed cursus condimentum ante, eget tempor nisl blandit quis. Ut pretium risus et nibero ultrices, a congue felis aliquet. Donec nec aliquet dolor, non volutpat odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem euis, malesuada nulla."
+    sideCardRef: "coreBankGroup"
     arrows:
       - direction: "down"
         targetCardId: "card4"
