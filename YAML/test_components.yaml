@@ -236,7 +236,6 @@ cards:
     badge: "13"
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim nisi, semper non tempor id, dapibus eget lorem. Duis suscipit, purus ac rutrum condimentum, lectus dolor posuere felis, at interdum ipsum enim vel nisi. Nam varius purus et pulvinar sollicitudin. Nunc vehicula enim ut nunc porta, ac placerat nisi aliquam. Nam eget tortor vitae diam viverra lacinia. Sed dictum lacus sem. Donec accumsan vel risus id dignissim. Integer sollicitudin quis enim vitae ultricies. Donec quis erat cursus ex tempus pharetra nec a ex. Curabitur suscipit ex eu finibus accumsan. Cras volutpat mi diam, eget ullamcorper urna tempus non. Vivamus vestibulum congue odio ut aliquet."
     sideCardRef: "shared_cards_test"
-    sideCardSpanEnd: "card15"
     arrows:
       - direction: "down"
         targetCardId: "card14"
@@ -244,11 +243,13 @@ cards:
     title: "Shared Cards"
     badge: "14"
     description: "Nam pellentesque, nisl nec placerat efficitur, dolor sapien eleifend elit, vel volutpat dui ipsum non lectus. Aliquam convallis elit leo, at elementum arcu vulputate in. Morbi blandit finibus convallis. Vestibulum gravida pellentesque ex vel viverra. Curabitur volutpat, ligula sit amet faucibus dapibus, urna mauris vestibulum dolor, nec blandit neque enim at velit. Sed hendrerit turpis at sapien maximus egestas. Quisque sit amet est mauris. In hac habitasse platea dictumst. Maecenas id ex scelerisque, varius nulla non, placerat nunc. Vivamus id pretium purus. Morbi metus ipsum, facilisis sit amet pretium nec, tincidunt quis urna. Duis eu pellentesque mauris. In ut mollis mauris, et lobortis ex. Vestibulum viverra, magna ac dictum tempus, sem augue rhoncus metus, in blandit nibh quam quis metus. Pellentesque eleifend dui non purus pharetra gravida."
+    sideCardRef: "shared_cards_test"
     arrows:
       - direction: "down"
         targetCardId: "card15"
   - id: "card15"
     title: "Shared Cards"
     badge: "15"
+    sideCardRef: "shared_cards_test"
     description: "Sed id velit dui. Maecenas orci est, porta ac orci sed, imperdiet ullamcorper odio. Phasellus volutpat, augue sit amet vestibulum facilisis, lacus nulla hendrerit arcu, vitae hendrerit mi urna eget justo. Etiam dignissim venenatis massa, ut tempus magna. Mauris id molestie lacus, ut efficitur metus. Pellentesque non pellentesque nisi. Donec non felis gravida, cursus mi nec, vehicula ligula. Pellentesque dolor lectus, lacinia nec interdum sit amet, posuere a neque."
     arrows:
