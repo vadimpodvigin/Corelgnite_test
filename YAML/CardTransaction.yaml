@@ -6,9 +6,9 @@ workflow:
 
 cards:
   - id: card1
-    title: some title
+    title: ""
     badge: 1
-    description: some description
+    description: ""
     arrows:
       - direction: down
         targetCardId: card2

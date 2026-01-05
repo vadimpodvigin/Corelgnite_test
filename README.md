@@ -20,6 +20,8 @@ Each workflow file contains a `workflow` object with the following properties:
 - **description** (string): A detailed description of what the workflow does
 - **icon** (string): An icon identifier for the workflow.
 
+Optionally, workflows can include **sharedSideCards** at the root level to define reusable side card groups that can be referenced by multiple cards.
+
 
 ## Cards Object Structure
 
@@ -29,9 +31,11 @@ Workflows are composed of **cards**, which represent individual steps or stages 
 - **title** (string): The name of the step
 - **badge** (string): Step number displayed on card
 - **description** (string): Detailed description of the step
-- **nestedcards** (array, optional): Nested cards within a card
-- **sections** (object, optional): Sub-sections within a card. Contains `direction` ("col" or "row") and `items` (array of section objects with title, badge, description, and optionally nestedcards, tabs, or codeSnippet)
 - **arrows** (array): Navigation connections to other cards
+
+Optional properties include: **button**, **codeSnippet**, **icon**, **list**, **nestedcards**, **sections**, **sideCardRef**/**sideCardSpanEnd** (for shared side cards), **tabs**, and **tags**.
+
+Cards can also reference **shared side cards** defined at the root level for reusable side card groups.
 
 ## Supported Formats
 

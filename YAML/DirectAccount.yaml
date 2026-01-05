@@ -3,3 +3,12 @@ workflow:
   description: Account to Account
   category: Debit
   icon: finance
+
+cards:
+  - id: card1
+    title: ""
+    badge: 1
+    description: ""
+    arrows:
+      - direction: down
+        targetCardId: card2

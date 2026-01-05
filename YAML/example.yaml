@@ -58,15 +58,12 @@ cards:
     description: This is an example of a card containing a tabs component.
     arrows: []
     tabs:
-      - id: tab1
-        label: Tab 1
+      - label: Tab 1
         content:
-          description: .^.^.^.^ Tab 1 description .^.^.^.^ 
-      - id: tab2
-        label: Tab 2
+          text: .^.^.^.^ Tab 1 text .^.^.^.^ 
+      - label: Tab 2
         content:
-          description: ~~~~~ Tab 2 description ~~~~~
-      - id: tab3
-        label: Tab 3
+          text: ~~~~~ Tab 2 text ~~~~~
+      - label: Tab 3
         content:
-          description: //// Tab 3 description ////
+          text: //// Tab 3 text ////

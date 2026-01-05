@@ -21,8 +21,7 @@ cards:
     description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
     arrows: []
     tabs:
-      - id: pos
-        label: Point of Sale
+        - label: Point of Sale
         content:
           sections:
             direction: col
@@ -45,8 +44,7 @@ cards:
                 button: 
                   label: BNPL Request API
                   url: /
-      - id: pastp
-        label: Past Purchase
+        - label: Past Purchase
         content:
           sections:
             direction: row
@@ -55,17 +53,15 @@ cards:
                 badge: 2.1
                 description: Suspendisse consectetur accumsan turpis et venenatis.
                 tabs:
-                  - id: filB
-                    label: Filter Based
+                  - label: Filter Based
                     content:
-                      description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
+                      text: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices.
                       button: 
                         label: Some Link
                         url: /
-                  - id: usrBsk
                     label: User-Composed Basket
                     content:
-                      description: Suspendisse consectetur accumsan turpis et venenatis. 
+                      text: Suspendisse consectetur accumsan turpis et venenatis. 
                       button: 
                         label: Create Basket Link
                         url: /

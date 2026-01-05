@@ -3,3 +3,12 @@ workflow:
   description: Pre-authorized triggers to debit from account
   category: Debit
   icon: finance
+
+cards:
+  - id: card1
+    title: ""
+    badge: 1
+    description: ""
+    arrows:
+      - direction: down
+        targetCardId: card2
