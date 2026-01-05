@@ -21,7 +21,7 @@ cards:
     description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. 
     arrows: []
     tabs:
-        - label: Point of Sale
+      - label: Point of Sale
         content:
           sections:
             direction: col
@@ -44,7 +44,7 @@ cards:
                 button: 
                   label: BNPL Request API
                   url: /
-        - label: Past Purchase
+      - label: Past Purchase
         content:
           sections:
             direction: row
@@ -59,7 +59,7 @@ cards:
                       button: 
                         label: Some Link
                         url: /
-                    label: User-Composed Basket
+                  - label: User-Composed Basket
                     content:
                       text: Suspendisse consectetur accumsan turpis et venenatis. 
                       button: 
