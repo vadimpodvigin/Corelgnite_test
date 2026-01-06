@@ -1,0 +1,414 @@
+{
+  "workflow": {
+    "title": "Test Components",
+    "description": "Here you can find all the components you can use",
+    "category": "test_components",
+    "icon": "test-tool"
+  },
+  "sharedSideCards": {
+    "shared_cards_test": [
+      {
+        "id": "s1",
+        "title": "Shared Cards",
+        "badge": "",
+        "description": "Nulla ultricies ornare eros, eu dignissim lorem auctor in. Nulla vel porta est. Donec ut risus et lacus porttitor maximus vel a sapien. Cras leo massa, volutpat a aliquet sit amet, pellentesque eu arcu. Cras non auctor magna. Donec in justo lobortis, eleifend risus nec, molestie lacus. Phasellus laoreet quam nisl, a tincidunt augue pharetra sed.",
+        "arrows": [
+          {
+            "direction": "down",
+            "targetCardId": "s2"
+          }
+        ],
+        "icon": "beta"
+      },
+      {
+        "id": "s2",
+        "title": "Shared Cards",
+        "badge": "",
+        "description": "Nam eget tortor vitae diam viverra lacinia. Sed dictum lacus sem. Donec accumsan vel risus id dignissim. Integer sollicitudin quis enim vitae ultricies. Donec quis erat cursus ex tempus pharetra nec a ex. Curabitur suscipit ex eu finibus accumsan. Cras volutpat mi diam, eget ullamcorper urna tempus non. Vivamus vestibulum congue odio ut aliquet.",
+        "arrows": [],
+        "icon": "bat"
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "card1",
+      "title": "Button",
+      "badge": "1",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card2"
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Primary",
+          "url": "https://www.bing.com/images/search?view=detailV2&ccid=1NZLvuvF&id=9A5F13CDC45F3D0EEB7A93BF65DBE5DF6C48CFE6",
+          "type": "primary"
+        },
+        {
+          "label": "Tertiary",
+          "url": "https://www.bing.com/images/search?view=detailV2&ccid=Gh8QtnFE&id=F1CA711D88126235500271596EE6055518E3A261",
+          "type": "tertiary"
+        }
+      ]
+    },
+    {
+      "id": "card2",
+      "title": "Code Snippet",
+      "badge": "2",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card3"
+        }
+      ],
+      "codeSnippet": {
+        "code": {
+          "language": "python",
+          "snippet": "import os\nimport requests\nimport yaml\n\nOWNER = \"your-org-or-username\"\nREPO = \"your-repo\"\nBRANCH = \"main\"\nPATH_IN_REPO = \"config/tokens.yaml\"\nTOKEN = os.getenv(\"GITHUB_TOKEN\")\n\nurl = f\"https://api.github.com/repos/{OWNER}/{REPO}/contents/{PATH_IN_REPO}?ref={BRANCH}\"\nheaders = {\n    \"Authorization\": f\"Bearer {TOKEN}\",\n    \"Accept\": \"application/vnd.github.raw+json\",\n    \"User-Agent\": \"your-app-or-email\"\n}\n\nr = requests.get(url, headers=headers)\nr.raise_for_status()\n\nyaml_text = r.text\ndata = yaml.safe_load(yaml_text)\n"
+        },
+        "caption": "Python (requests + pyyaml)"
+      }
+    },
+    {
+      "id": "card3",
+      "title": "Nested Cards",
+      "badge": "3",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card4"
+        }
+      ],
+      "nestedcards": [
+        {
+          "title": "Phasellus dictum",
+          "subtext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesque."
+        },
+        {
+          "title": "Sed commodo"
+        },
+        {
+          "title": "Nulla eu congue massa"
+        }
+      ]
+    },
+    {
+      "id": "card4",
+      "title": "Sections",
+      "badge": "4",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card5"
+        }
+      ],
+      "sections": {
+        "direction": "col",
+        "items": [
+          {
+            "title": "Donec sit amet lacinia urna",
+            "badge": "4.1",
+            "description": "Maecenas eros ante, vehicula in justo quis, imperdiet vestibulum leo."
+          },
+          {
+            "title": "Sed",
+            "badge": "4.2",
+            "description": "Fusce at est facilisis lacus sollicitudin semper."
+          }
+        ]
+      }
+    },
+    {
+      "id": "card5",
+      "title": "Tabs",
+      "badge": "5",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card6"
+        }
+      ],
+      "tabs": [
+        {
+          "id": "tab1",
+          "label": "Pellentesque mollis",
+          "content": {
+            "description": "Donec sit amet lacinia urna, id pretium urna."
+          }
+        },
+        {
+          "id": "tab2",
+          "label": "Fusce at est",
+          "content": {
+            "description": "Proin sit amet accumsan turpis."
+          }
+        }
+      ]
+    },
+    {
+      "id": "card6",
+      "title": "Accordion",
+      "badge": "6",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card7"
+        }
+      ],
+      "accordion": [
+        {
+          "title": "Expanded",
+          "content": "Donec ornare lacus id risus venenatis.",
+          "defaultExpanded": true
+        },
+        {
+          "title": "Collapsed",
+          "content": "Content for the second item"
+        },
+        {
+          "title": "Disabled",
+          "content": "Proin sit amet accumsan turpis.",
+          "disabled": true
+        }
+      ]
+    },
+    {
+      "id": "card7",
+      "title": "Checkboxes",
+      "badge": "7",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card8"
+        }
+      ],
+      "checkboxGroup": {
+        "title": "Nullam elementum",
+        "items": [
+          {
+            "label": "Nunc ut porta diam",
+            "state": "checked"
+          },
+          {
+            "label": "Suspendisse congue magna",
+            "state": "error"
+          },
+          {
+            "label": "Vestibulum metus orci",
+            "state": "unchecked"
+          }
+        ]
+      }
+    },
+    {
+      "id": "card8",
+      "title": "Steps",
+      "badge": "8",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card9"
+        }
+      ],
+      "stepper": {
+        "direction": "vertical",
+        "steps": [
+          {
+            "label": "Donec ultrices",
+            "description": "Nunc ut porta diam",
+            "state": "completed"
+          },
+          {
+            "label": "Suspendisse congue",
+            "description": "Class aptent taciti sociosqu",
+            "state": "current"
+          },
+          {
+            "label": "Proin porttitor",
+            "description": "Aliquam id ultricies",
+            "state": "incomplete"
+          },
+          {
+            "label": "In nec dolor",
+            "description": "Nunc ut porta diam",
+            "state": "error"
+          }
+        ]
+      }
+    },
+    {
+      "id": "card9",
+      "title": "Table",
+      "badge": "9",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card10"
+        }
+      ],
+      "table": {
+        "headers": [
+          "Class aptent",
+          "Aliquam ut",
+          "Nunc ut porta"
+        ],
+        "rows": [
+          [
+            "Pellentesque habitant",
+            "Nunc ut porta diam",
+            "Suspendisse congue magna"
+          ],
+          [
+            "Aliquam",
+            "Class aptent taciti",
+            "Vestibulum metus orci"
+          ],
+          [
+            "Vestibulum quis ante ex",
+            "Proin sed nisi nulla",
+            "Proin porttitor tincidunt"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "card10",
+      "title": "Notifications",
+      "badge": "10",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card11"
+        }
+      ],
+      "notifications": [
+        {
+          "type": "info",
+          "title": "Info",
+          "message": "Aliquam id ultricies dolor."
+        },
+        {
+          "type": "success",
+          "title": "Success",
+          "message": "Proin sit amet accumsan turpis"
+        },
+        {
+          "type": "warning",
+          "title": "Warning",
+          "message": "Pellentesque ac lorem"
+        },
+        {
+          "type": "error",
+          "title": "Error",
+          "message": "502"
+        }
+      ]
+    },
+    {
+      "id": "card11",
+      "title": "List",
+      "badge": "11",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card12"
+        }
+      ],
+      "list": {
+        "type": "ordered",
+        "nestedType": "alpha",
+        "items": [
+          {
+            "text": "Proin sed"
+          },
+          {
+            "text": "Nunc pulvinar justo",
+            "nested": [
+              {
+                "text": "Phasellus neque dolor"
+              },
+              {
+                "text": "Lorem ipsum dolor sit amet"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "card12",
+      "title": "Tags",
+      "badge": "12",
+      "description": "",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card13"
+        }
+      ],
+      "tags": [
+        {
+          "label": "Sed rutrum",
+          "color": "#9F1853"
+        },
+        {
+          "label": "Nunc pulvinar justo",
+          "color": "#0043CE"
+        },
+        {
+          "label": "=)",
+          "color": "#0E6027"
+        }
+      ]
+    },
+    {
+      "id": "card13",
+      "title": "Shared Cards",
+      "badge": "13",
+      "description": "Lorem ipsum dolor sit amet.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card14"
+        }
+      ],
+      "sideCardRef": "shared_cards_test"
+    },
+    {
+      "id": "card14",
+      "title": "Shared Cards",
+      "badge": "14",
+      "description": "Nam pellentesque, nisl nec placerat efficitur.",
+      "arrows": [
+        {
+          "direction": "down",
+          "targetCardId": "card15"
+        }
+      ],
+      "sideCardRef": "shared_cards_test"
+    },
+    {
+      "id": "card15",
+      "title": "Shared Cards",
+      "badge": "15",
+      "description": "Sed id velit dui.",
+      "arrows": [],
+      "sideCardRef": "shared_cards_test"
+    }
+  ]
+}
+

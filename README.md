@@ -33,7 +33,7 @@ Workflows are composed of **cards**, which represent individual steps or stages 
 - **description** (string): Detailed description of the step
 - **arrows** (array): Navigation connections to other cards
 
-Optional properties include: **button**, **codeSnippet**, **icon**, **list**, **nestedcards**, **sections**, **sideCardRef**/**sideCardSpanEnd** (for shared side cards), **tabs**, and **tags**.
+Optional properties include: **accordion**, **button**, **checkboxGroup**, **codeSnippet**, **icon**, **list**, **nestedcards**, **notifications**, **sections**, **sideCardRef**/**sideCardSpanEnd** (for shared side cards), **stepper**, **table**, **tabs**, and **tags**.
 
 Cards can also reference **shared side cards** defined at the root level for reusable side card groups.
 

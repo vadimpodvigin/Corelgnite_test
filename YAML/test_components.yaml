@@ -1,255 +1,276 @@
 workflow:
-  title: "Test Components"
-  description: "Here you can find all the components you can use"
-  category: "test_components"
-  icon: "test-tool"
+  title: Test Components
+  description: Here you can find all the components you can use
+  category: test_components
+  icon: test-tool
 
 sharedSideCards:
   shared_cards_test:
-    - id: "s1"
-      title: "Shared Cards"
+    - id: s1
+      title: Shared Cards
       badge: ""
-      description: "Nulla ultricies ornare eros, eu dignissim lorem auctor in. Nulla vel porta est. Donec ut risus et lacus porttitor maximus vel a sapien. Cras leo massa, volutpat a aliquet sit amet, pellentesque eu arcu. Cras non auctor magna. Donec in justo lobortis, eleifend risus nec, molestie lacus. Phasellus laoreet quam nisl, a tincidunt augue pharetra sed."
-      icon: "beta"
+      description: Nulla ultricies ornare eros, eu dignissim lorem auctor in. Nulla vel porta est. Donec ut risus et lacus porttitor maximus vel a sapien. Cras leo massa, volutpat a aliquet sit amet, pellentesque eu arcu. Cras non auctor magna. Donec in justo lobortis, eleifend risus nec, molestie lacus. Phasellus laoreet quam nisl, a tincidunt augue pharetra sed.
       arrows:
-        - direction: "down"
-          targetCardId: "s2"
-    - id: "s2"
-      title: "Shared Cards"
+        - direction: down
+          targetCardId: s2
+      icon: beta
+    - id: s2
+      title: Shared Cards
       badge: ""
-      description: "Nam eget tortor vitae diam viverra lacinia. Sed dictum lacus sem. Donec accumsan vel risus id dignissim. Integer sollicitudin quis enim vitae ultricies. Donec quis erat cursus ex tempus pharetra nec a ex. Curabitur suscipit ex eu finibus accumsan. Cras volutpat mi diam, eget ullamcorper urna tempus non. Vivamus vestibulum congue odio ut aliquet."
-      icon: "bat"
+      description: Nam eget tortor vitae diam viverra lacinia. Sed dictum lacus sem. Donec accumsan vel risus id dignissim. Integer sollicitudin quis enim vitae ultricies. Donec quis erat cursus ex tempus pharetra nec a ex. Curabitur suscipit ex eu finibus accumsan. Cras volutpat mi diam, eget ullamcorper urna tempus non. Vivamus vestibulum congue odio ut aliquet.
       arrows: []
-    
+      icon: bat
+
 cards:
-  - id: "card1"
-    title: "Button"
+  - id: card1
+    title: Button
     badge: "1"
     description: ""
-    buttons:
-      - label: "Primary"
-        url: "https://www.bing.com/images/search?view=detailV2&ccid=1NZLvuvF&id=9A5F13CDC45F3D0EEB7A93BF65DBE5DF6C48CFE6&thid=OIP.1NZLvuvFw6CiSQGOulst3gHaE7&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d4d64bbeebc5c3a0a249018eba5b2dde%3frik%3d5s9IbN%252fl22W%252fkw%26riu%3dhttp%253a%252f%252fweknowyourdreams.com%252fimages%252fkitten%252fkitten-07.jpg%26ehk%3dCTXjbs%252fdOMVgBhosIQf27%252bDsN4HH5Bal4cUTKf2wMKw%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=kitten+photo&FORM=IRPRST&ck=4C3A948979E78C57621837C31FD6C072&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
-        type: "primary"
-      - label: "Tertiary"
-        url: "https://www.bing.com/images/search?view=detailV2&ccid=Gh8QtnFE&id=F1CA711D88126235500271596EE6055518E3A261&thid=OIP.Gh8QtnFEh8LOj1a6-Q88FQHaFj&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.1a1f10b6714487c2ce8f56baf90f3c15%3Frik%3DYaLjGFUF5m5ZcQ%26riu%3Dhttp%253a%252f%252fupload.wikimedia.org%252fwikipedia%252fcommons%252f9%252f9b%252fPhoto_of_a_kitten.jpg%26ehk%3DD%252bCxp6dPLSkHfYa8JvraOQ0MScRDCwP95fuL7yMpZ7E%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=2736&expw=3648&q=kitten+photo&form=IRPRST&ck=B753396741B3B5062257622B33E10567&selectedindex=9&itb=0&ajaxhist=0&ajaxserp=0&vt=0&sim=11"
-        type: "tertiary"
     arrows:
-      - direction: "down"
-        targetCardId: "card2"
-  - id: "card2"
-    title: "Code Snippet"
+      - direction: down
+        targetCardId: card2
+    buttons:
+      - label: Primary
+        url: https://www.bing.com/images/search?view=detailV2&ccid=1NZLvuvF&id=9A5F13CDC45F3D0EEB7A93BF65DBE5DF6C48CFE6
+        type: primary
+      - label: Tertiary
+        url: https://www.bing.com/images/search?view=detailV2&ccid=Gh8QtnFE&id=F1CA711D88126235500271596EE6055518E3A261
+        type: tertiary
+
+  - id: card2
+    title: Code Snippet
     badge: "2"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: card3
     codeSnippet:
       code:
-        language: "python"
+        language: python
         snippet: |
           import os
           import requests
           import yaml
-          
+
           OWNER = "your-org-or-username"
           REPO = "your-repo"
           BRANCH = "main"
           PATH_IN_REPO = "config/tokens.yaml"
           TOKEN = os.getenv("GITHUB_TOKEN")
-          
+
           url = f"https://api.github.com/repos/{OWNER}/{REPO}/contents/{PATH_IN_REPO}?ref={BRANCH}"
           headers = {
               "Authorization": f"Bearer {TOKEN}",
               "Accept": "application/vnd.github.raw+json",
               "User-Agent": "your-app-or-email"
           }
-          
+
           r = requests.get(url, headers=headers)
           r.raise_for_status()
-          
+
           yaml_text = r.text
           data = yaml.safe_load(yaml_text)
-      caption: "Python (requests + pyyaml)"
-    arrows:
-      - direction: "down"
-        targetCardId: "card3"
-  - id: "card3"
-    title: "Nested Cards"
+      caption: Python (requests + pyyaml)
+
+  - id: card3
+    title: Nested Cards
     badge: "3"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: card4
     nestedcards:
       - title: Phasellus dictum
         subtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesque.
       - title: Sed commodo
       - title: Nulla eu congue massa
-    arrows:
-      - direction: "down"
-        targetCardId: "card4"
-  - id: "card4"
-    title: "Sections"
+
+  - id: card4
+    title: Sections
     badge: "4"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: card5
     sections:
       direction: col
       items:
         - title: Donec sit amet lacinia urna
           badge: 4.1
-          description: Maecenas eros ante, vehicula in justo quis, imperdiet vestibulum leo. Duis ante purus, placerat vel metus eget, bibendum malesuada libero.
+          description: Maecenas eros ante, vehicula in justo quis, imperdiet vestibulum leo.
         - title: Sed
           badge: 4.2
-          description: Fusce at est facilisis lacus sollicitudin semper. Aliquam id ultricies dolor.
-    arrows:
-      - direction: "down"
-        targetCardId: "card5"
-  - id: "card5"
-    title: "Tabs"
+          description: Fusce at est facilisis lacus sollicitudin semper.
+
+  - id: card5
+    title: Tabs
     badge: "5"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: card6
     tabs:
       - id: tab1
         label: Pellentesque mollis
         content:
-          description: Donec sit amet lacinia urna, id pretium urna. Proin sed nisi nulla. Nunc pulvinar justo at magna sollicitudin, id dignissim nunc fringilla. Vestibulum quis ante ex. Phasellus neque dolor, fermentum vel laoreet sed, condimentum ac enim. Donec non scelerisque dui. Maecenas quam erat, placerat eu odio id, viverra posuere libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit a enim ullamcorper accumsan. Pellentesque mollis, elit eu sodales posuere, tortor dolor eleifend lorem, a elementum arcu neque sit amet nisi. Integer lorem metus, tempus a turpis eu, ornare condimentum massa. Proin porttitor tincidunt vulputate. Nullam sed eros lacus.
+          description: Donec sit amet lacinia urna, id pretium urna.
       - id: tab2
         label: Fusce at est
         content:
-          description: Proin sit amet accumsan turpis. Sed accumsan neque sit amet libero volutpat dignissim et eget diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In nec dolor erat. Nullam elementum lorem nec tortor posuere consectetur. Pellentesque ac lorem et lectus ornare posuere in vitae tellus. Integer suscipit tortor in orci dapibus, rhoncus ultricies metus malesuada. Nam erat nunc, tincidunt vitae dolor nec, accumsan varius nisi. Nunc ut porta diam, at convallis enim. Suspendisse congue magna at ligula facilisis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc faucibus euismod mollis. Aliquam ut nisl pretium, tempor leo ac, fringilla sapien. Vestibulum metus orci, fermentum in egestas in, placerat ut eros. Vivamus interdum orci eu lectus eleifend, at lacinia est tincidunt. Donec ultrices, nisl a scelerisque porta, ex ipsum consectetur urna, accumsan iaculis quam ipsum ac sapien.
-    arrows:
-      - direction: "down"
-        targetCardId: "card6"
-  - id: "card6"
-    title: "Accordion"
+          description: Proin sit amet accumsan turpis.
+
+  - id: card6
+    title: Accordion
     badge: "6"
     description: ""
-    accordion:
-      - title: "Expanded"
-        content: "Donec ornare lacus id risus venenatis, eget mattis tellus efficitur. Nam ornare, risus sed rutrum laoreet, turpis urna auctor nunc, et semper metus neque eget velit."
-        defaultExpanded: true
-      - title: "Collapsed"
-        content: "Content for the second item"
-      - title: "Disabled"
-        content: "Proin sit amet accumsan turpis. Sed accumsan neque sit amet libero volutpat dignissim et eget diam."
-        disabled: true
     arrows:
-      - direction: "down"
-        targetCardId: "card7"
-  - id: "card7"
-    title: "Checkboxes"
+      - direction: down
+        targetCardId: card7
+    accordion:
+      - title: Expanded
+        content: Donec ornare lacus id risus venenatis.
+        defaultExpanded: true
+      - title: Collapsed
+        content: Content for the second item
+      - title: Disabled
+        content: Proin sit amet accumsan turpis.
+        disabled: true
+
+  - id: card7
+    title: Checkboxes
     badge: "7"
     description: ""
-    checkboxGroup:
-      title: "Nullam elementum"
-      items:
-        - label: "Nunc ut porta diam, at convallis enim"
-          state: "checked"
-        - label: "Suspendisse congue magna at ligula facilisis commodo"
-          state: "error"
-        - label: "Vestibulum metus orci"
-          state: "unchecked"
     arrows:
-      - direction: "down"
-        targetCardId: "card8"
-  - id: "card8"
-    title: "Steps"
+      - direction: down
+        targetCardId: card8
+    checkboxGroup:
+      title: Nullam elementum
+      items:
+        - label: Nunc ut porta diam
+          state: checked
+        - label: Suspendisse congue magna
+          state: error
+        - label: Vestibulum metus orci
+          state: unchecked
+
+  - id: card8
+    title: Steps
     badge: "8"
     description: ""
-    stepper:
-      direction: "vertical"
-      steps:
-        - label: "Donec ultrices"
-          description: "Nunc ut porta diam, at convallis enim"
-          state: "completed"
-        - label: "Suspendisse congue" 
-          description: "Class aptent taciti sociosqu"
-          state: "current"
-        - label: "Proin porttitor"
-          description: "Aliquam id ultricies"  
-          state: "incomplete"
-        - label: "In nec dolor"
-          description: "Nunc ut porta diam, at convallis enim"
-          state: "error"
     arrows:
-      - direction: "down"
-        targetCardId: "card9"
-  - id: "card9"
-    title: "Table"
+      - direction: down
+        targetCardId: card9
+    stepper:
+      direction: vertical
+      steps:
+        - label: Donec ultrices
+          description: Nunc ut porta diam
+          state: completed
+        - label: Suspendisse congue
+          description: Class aptent taciti sociosqu
+          state: current
+        - label: Proin porttitor
+          description: Aliquam id ultricies
+          state: incomplete
+        - label: In nec dolor
+          description: Nunc ut porta diam
+          state: error
+
+  - id: card9
+    title: Table
     badge: "9"
     description: ""
-    table:
-      headers: ["Class aptent", "Aliquam ut", "Nunc ut porta"]
-      rows:
-        - ["Pellentesque habitant morbi tristique senectus", "Nunc ut porta diam, at convallis", "Suspendisse congue magna"]
-        - ["Aliquam", "Class aptent taciti sociosqu ad litora", "Vestibulum metus orci, fermentum in egestas"]
-        - ["Vestibulum quis ante ex", "Proin sed nisi nulla", "Proin porttitor tincidunt vulputate"]
     arrows:
-      - direction: "down"
-        targetCardId: "card10"
-  - id: "card10"
-    title: "Notifications"
+      - direction: down
+        targetCardId: card10
+    table:
+      headers:
+        - Class aptent
+        - Aliquam ut
+        - Nunc ut porta
+      rows:
+        - [Pellentesque habitant, Nunc ut porta diam, Suspendisse congue magna]
+        - [Aliquam, Class aptent taciti, Vestibulum metus orci]
+        - [
+            Vestibulum quis ante ex,
+            Proin sed nisi nulla,
+            Proin porttitor tincidunt,
+          ]
+
+  - id: card10
+    title: Notifications
     badge: "10"
     description: ""
-    notifications:
-      - type: "info"
-        title: "Info"
-        message: "Aliquam id ultricies dolor. Fusce magna leo, mattis eu erat sed, tempor pharetra est"
-      - type: "success"
-        title: "Success"
-        message: "Proin sit amet accumsan turpis"
-      - type: "warning"
-        title: "Warning"
-        message: "Pellentesque ac lorem et lectus ornare posuere in vitae tellus"
-      - type: "error"
-        title: "Error"
-        message: "502"
     arrows:
-      - direction: "down"
-        targetCardId: "card11"
-  - id: "card11"
-    title: "List"
+      - direction: down
+        targetCardId: card11
+    notifications:
+      - type: info
+        title: Info
+        message: Aliquam id ultricies dolor.
+      - type: success
+        title: Success
+        message: Proin sit amet accumsan turpis
+      - type: warning
+        title: Warning
+        message: Pellentesque ac lorem
+      - type: error
+        title: Error
+        message: "502"
+
+  - id: card11
+    title: List
     badge: "11"
     description: ""
-    list:
-      type: "ordered"
-      nestedType: "alpha"
-      items:
-        - text: "Proin sed"
-        - text: "Nunc pulvinar justo"
-          nested:
-            - text: "Phasellus neque dolor, fermentum vel laoreet sed, condimentum ac enim. Donec non scelerisque dui. Maecenas quam erat, placerat eu odio id, viverra posuere libero."
-            - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut elit a enim ullamcorper accumsan. Pellentesque mollis, elit eu sodales posuere, tortor dolor eleifend lorem, a elementum arcu neque sit amet nisi."
     arrows:
-      - direction: "down"
-        targetCardId: "card12"
-  - id: "card12"
-    title: "Tags"
+      - direction: down
+        targetCardId: card12
+    list:
+      type: ordered
+      nestedType: alpha
+      items:
+        - text: Proin sed
+        - text: Nunc pulvinar justo
+          nested:
+            - text: Phasellus neque dolor
+            - text: Lorem ipsum dolor sit amet
+
+  - id: card12
+    title: Tags
     badge: "12"
     description: ""
+    arrows:
+      - direction: down
+        targetCardId: card13
     tags:
-      - label: "Sed rutrum"
+      - label: Sed rutrum
         color: "#9F1853"
-      - label: "Nunc pulvinar justo at magna sollicitudin"
+      - label: Nunc pulvinar justo
         color: "#0043CE"
       - label: "=)"
         color: "#0E6027"
-    arrows:
-      - direction: "down"
-        targetCardId: "card13"
-  - id: "card13"
-    title: "Shared Cards"
+
+  - id: card13
+    title: Shared Cards
     badge: "13"
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas enim nisi, semper non tempor id, dapibus eget lorem. Duis suscipit, purus ac rutrum condimentum, lectus dolor posuere felis, at interdum ipsum enim vel nisi. Nam varius purus et pulvinar sollicitudin. Nunc vehicula enim ut nunc porta, ac placerat nisi aliquam. Nam eget tortor vitae diam viverra lacinia. Sed dictum lacus sem. Donec accumsan vel risus id dignissim. Integer sollicitudin quis enim vitae ultricies. Donec quis erat cursus ex tempus pharetra nec a ex. Curabitur suscipit ex eu finibus accumsan. Cras volutpat mi diam, eget ullamcorper urna tempus non. Vivamus vestibulum congue odio ut aliquet."
-    sideCardRef: "shared_cards_test"
+    description: Lorem ipsum dolor sit amet.
     arrows:
-      - direction: "down"
-        targetCardId: "card14"
-  - id: "card14"
-    title: "Shared Cards"
+      - direction: down
+        targetCardId: card14
+    sideCardRef: shared_cards_test
+
+  - id: card14
+    title: Shared Cards
     badge: "14"
-    description: "Nam pellentesque, nisl nec placerat efficitur, dolor sapien eleifend elit, vel volutpat dui ipsum non lectus. Aliquam convallis elit leo, at elementum arcu vulputate in. Morbi blandit finibus convallis. Vestibulum gravida pellentesque ex vel viverra. Curabitur volutpat, ligula sit amet faucibus dapibus, urna mauris vestibulum dolor, nec blandit neque enim at velit. Sed hendrerit turpis at sapien maximus egestas. Quisque sit amet est mauris. In hac habitasse platea dictumst. Maecenas id ex scelerisque, varius nulla non, placerat nunc. Vivamus id pretium purus. Morbi metus ipsum, facilisis sit amet pretium nec, tincidunt quis urna. Duis eu pellentesque mauris. In ut mollis mauris, et lobortis ex. Vestibulum viverra, magna ac dictum tempus, sem augue rhoncus metus, in blandit nibh quam quis metus. Pellentesque eleifend dui non purus pharetra gravida."
-    sideCardRef: "shared_cards_test"
+    description: Nam pellentesque, nisl nec placerat efficitur.
     arrows:
-      - direction: "down"
-        targetCardId: "card15"
-  - id: "card15"
-    title: "Shared Cards"
+      - direction: down
+        targetCardId: card15
+    sideCardRef: shared_cards_test
+
+  - id: card15
+    title: Shared Cards
     badge: "15"
-    sideCardRef: "shared_cards_test"
-    description: "Sed id velit dui. Maecenas orci est, porta ac orci sed, imperdiet ullamcorper odio. Phasellus volutpat, augue sit amet vestibulum facilisis, lacus nulla hendrerit arcu, vitae hendrerit mi urna eget justo. Etiam dignissim venenatis massa, ut tempus magna. Mauris id molestie lacus, ut efficitur metus. Pellentesque non pellentesque nisi. Donec non felis gravida, cursus mi nec, vehicula ligula. Pellentesque dolor lectus, lacinia nec interdum sit amet, posuere a neque."
-    arrows:
+    description: Sed id velit dui.
+    arrows: []
+    sideCardRef: shared_cards_test

@@ -79,7 +79,9 @@ sharedSideCards:
 | `badge`          | `string` | **Yes**  | **Step number to display on card (e.g., "1", "2.1")** |
 | `description`    | `string` | **Yes**  | **Detailed description of the step**                  |
 | `arrows`         | `array`  | **Yes**  | **Navigation arrows to other cards**                  |
+| `accordion`      | `array`  | No       | Expandable/collapsible accordion sections             |
 | `button`         | `object` | No       | Button with label and URL                             |
+| `checkboxGroup`  | `object` | No       | Group of checkboxes with various states               |
 | `codeSnippet`    | `object` | No       | Display snippet of code in a card                     |
 | `icon`           | `string` | No       | Icon (24px, for side cards)                           |
 | `list`           | `object` | No       | List component (ordered or unordered)                 |
@@ -87,6 +89,8 @@ sharedSideCards:
 | `sections`       | `object` | No       | Highlight sections within a card                      |
 | `sideCardRef`    | `string` | No       | Reference to shared side cards group                  |
 | `sideCardSpanEnd`| `string` | No       | ID where shared cards span ends (auto-calculated)     |
+| `stepper`        | `object` | No       | Step-by-step progress indicator                       |
+| `table`          | `object` | No       | Display data in table format with headers and rows    |
 | `tabs`           | `array`  | No       | Show multiple tabs of content                         |
 | `tags`           | `array`  | No       | Tags with label and optional color                    |
 
@@ -101,14 +105,19 @@ cards:
     badge: "1"
     description: "Card description"
     arrows: [...]
+    accordion: [...] # Optional
     button: {...} # Optional
+    checkboxGroup: {...} # Optional
     codeSnippet: {...} # Optional
     icon: "wallet" # Optional
     list: {...} # Optional
     nestedcards: [...] # Optional
+    notifications: [...] # Optional
     sections: {...} # Optional
     sideCardRef: "groupName" # Optional
     sideCardSpanEnd: "card3" # Optional
+    stepper: {...} # Optional
+    table: {...} # Optional
     tabs: [...] # Optional
     tags: [...] # Optional
 ```
@@ -395,9 +404,20 @@ cards:
       - direction: up | down | right | left
         targetCardId: cardx
         rowIndex: 0 # Optional
+    accordion:
+      - title: Accordion Item
+        content: Accordion content
+        defaultExpanded: true
     button:
       label: View Documentation
       url: https://example.com/docs
+    checkboxGroup:
+      title: Checkbox Group Title
+      items:
+        - label: Checkbox 1
+          state: checked
+        - label: Checkbox 2
+          state: unchecked
     codeSnippet: 
       code: <custom code>
       caption: Code Snippet Caption
@@ -414,6 +434,10 @@ cards:
       - title: Nested Card Title
         subtext: Nested card description
       - title: Another Nested Card
+    notifications:
+      - type: info
+        title: Info
+        message: Information message
     sections:
       direction: col
       items:
@@ -426,9 +450,6 @@ cards:
             label: Learn More
             url: https://example.com
           icon: wallet
-          tags:
-            - label: Tag 1
-              color: "#FF5733"
           list:
             type: ordered
             items:
@@ -437,8 +458,24 @@ cards:
             - label: Tab 1
               content:
                 text: Tab content
+          tags:
+            - label: Tag 1
+              color: "#FF5733"
     sideCardRef: groupName
     sideCardSpanEnd: card3
+    stepper:
+      direction: vertical
+      steps:
+        - label: Step 1
+          description: Step description
+          state: completed
+    table:
+      headers:
+        - Header 1
+        - Header 2
+      rows:
+        - [Row 1 Col 1, Row 1 Col 2]
+        - [Row 2 Col 1, Row 2 Col 2]
     tabs:
       - label: Tab 1
         content:

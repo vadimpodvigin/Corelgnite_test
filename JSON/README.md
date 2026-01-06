@@ -79,14 +79,19 @@ Shared side cards allow you to define reusable side card groups that can be refe
 | `badge`          | `string` | **Yes**  | **Step number to display on card (e.g., "1", "2.1")** |
 | `description`    | `string` | **Yes**  | **Detailed description of the step**                  |
 | `arrows`         | `array`  | **Yes**  | **Navigation arrows to other cards**                  |
+| `accordion`      | `array`  | No       | Expandable/collapsible accordion sections             |
 | `button`         | `object` | No       | Button with label and URL                             |
+| `checkboxGroup`  | `object` | No       | Group of checkboxes with various states               |
 | `codeSnippet`    | `object` | No       | Display snippet of code in a card                     |
 | `icon`           | `string` | No       | Icon (24px, for side cards)                           |
 | `list`           | `object` | No       | List component (ordered or unordered)                 |
 | `nestedcards`    | `array`  | No       | Display nested cards within the card                  |
+| `notifications`  | `array`  | No       | Display notification messages with types              |
 | `sections`       | `object` | No       | Highlight sections within a card                      |
 | `sideCardRef`    | `string` | No       | Reference to shared side cards group                  |
 | `sideCardSpanEnd`| `string` | No       | ID where shared cards span ends (auto-calculated)     |
+| `stepper`        | `object` | No       | Step-by-step progress indicator                       |
+| `table`          | `object` | No       | Display data in table format with headers and rows    |
 | `tabs`           | `array`  | No       | Show multiple tabs of content                         |
 | `tags`           | `array`  | No       | Tags with label and optional color                    |
 
@@ -102,14 +107,19 @@ Each card in the `cards` array follows this structure:
         "badge": "1",
         "description": "Card description",
         "arrows": [...],
+        "accordion": [...], // Optional
         "button": {...}, // Optional
+        "checkboxGroup": {...}, // Optional
         "codeSnippet": {...}, // Optional
         "icon": "wallet", // Optional
         "list": {...}, // Optional
         "nestedcards": [...], // Optional
+        "notifications": [...], // Optional
         "sections": {...}, // Optional
         "sideCardRef": "groupName", // Optional
         "sideCardSpanEnd": "card3", // Optional
+        "stepper": {...}, // Optional
+        "table": {...}, // Optional
         "tabs": [...], // Optional
         "tags": [...] // Optional
     }
@@ -467,9 +477,29 @@ Since this property is optional, if a card does not require tags make sure to om
                 "targetCardId": "card3"
             }
         ],
+        "accordion": [
+            {
+                "title": "Accordion Item",
+                "content": "Accordion content",
+                "defaultExpanded": true
+            }
+        ],
         "button": {
             "label": "View Documentation",
             "url": "https://example.com/docs"
+        },
+        "checkboxGroup": {
+            "title": "Checkbox Group Title",
+            "items": [
+                {
+                    "label": "Checkbox 1",
+                    "state": "checked"
+                },
+                {
+                    "label": "Checkbox 2",
+                    "state": "unchecked"
+                }
+            ]
         },
         "codeSnippet": {
             "code": "code snippet",
@@ -502,6 +532,13 @@ Since this property is optional, if a card does not require tags make sure to om
                 "title": "Another Nested Card"
             }
         ],
+        "notifications": [
+            {
+                "type": "info",
+                "title": "Info",
+                "message": "Information message"
+            }
+        ],
         "sections": {
             "direction": "col",
             "items": [
@@ -518,12 +555,6 @@ Since this property is optional, if a card does not require tags make sure to om
                         "url": "https://example.com"
                     },
                     "icon": "wallet",
-                    "tags": [
-                        {
-                            "label": "Tag 1",
-                            "color": "#FF5733"
-                        }
-                    ],
                     "list": {
                         "type": "ordered",
                         "items": [
@@ -531,12 +562,35 @@ Since this property is optional, if a card does not require tags make sure to om
                                 "text": "Item 1"
                             }
                         ]
-                    }
+                    },
+                    "tags": [
+                        {
+                            "label": "Tag 1",
+                            "color": "#FF5733"
+                        }
+                    ]
                 }
             ]
         },
         "sideCardRef": "groupName",
         "sideCardSpanEnd": "card3",
+        "stepper": {
+            "direction": "vertical",
+            "steps": [
+                {
+                    "label": "Step 1",
+                    "description": "Step description",
+                    "state": "completed"
+                }
+            ]
+        },
+        "table": {
+            "headers": ["Header 1", "Header 2"],
+            "rows": [
+                ["Row 1 Col 1", "Row 1 Col 2"],
+                ["Row 2 Col 1", "Row 2 Col 2"]
+            ]
+        },
         "tabs": [
             {
                 "label": "Tab 1",
