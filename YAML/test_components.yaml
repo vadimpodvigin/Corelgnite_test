@@ -88,7 +88,7 @@ cards:
   - id: card4
     title: Sections
     badge: "4"
-    description: "Sections are sub-sections within a card. This component takes 3 properties: direction anditems. Direction determines if layout is column or row. Items takes an array of section objects, which can contain title and badge, and optionally description, button, codeSnippet, icon, list, nestedcards, sections, tabs, and tags."
+    description: "Sections are sub-sections within a card. This component takes 2 properties: direction and items. Direction determines if layout is column or row. Items takes an array of section objects, which can contain title and badge, and optionally description, button, codeSnippet, icon, list, nestedcards, sections, tabs, and tags."
     arrows:
       - direction: down
         targetCardId: card5
