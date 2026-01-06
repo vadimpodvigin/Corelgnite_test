@@ -153,6 +153,38 @@ If on the last card, Arrows array can be left empty, but must be listed since it
 "arrows": []
 ```
 
+### Accordion (Optional)
+
+Accordion allows you to create expandable/collapsible sections within a card.
+
+Since this property is optional, if a card does not require an accordion make sure to omit it entirely from a card object.
+
+**_Accordion Item Properties_**
+
+- `title` (string, required): Accordion item title
+- `content` (string, required): Content to display when expanded
+- `defaultExpanded` (boolean, optional): Whether the item is expanded by default
+- `disabled` (boolean, optional): Whether the item is disabled
+
+```
+"accordion": [
+    {
+        "title": "Expanded",
+        "content": "Donec ornare lacus id risus venenatis.",
+        "defaultExpanded": true
+    },
+    {
+        "title": "Collapsed",
+        "content": "Content for the second item"
+    },
+    {
+        "title": "Disabled",
+        "content": "Proin sit amet accumsan turpis.",
+        "disabled": true
+    }
+]
+```
+
 ### Button (Optional)
 
 Button allows you to add a clickable button to a card that links to an external URL.
@@ -164,11 +196,48 @@ Since this property is optional, if a card does not require a button make sure t
 - `label` (string, required): Text to display on the button
 - `url` (string, required): URL to navigate to when button is clicked
 - `type` (string, required): Style variations of button
+
 ```
 "button": {
     "label": "View Documentation",
-    "url": "https://example.com/docs"
-    "type": "primary" | "tertiary"
+    "url": "https://example.com/docs",
+    "type": "primary"
+}
+```
+
+### CheckboxGroup (Optional)
+
+CheckboxGroup allows you to display a group of checkboxes with various states within a card.
+
+Since this property is optional, if a card does not require a checkbox group make sure to omit it entirely from a card object.
+
+**_CheckboxGroup Properties_**
+
+- `title` (string, required): Title for the checkbox group
+- `items` (array, required): Array of checkbox items
+
+**_Checkbox Item Properties_**
+
+- `label` (string, required): Checkbox label text
+- `state` (string, required): State of the checkbox: `"checked"`, `"unchecked"`, or `"error"`
+
+```
+"checkboxGroup": {
+    "title": "Nullam elementum",
+    "items": [
+        {
+            "label": "Nunc ut porta diam",
+            "state": "checked"
+        },
+        {
+            "label": "Suspendisse congue magna",
+            "state": "error"
+        },
+        {
+            "label": "Vestibulum metus orci",
+            "state": "unchecked"
+        }
+    ]
 }
 ```
 
@@ -180,14 +249,17 @@ Since this property is optional, if a card does not require a code snippet make 
 
 **_Code Snippet Properties_**
 
-- `language` (string, required) Code language
-- `snippet` (string, required): Code content
+- `code` (object, required): Code object containing language and snippet
+  - `language` (string, required): Code language
+  - `snippet` (string, required): Code content
 - `caption` (string, optional): Brief text underneath code to provide any comments/explanations
 
 ```
 "codeSnippet": {
-    "language": "<language name>"
-    "snippet": "<custom code>",
+    "code": {
+        "language": "python",
+        "snippet": "import os\nprint(\"Hello World\")"
+    },
     "caption": "Code snippet caption"
 }
 ```
@@ -263,9 +335,43 @@ Since this property is optional, if a card does not require nested cards, make s
     },
     {
         "title": "Another Nested Card"
+    }
+]
+```
+
+### Notifications (Optional)
+
+Notifications allow you to display notification messages with different types (info, success, warning, error) within a card.
+
+Since this property is optional, if a card does not require notifications make sure to omit it entirely from a card object.
+
+**_Notification Item Properties_**
+
+- `type` (string, required): Type of notification: `"info"`, `"success"`, `"warning"`, or `"error"`
+- `title` (string, required): Notification title
+- `message` (string, required): Notification message
+
+```
+"notifications": [
+    {
+        "type": "info",
+        "title": "Info",
+        "message": "Aliquam id ultricies dolor."
     },
     {
-        "title": "Another Nested Card"
+        "type": "success",
+        "title": "Success",
+        "message": "Proin sit amet accumsan turpis"
+    },
+    {
+        "type": "warning",
+        "title": "Warning",
+        "message": "Pellentesque ac lorem"
+    },
+    {
+        "type": "error",
+        "title": "Error",
+        "message": "502"
     }
 ]
 ```
@@ -344,6 +450,73 @@ Side card reference allows a card to reference a shared side card group defined 
 "sideCardSpanEnd": "card3"
 ```
 
+### Stepper (Optional)
+
+Stepper allows you to display a step-by-step progress indicator within a card.
+
+Since this property is optional, if a card does not require a stepper make sure to omit it entirely from a card object.
+
+**_Stepper Properties_**
+
+- `direction` (string, required): Direction of the stepper: `"vertical"` or `"horizontal"`
+- `steps` (array, required): Array of step objects
+
+**_Step Item Properties_**
+
+- `label` (string, required): Step label
+- `description` (string, required): Step description
+- `state` (string, required): State of the step: `"completed"`, `"current"`, `"incomplete"`, or `"error"`
+
+```
+"stepper": {
+    "direction": "vertical",
+    "steps": [
+        {
+            "label": "Donec ultrices",
+            "description": "Nunc ut porta diam",
+            "state": "completed"
+        },
+        {
+            "label": "Suspendisse congue",
+            "description": "Class aptent taciti sociosqu",
+            "state": "current"
+        },
+        {
+            "label": "Proin porttitor",
+            "description": "Aliquam id ultricies",
+            "state": "incomplete"
+        },
+        {
+            "label": "In nec dolor",
+            "description": "Nunc ut porta diam",
+            "state": "error"
+        }
+    ]
+}
+```
+
+### Table (Optional)
+
+Table allows you to display data in a table format with headers and rows within a card.
+
+Since this property is optional, if a card does not require a table make sure to omit it entirely from a card object.
+
+**_Table Properties_**
+
+- `headers` (array, required): Array of header strings
+- `rows` (array, required): Array of row arrays, where each row contains cell values
+
+```
+"table": {
+    "headers": ["Class aptent", "Aliquam ut", "Nunc ut porta"],
+    "rows": [
+        ["Pellentesque habitant", "Nunc ut porta diam", "Suspendisse congue magna"],
+        ["Aliquam", "Class aptent taciti", "Vestibulum metus orci"],
+        ["Vestibulum quis ante ex", "Proin sed nisi nulla", "Proin porttitor tincidunt"]
+    ]
+}
+```
+
 ### Tabs (Optional)
 
 Tabs allows you to show multiple tabs of content within a card. A viewer will be able to toggle between the different tabs. Make sure to format your tabs in the order you would like them to be displayed.
@@ -352,6 +525,7 @@ Since this property is optional, if a card does not require tabs make sure to om
 
 **_Tab Item Properties_**
 
+- `id` (string, required) Unique Identifier
 - `label` (string, required): Tab label/name
 - `content` (object, required): Content object containing tab content
 
@@ -370,17 +544,20 @@ Since this property is optional, if a card does not require tabs make sure to om
 ```
 "tabs": [
     {
+        "id": "tab1",
         "label": "Tab 1",
         "content": {
             "text": "Tab 1 content text"
         }
     },
     {
+        "id": "tab2"
         "label": "Tab 2",
         "content": {
-            "type": "code",
-            "code": "console.log('Hello');",
-            "caption": "Optional caption"
+            "codeSnippet":
+                "language": "<language name>"
+                "snippet": "<custom code>"
+                "caption": "Code snippet caption"
         }
     }
 ]

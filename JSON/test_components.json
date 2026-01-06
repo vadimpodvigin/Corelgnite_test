@@ -129,7 +129,7 @@
       "id": "card5",
       "title": "Tabs",
       "badge": "5",
-      "description": "",
+      "description": "Tabs allows you to show multiple tabs of content within a card. A viewer will be able to toggle between the different tabs. This component takes 3 properties: id, label, and content. Content can contain text, codeSnippet, button, icon, list, nestedcards, sections, tabs, and tags.",
       "arrows": [
         {
           "direction": "down",
