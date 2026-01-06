@@ -163,11 +163,12 @@ Since this property is optional, if a card does not require a button make sure t
 
 - `label` (string, required): Text to display on the button
 - `url` (string, required): URL to navigate to when button is clicked
-
+- `type` (string, required): Style variations of button
 ```
 "button": {
     "label": "View Documentation",
     "url": "https://example.com/docs"
+    "type": "primary" | "tertiary"
 }
 ```
 
@@ -179,12 +180,14 @@ Since this property is optional, if a card does not require a code snippet make 
 
 **_Code Snippet Properties_**
 
-- `code` (string, required): Code content
+- `language` (string, required) Code language
+- `snippet` (string, required): Code content
 - `caption` (string, optional): Brief text underneath code to provide any comments/explanations
 
 ```
 "codeSnippet": {
-    "code": "<custom code>",
+    "language": "<language name>"
+    "snippet": "<custom code>",
     "caption": "Code snippet caption"
 }
 ```

@@ -1,7 +1,7 @@
 workflow:
   title: Example Cards & Components
   description: Here you can find all the components you can use
-  category: How it works? Create your own workflow
+  category: How does it works? Create your own workflow
   icon: test-tool
 
 sharedSideCards:
@@ -25,7 +25,7 @@ cards:
   - id: card1
     title: Button
     badge: "1"
-    description: ""
+    description: Button allows you to add a clickable button to a card that links to an URL. This component takes 3 properties: label, url, and type.
     arrows:
       - direction: down
         targetCardId: card2
@@ -40,7 +40,7 @@ cards:
   - id: card2
     title: Code Snippet
     badge: "2"
-    description: ""
+    description: Code Snippet allows you to display some simple code in its own section with content displayed in a monospaced block. This component takes 3 properties: language, snippet, and caption.
     arrows:
       - direction: down
         targetCardId: card3
@@ -75,7 +75,7 @@ cards:
   - id: card3
     title: Nested Cards
     badge: "3"
-    description: ""
+    description: Nested Cards allows you to display nested cards within a card. This component takes 2 properties: title and subtext(optional).
     arrows:
       - direction: down
         targetCardId: card4
@@ -88,7 +88,7 @@ cards:
   - id: card4
     title: Sections
     badge: "4"
-    description: ""
+    description: Sections are sub-sections within a card. This component takes 3 properties: direction anditems. Direction determines if layout is column or row. Items takes an array of section objects, which can contain title and badge, and optionally description, button, codeSnippet, icon, list, nestedcards, sections, tabs, and tags.
     arrows:
       - direction: down
         targetCardId: card5
