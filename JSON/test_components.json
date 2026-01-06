@@ -1,8 +1,8 @@
 {
   "workflow": {
-    "title": "Test Components",
+    "title": "Example Cards & Components",
     "description": "Here you can find all the components you can use",
-    "category": "test_components",
+    "category": "How it works? Create your own workflow",
     "icon": "test-tool"
   },
   "sharedSideCards": {
