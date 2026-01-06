@@ -3,6 +3,7 @@ workflow:
   title: Initiate New Bank Space
   description: This workflow guides a user through the process of initiating a new bank space. This includes creating an admin account and setting up the bank space.
   icon: finance
+
 cards:
   - id: "1"
     title: Initiate New Bank Space

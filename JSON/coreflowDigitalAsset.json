@@ -156,6 +156,7 @@
       "title": "Shadow Ledger",
       "badge": "6.1",
       "description": "",
+      "arrows": [],
       "nestedcards": [
         {
           "title": "Assets",
@@ -169,14 +170,14 @@
           "title": "Net Position: Balanced",
           "subtext": "Invariant: Reserve USD = Token USDX"
         }
-      ],
-      "arrows": []
+      ]
     },
     {
       "id": "card71",
       "title": "Financial Institution (Wealth management) (Bank's App)",
       "badge": "7.1",
       "description": "",
+      "arrows": [],
       "nestedcards": [
         {
           "title": "OMS"
@@ -187,8 +188,7 @@
         {
           "title": "Ledger"
         }
-      ],
-      "arrows": []
+      ]
     }
   ]
 }

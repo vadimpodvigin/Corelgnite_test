@@ -3,6 +3,7 @@ workflow:
   title: Stripe Payment Processing
   description: This workflow walks through how CoreIgnite handles Stripe payments.
   icon: money
+
 cards:
   - id: card1
     title: Stripe Request

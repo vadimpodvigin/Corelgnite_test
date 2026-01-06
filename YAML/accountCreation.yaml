@@ -3,6 +3,7 @@ workflow:
   title: User Account Creation
   description: This workflow guides a new user through the account creation process.
   icon: user-profile
+
 cards:
   - id: card1
     title: Open Invitation Link

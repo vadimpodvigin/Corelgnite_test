@@ -1,137 +1,137 @@
 workflow:
-  title: "CoreFlow (Mint Digital Asset)"
-  description: "Nunc at convallis dui. Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis."
-  category: "CoreFlow"
-  icon: "money"
+  title: CoreFlow (Mint Digital Asset)
+  description: Nunc at convallis dui. Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
+  category: CoreFlow
+  icon: money
 
 sharedSideCards:
   coreBankGroup:
-    - id: "card31"
-      title: "Core Bank Plugin (Hogan)"
+    - id: card31
+      title: Core Bank Plugin (Hogan)
       badge: ""
-      description: "Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
-      icon: "settings"
+      description: Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin.
       arrows:
-        - direction: "down"
-          targetCardId: "card32"
-    - id: "card32"
+        - direction: down
+          targetCardId: card32
+      icon: settings
+    - id: card32
       title: "CORE: DDA"
       badge: ""
       description: ""
-      icon: "database"
       arrows: []
+      icon: database
 
 cards:
-  - id: "card1"
+  - id: card1
     title: "Validate Order | Request"
     badge: "1"
-    description: "Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis."
+    description: Suspendisse consectetur accumsan turpis et venenatis. Duis imperdiet ante ut felis condimentum ultrices. Vivamus auctor viverra ultrices. Vestibulum ac justo eget sapien tincidunt consequat. Proin tempor sem in purus faucibus facilisis.
     arrows:
-      - direction: "down"
-        targetCardId: "card2"
+      - direction: down
+        targetCardId: card2
 
-  - id: "card2"
-    title: "Funding Source"
+  - id: card2
+    title: Funding Source
     badge: "2"
-    description: "Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin."
-    sideCardRef: "coreBankGroup"
+    description: Vivamus arcu nunc, luctus ut lacinia ut, venenatis vitae massa. Cras lacus tellus, iaculis nec interdum accumsan, suscipit scelerisque nisl. Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero. Sed feugiat suscipit enim ut sollicitudin.
     arrows:
-      - direction: "right"
-        targetCardId: "card21"
-      - direction: "down"
-        targetCardId: "card3"
+      - direction: right
+        targetCardId: card21
+      - direction: down
+        targetCardId: card3
+    sideCardRef: coreBankGroup
 
-  - id: "card21"
-    title: "OMS Funds"
+  - id: card21
+    title: OMS Funds
     badge: ""
     description: ""
-    icon: "wallet"
     arrows:
-      - direction: "down"
-        targetCardId: "card31"
+      - direction: down
+        targetCardId: card31
+    icon: wallet
 
-  - id: "card3"
-    title: "Validate & Reserve Funds"
+  - id: card3
+    title: Validate & Reserve Funds
     badge: "3"
-    description: "Fusce euis oci nunc. Aenean dui libero, pharetra nec rutrum vitae, rutrum eu felis. In dictum posuere nisl eu consectetur. Sed cursus condimentum ante, eget tempor nisl blandit quis. Ut pretium risus et nibero ultrices, a congue felis aliquet. Donec nec aliquet dolor, non volutpat odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem euis, malesuada nulla."
-    sideCardRef: "coreBankGroup"
+    description: Fusce euis oci nunc. Aenean dui libero, pharetra nec rutrum vitae, rutrum eu felis. In dictum posuere nisl eu consectetur. Sed cursus condimentum ante, eget tempor nisl blandit quis. Ut pretium risus et nibero ultrices, a congue felis aliquet. Donec nec aliquet dolor, non volutpat odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem euis, malesuada nulla.
     arrows:
-      - direction: "down"
-        targetCardId: "card4"
+      - direction: down
+        targetCardId: card4
+    sideCardRef: coreBankGroup
 
-  - id: "card4"
-    title: "Transfer to Custody Reserve"
+  - id: card4
+    title: Transfer to Custody Reserve
     badge: "4"
-    description: "Fusce porttitor auctor vulputate. Donec lacus augue, condimentum id placerat et, cursus id diam."
+    description: Fusce porttitor auctor vulputate. Donec lacus augue, condimentum id placerat et, cursus id diam.
     arrows:
-      - direction: "down"
-        targetCardId: "card5"
+      - direction: down
+        targetCardId: card5
 
-  - id: "card5"
-    title: "Mint Digital Asset"
+  - id: card5
+    title: Mint Digital Asset
     badge: "5"
-    description: "Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, et volutpat enim pulvinar molestie. Nullam eae neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus."
+    description: Vestibulum non elit eget odio bibendum maximus. Donec volutpat nulla ante, et volutpat enim pulvinar molestie. Nullam eae neque vitae dui pretium lacinia. Aliquam euismod eros ut massa mattis bibendum. In nec pulvinar tellus.
     arrows:
-      - direction: "right"
-        targetCardId: "card51"
-      - direction: "down"
-        targetCardId: "card6"
+      - direction: right
+        targetCardId: card51
+      - direction: down
+        targetCardId: card6
 
-  - id: "card51"
+  - id: card51
     title: "Digital Asset Plugin (example: Ripple)"
     badge: ""
-    description: "Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero."
-    icon: "application-mobile"
+    description: Pellentesque sit amet nunc sodales, condimentum metus ac, porttitor libero.
     arrows:
-      - direction: "right"
-        targetCardId: "card52"
+      - direction: right
+        targetCardId: card52
+    icon: application-mobile
 
-  - id: "card52"
-    title: "Mint"
+  - id: card52
+    title: Mint
     badge: ""
     description: ""
-    icon: "fragments"
     arrows: []
+    icon: fragments
 
-  - id: "card6"
-    title: "Reconcile & Record"
+  - id: card6
+    title: Reconcile & Record
     badge: "6"
-    description: "Donec nec aliquet dolor, non sodales odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem euis, malesuada nulla."
+    description: Donec nec aliquet dolor, non sodales odio. Proin et diam mattis enim rutrum mattis vitae eu libero. Donec quis erat dignissim, semper sem euis, malesuada nulla.
     arrows:
-      - direction: "right"
-        targetCardId: "card61"
-      - direction: "down"
-        targetCardId: "card7"
+      - direction: right
+        targetCardId: card61
+      - direction: down
+        targetCardId: card7
 
-  - id: "card61"
-    title: "Shadow Ledger"
+  - id: card61
+    title: Shadow Ledger
     badge: ""
     description: ""
-    icon: "book"
+    arrows: []
+    icon: book
     nestedcards:
-      - title: "Assets"
+      - title: Assets
         subtext: "Reserve (USD) $1,0000"
-      - title: "Liabilities"
+      - title: Liabilities
         subtext: "Token Liabilities (USDt) $1,000 USDt"
       - title: "Net Position: Balanced"
         subtext: "Invariant: Reserve Usd = Token USDt"
-    arrows: []
 
-  - id: "card7"
-    title: "Notify Completion"
+  - id: card7
+    title: Notify Completion
     badge: "7"
-    description: "Mauris laoreet ligula sem, vel faucibus ipsum mollis esit. Duis nisl massa, malesuada at lectus at, ullamcorper."
+    description: Mauris laoreet ligula sem, vel faucibus ipsum mollis esit. Duis nisl massa, malesuada at lectus at, ullamcorper.
     arrows:
-      - direction: "right"
-        targetCardId: "card71"
+      - direction: right
+        targetCardId: card71
 
-  - id: "card71"
+  - id: card71
     title: "Financial Institution (Wealth management) (Bank's App)"
     badge: ""
     description: ""
-    icon: "piggy-bank"
-    nestedcards:
-      - title: "OMS"
-      - title: "REST API"
-      - title: "Ledger"
     arrows: []
+    icon: piggy-bank
+    nestedcards:
+      - title: OMS
+      - title: REST API
+      - title: Ledger

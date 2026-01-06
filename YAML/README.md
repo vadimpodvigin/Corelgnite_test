@@ -86,6 +86,7 @@ sharedSideCards:
 | `icon`           | `string` | No       | Icon (24px, for side cards)                           |
 | `list`           | `object` | No       | List component (ordered or unordered)                 |
 | `nestedcards`    | `array`  | No       | Display nested cards within a card                    |
+| `notifications`  | `array`  | No       | Display notification messages with types              |
 | `sections`       | `object` | No       | Highlight sections within a card                      |
 | `sideCardRef`    | `string` | No       | Reference to shared side cards group                  |
 | `sideCardSpanEnd`| `string` | No       | ID where shared cards span ends (auto-calculated)     |
