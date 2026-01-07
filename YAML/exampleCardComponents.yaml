@@ -156,38 +156,38 @@ cards:
   - id: card8
     title: Steps
     badge: "8"
-    description: ""
+    description: "Stepper allows you to display a step-by-step progress indicator within a card. This component takes 2 properties: direction and steps. Direction determines if the stepper is vertical or horizontal. Steps takes an array of step objects, which can contain label, description, and state. State determines if the step is completed, current, incomplete, or in error. Label is the text of the step. Description is the description of the step."
     arrows:
       - direction: down
         targetCardId: card9
     stepper:
       direction: vertical
       steps:
-        - label: Donec ultrices
-          description: Nunc ut porta diam
+        - label: Step 1
+          description: Step 1 is in completed state.
           state: completed
-        - label: Suspendisse congue
-          description: Class aptent taciti sociosqu
+        - label: Step 2
+          description: Step 2 is in current state.
           state: current
-        - label: Proin porttitor
-          description: Aliquam id ultricies
+        - label: Step 3
+          description: Step 3 is in incomplete state.
           state: incomplete
-        - label: In nec dolor
-          description: Nunc ut porta diam
+        - label: Step 4
+          description: Step 4 is in error state.
           state: error
 
   - id: card9
     title: Table
     badge: "9"
-    description: ""
+    description: "Table allows you to display data in a table format with headers and rows within a card. This component takes 2 properties: headers and rows. Headers takes an array of header strings. Rows takes an array of row arrays, where each row contains cell values."
     arrows:
       - direction: down
         targetCardId: card10
     table:
       headers:
-        - Class aptent
-        - Aliquam ut
-        - Nunc ut porta
+        - Header 1
+        - Header 2
+        - Header 3
       rows:
         - [Pellentesque habitant, Nunc ut porta diam, Suspendisse congue magna]
         - [Aliquam, Class aptent taciti, Vestibulum metus orci]
