@@ -157,7 +157,7 @@
       "id": "card6",
       "title": "Accordion",
       "badge": "6",
-      "description": "",
+      "description": "Accordion allows you to create expandable/collapsible sections within a card. This component takes 4 properties: title, content, defaultExpanded (optional), and disabled (optional). DefaultExpanded determines if the accordion is expanded by default. Disabled determines if the accordion item is disabled. Content can contain text, codeSnippet, button, icon, list, nestedcards, sections, tabs, and tags.",
       "arrows": [
         {
           "direction": "down",
@@ -167,16 +167,16 @@
       "accordion": [
         {
           "title": "Expanded",
-          "content": "Donec ornare lacus id risus venenatis.",
+          "content": "This accordian item is set to defaultExpanded as true.",
           "defaultExpanded": true
         },
         {
           "title": "Collapsed",
-          "content": "Content for the second item"
+          "content": "This accordian item has not set defaultExpanded to any value, so it is collapsed by default."
         },
         {
           "title": "Disabled",
-          "content": "Proin sit amet accumsan turpis.",
+          "content": "This accordian item is set to disabled as true.",
           "disabled": true
         }
       ]
@@ -185,7 +185,7 @@
       "id": "card7",
       "title": "Checkboxes",
       "badge": "7",
-      "description": "",
+      "description": "CheckboxGroup allows you to display a group of checkboxes with various states within a card. This component takes 2 properties: title and items. Title is the title of the checkbox group. Items takes an array of checkbox objects, which can contain label and state. State determines if the checkbox is checked, unchecked, or in error. Label is the text of the checkbox.",
       "arrows": [
         {
           "direction": "down",
@@ -193,18 +193,18 @@
         }
       ],
       "checkboxGroup": {
-        "title": "Nullam elementum",
+        "title": "Checkbox Group Title",
         "items": [
           {
-            "label": "Nunc ut porta diam",
+            "label": "Checked State Example",
             "state": "checked"
           },
           {
-            "label": "Suspendisse congue magna",
+            "label": "Error State Example",
             "state": "error"
           },
           {
-            "label": "Vestibulum metus orci",
+            "label": "Unchecked State Example",
             "state": "unchecked"
           }
         ]
