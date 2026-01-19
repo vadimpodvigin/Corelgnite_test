@@ -284,22 +284,22 @@ cards:
       type: ordered
       nestedType: alpha
       items:
-        - text: Proin sed
-        - text: Nunc pulvinar justo
+        - text: Proin sedwer
+        - text: Nunc pulvinar justoer
           nested:
-            - text: Phasellus neque dolor
-            - text: Lorem ipsum dolor sit amet
+            - text: Phasellus neque dolorawfew
+            - text: Lorem ipsum dolor sit ametaewf
     nestedcards:
       - title: Phasellus dictum
-        subtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesque.
-      - title: Sed commodo
-      - title: Nulla eu congue massa
+        subtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesqueaefaw.
+      - title: Sed commodoaef
+      - title: Nulla eu congue massaawef
     list:
       type: ordered
       nestedType: alpha
       items:
-        - text: Proin sed
-        - text: Nunc pulvinar justo
+        - text: Proin sedwafew
+        - text: Nunc pulvinar justowefew
           nested:
-            - text: Phasellus neque dolor
-            - text: Lorem ipsum dolor sit amet
+            - text: Phasellus neque dolorsdfsdf
+            - text: Lorem ipsum dolor sit ametsf
