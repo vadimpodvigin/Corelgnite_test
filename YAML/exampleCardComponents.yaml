@@ -277,7 +277,7 @@ cards:
 
   - id: card16
     title: Let us check fonts adaptivity
-    badge: "~"
+    badge: "16"
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis tincidunt magna. Ut in consequat quam. Mauris interdum elit enim, quis scelerisque nibh tempus id. Praesent eros risus, sagittis et feugiat semper, dapibus ac dui. Suspendisse pretium metus eros, in pharetra est maximus a. Vivamus gravida volutpat urna sit amet venenatis. Sed cursus enim velit, eleifend fringilla ex congue eget. Fusce pulvinar tellus posuere nunc dapibus sodales."
     arrows:
       - direction: down
