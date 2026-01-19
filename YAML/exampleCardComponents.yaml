@@ -291,3 +291,17 @@ cards:
           nested:
             - text: Phasellus neque dolor
             - text: Lorem ipsum dolor sit amet
+    nestedcards:
+      - title: Phasellus dictum
+        subtext: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum purus ut sollicitudin laoreet. Maecenas euismod rhoncus pellentesque.
+      - title: Sed commodo
+      - title: Nulla eu congue massa
+    list:
+      type: ordered
+      nestedType: alpha
+      items:
+        - text: Proin sed
+        - text: Nunc pulvinar justo
+          nested:
+            - text: Phasellus neque dolor
+            - text: Lorem ipsum dolor sit amet
