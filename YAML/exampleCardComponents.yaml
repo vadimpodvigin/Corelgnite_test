@@ -272,7 +272,9 @@ cards:
     title: Shared Cards
     badge: "15"
     description: Sed id velit dui.
-    arrows: []
+    arrows:
+      - direction: down
+        targetCardId: card16
     sideCardRef: shared_cards_test
 
   - id: card16
