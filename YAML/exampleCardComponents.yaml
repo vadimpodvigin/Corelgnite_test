@@ -283,7 +283,7 @@ cards:
     description: "Maecenas elit lorem, condimentum sed consectetur id, efficitur eget mauris. Aenean metus urna, elementum tempor consequat sit amet, fringilla euismod enim. Aliquam pellentesque, libero suscipit vestibulum facilisis, ex quam pellentesque turpis, at interdum leo ipsum vel magna. Nulla felis mi, aliquet sed nibh ut, suscipit consequat diam. Nulla blandit odio lacus, vitae pulvinar erat sagittis id."
     mermaid:
       chart: |
-        graph TD
+        flowchart LR
           subgraph API["Wealth Manager FI API"]
               direction LR
               START[1. Initiates Payment<br/>Request Fiat → Crypto]
