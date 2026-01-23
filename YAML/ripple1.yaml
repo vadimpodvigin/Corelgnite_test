@@ -8,7 +8,6 @@ cards:
   - id: card1
     title: Initiates Payment
     badge: "1"
-    description: []
     nestedcards:
       direction: row
       items:
