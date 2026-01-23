@@ -13,7 +13,7 @@ cards:
       items:
         - title: Initiates Payment
           badge: "Step 1"
-          description: Request Fiat → Crypto
+          description: Request Fiat U+02192 Crypto
         - title: Confirmed Completion
           badge: "Step 10"
           description: Request Fiat → Crypto
