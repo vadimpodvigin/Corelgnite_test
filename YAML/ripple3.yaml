@@ -1,0 +1,61 @@
+workflow:
+  title: Ripple Workflow opt.3
+  category: About
+  icon: test-tool
+
+cards:
+  - id: card1
+    title: Ripple Workflow
+    badge: "1"
+    mermaid:
+      chart: |
+        flowchart LR
+          subgraph API["Wealth Manager FI API"]
+              direction LR
+              START[1. Initiates Payment<br/>Request Fiat → Crypto]
+              END[10. Confirmed Completion<br/>Notify Buyer]
+          end
+          
+          subgraph CoreIgnite["Wealth Manager FI CoreIgnite"]
+              direction LR
+              VERIFY1[2. Verifies Balance<br/>Check debit possible<br/>Fiat - Buyer]
+              VERIFY2[8. Verifies Balance<br/>Ensure Crypto in wallet<br/>Crypto - Buyer]
+              LOG[9. Logs Transaction<br/>Audit trail &<br/>reconciliation]
+          end
+          
+          subgraph Ledger["Wealth Manager FI Core Ledger"]
+              direction LR
+              DEBIT[3. Debit Source Account<br/>Event: Debit<br/>Decrease Fiat - Buyer]
+          end
+          
+          subgraph Ripple["Ripple API"]
+              direction LR
+              CREDIT[4. Credit Destination<br/>Event: Credit<br/>Increase Fiat - Ripple]
+              RESERVE[5. Mark as Reserves<br/>Event: Hold<br/>Hold Fiat - Ripple]
+              MINT[6. Mint XRP<br/>Event: Credit Mint<br/>Mint Crypto - Ripple]
+              SETTLE[7. Settle with XRP<br/>Event: Credit<br/>Transfer Crypto - Buyer]
+          end
+          
+          START -.-> VERIFY1
+          VERIFY1 -.-> DEBIT
+          DEBIT -.-> CREDIT
+          CREDIT --> RESERVE
+          RESERVE --> MINT
+          MINT --> SETTLE
+          SETTLE -.-> VERIFY2
+          VERIFY2 --> LOG
+          LOG -.-> END
+          
+          style START fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
+          style END fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
+          style VERIFY1 fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+          style VERIFY2 fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+          style LOG fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
+          style DEBIT fill:#FF9800,stroke:#E65100,stroke-width:2px,color:#fff
+          style CREDIT fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+          style RESERVE fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+          style MINT fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+          style SETTLE fill:#9C27B0,stroke:#6A1B9A,stroke-width:2px,color:#fff
+      caption: "Lorem ipsum dolor sit amet"
+    arrows:
+      - direction: []
