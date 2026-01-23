@@ -13,10 +13,10 @@ cards:
       items:
         - title: Initiates Payment
           badge: "Step 1"
-          description: Request Fiat U+02192 Crypto
+          description: Request Fiat -> Crypto
         - title: Confirmed Completion
           badge: "Step 10"
-          description: Request Fiat → Crypto
+          description: Request Fiat -> Crypto
     arrows:
       - direction: down
         targetCardId: card2
@@ -29,10 +29,10 @@ cards:
       items:
         - title: Verifies Balance
           badge: "Step 2"
-          description: Check debit possible. Fiat → Buyer
+          description: Check debit possible. Fiat -> Buyer
         - title: Verifies Balance
           badge: "Step 8"
-          description: Ensure Crypto in wallet. Crypto → Buyer
+          description: Ensure Crypto in wallet. Crypto -> Buyer
         - title: Logs Transaction
           badge: "Step 9"
           description: Audit trail & reconciliation
@@ -48,7 +48,7 @@ cards:
       items:
         - title: Debit Source Account
           badge: "Step 3"
-          description: Event: Debit. Decrease Fiat → Buyer
+          description: Event: Debit. Decrease Fiat -> Buyer
     arrows:
       - direction: right
         targetCardId: card32
@@ -61,14 +61,14 @@ cards:
       items:
         - title: Credit Destination
           badge: "Step 4"
-          description: Event: Credit. Increase Fiat → Ripple
+          description: Event: Credit. Increase Fiat -> Ripple
         - title: Mark as Reserves
           badge: "Step 5"
-          description: Event: Hold. Hold Fiat → Ripple
+          description: Event: Hold. Hold Fiat -> Ripple
         - title: Mint XRP
           badge: "Step 6"
-          description: Event: Credit Mint. Mint Crypto → Ripple
+          description: Event: Credit Mint. Mint Crypto -> Ripple
         - title: Settle with XRP
           badge: "Step 7"
-          description: Event: Credit. Transfer Crypto → Buyer
+          description: Event: Credit. Transfer Crypto -> Buyer
     arrows: []
