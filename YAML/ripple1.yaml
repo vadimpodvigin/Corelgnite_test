@@ -9,15 +9,11 @@ cards:
     title: Initiates Payment
     badge: "1"
     description: []
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Request Fiat
-          badge: []
-          description: []
         - title: Crypto
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card2
@@ -26,15 +22,11 @@ cards:
     title: Verifies Balance
     badge: "2"
     description: "Check debit possible"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Fiat
-          badge: []
-          description: []
         - title: Buyer
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card3
@@ -43,15 +35,11 @@ cards:
     title: Debit Source Account
     badge: "3"
     description: "Event: Debit"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Decrease Fiat
-          badge: []
-          description: []
         - title: Buyer
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card4
@@ -60,15 +48,11 @@ cards:
     title: Credit Destination
     badge: "4"
     description: "Event: Credit"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Increase Fiat
-          badge: []
-          description: []
         - title: Ripple
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card5
@@ -77,15 +61,11 @@ cards:
     title: Mark as Reserves
     badge: "5"
     description: "Event: Hold"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Hold Fiat
-          badge: []
-          description: []
         - title: Ripple
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card6
@@ -94,15 +74,11 @@ cards:
     title: Mint XRP
     badge: "6"
     description: "Event: Credit Mint"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Mint Crypto
-          badge: []
-          description: []
         - title: Ripple
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card7
@@ -111,15 +87,11 @@ cards:
     title: Settle with XRP
     badge: "7"
     description: "Event: Credit"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Transfer Crypto
-          badge: []
-          description: []
         - title: Buyer
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card8
@@ -128,15 +100,11 @@ cards:
     title: Verifies Balance
     badge: "8"
     description: "Ensure Crypto in wallet"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Crypto
-          badge: []
-          description: []
         - title: Buyer
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card9
@@ -145,12 +113,10 @@ cards:
     title: Verifies Balance
     badge: "9"
     description: "Logs Transaction"
-    sections:
+    nestedcards:
       direction: row
       items:
         - title: Audit trail & reconciliation
-          badge: []
-          description: []
     arrows:
       - direction: down
         targetCardId: card10
