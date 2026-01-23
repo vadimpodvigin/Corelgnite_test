@@ -1,0 +1,162 @@
+workflow:
+  title: Ripple Workflow opt.1
+  description: []
+  category: About
+  icon: test-tool
+
+cards:
+  - id: card1
+    title: Initiates Payment
+    badge: "1"
+    description: []
+    sections:
+      direction: row
+      items:
+        - title: Request Fiat
+          badge: []
+          description: []
+        - title: Crypto
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card2
+        
+  - id: card2
+    title: Verifies Balance
+    badge: "2"
+    description: "Check debit possible"
+    sections:
+      direction: row
+      items:
+        - title: Fiat
+          badge: []
+          description: []
+        - title: Buyer
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card3
+        
+  - id: card3
+    title: Debit Source Account
+    badge: "3"
+    description: "Event: Debit"
+    sections:
+      direction: row
+      items:
+        - title: Decrease Fiat
+          badge: []
+          description: []
+        - title: Buyer
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card4
+
+  - id: card4
+    title: Credit Destination
+    badge: "4"
+    description: "Event: Credit"
+    sections:
+      direction: row
+      items:
+        - title: Increase Fiat
+          badge: []
+          description: []
+        - title: Ripple
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card5
+        
+  - id: card5
+    title: Mark as Reserves
+    badge: "5"
+    description: "Event: Hold"
+    sections:
+      direction: row
+      items:
+        - title: Hold Fiat
+          badge: []
+          description: []
+        - title: Ripple
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card6
+
+  - id: card6
+    title: Mint XRP
+    badge: "6"
+    description: "Event: Credit Mint"
+    sections:
+      direction: row
+      items:
+        - title: Mint Crypto
+          badge: []
+          description: []
+        - title: Ripple
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card7
+
+  - id: card7
+    title: Settle with XRP
+    badge: "7"
+    description: "Event: Credit"
+    sections:
+      direction: row
+      items:
+        - title: Transfer Crypto
+          badge: []
+          description: []
+        - title: Buyer
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card8
+
+  - id: card8
+    title: Verifies Balance
+    badge: "8"
+    description: "Ensure Crypto in wallet"
+    sections:
+      direction: row
+      items:
+        - title: Crypto
+          badge: []
+          description: []
+        - title: Buyer
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card9
+
+  - id: card9
+    title: Verifies Balance
+    badge: "9"
+    description: "Logs Transaction"
+    sections:
+      direction: row
+      items:
+        - title: Audit trail & reconciliation
+          badge: []
+          description: []
+    arrows:
+      - direction: down
+        targetCardId: card10
+
+  - id: card10
+    title: Confirmed Completion
+    badge: "10"
+    description: "Notify Buyer"
+    arrows: []
